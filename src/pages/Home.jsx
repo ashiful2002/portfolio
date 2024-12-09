@@ -18,9 +18,9 @@ const Home = () => {
           </div>
 
           <div className="xl:w-1/2">
-            {aboutDetails.map((item,index) => (
-              <div key={index}>
-                <h2>{item.name}</h2>
+            {aboutDetails.map((item, index) => (
+              <div key={index} className="mt-4">
+                <h2 className="text-capitalize">{item.name}</h2>
                 <h5>{item.title}</h5>
                 <p className="text-justify tracking-tight">{item.desc}</p>
               </div>
@@ -28,13 +28,13 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* <div className="">
+      <div className="">
         <div className="grid grid-cols-1 md:grid-cols-3 ">
           <div>
             {" "}
             <iframe
               src="https://engineershome.vercel.app/"
-              width="400px"
+              width="375px"
               height="500px"
               frameborder="0"
             ></iframe>
@@ -43,7 +43,7 @@ const Home = () => {
             {" "}
             <iframe
               src="https://helloshe.org/"
-              width="400px"
+              width="375px"
               height="500px"
               frameborder="0"
             ></iframe>
@@ -52,7 +52,7 @@ const Home = () => {
             {" "}
             <iframe
               src="https://photoholicah.vercel.app/"
-              width="400px"
+              width="375px"
               height="500px"
               frameborder="0"
             ></iframe>
@@ -61,13 +61,13 @@ const Home = () => {
             {" "}
             <iframe
               src="https://rswa-rowmari.vercel.app/"
-              width="400px"
+              width="375px"
               height="500px"
               frameborder="0"
             ></iframe>
           </div>
         </div>
-      </div> */}
+      </div>
     </Section>
   );
 };

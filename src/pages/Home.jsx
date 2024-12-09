@@ -1,6 +1,6 @@
 import React from "react";
 import Section from "../Components/Title.jsx/Section";
-import heroImage from "../assets/hero.webp";
+import heroImage from "../assets/hero.jpg";
 import { aboutDetails } from "../Constants/Index";
 const Home = () => {
   return (

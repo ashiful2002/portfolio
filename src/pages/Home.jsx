@@ -1,6 +1,7 @@
 import React from "react";
 import Section from "../Components/Title.jsx/Section";
 import heroImage from "../assets/hero.webp";
+import { aboutDetails } from "../Constants/Index";
 const Home = () => {
   return (
     <Section>
@@ -17,21 +18,13 @@ const Home = () => {
           </div>
 
           <div className="xl:w-1/2">
-            <h2>Ashiful islam</h2>
-            <h5>Web developer (Front end)</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Dignissimos itaque quos qui eligendi quisquam, quo, ipsam
-              consequatur repudiandae fugiat sint officia, quas assumenda!
-              Accusamus ratione suscipit, quos molestias fugiat natus, dolor
-              error ex sapiente facere aspernatur itaque. Perferendis
-              consequuntur omnis optio possimus nulla veritatis deserunt harum
-              nesciunt, consequatur quidem rem asperiores ex rerum vero, facere,
-              laboriosam animi mollitia tempore soluta adipisci voluptatibus
-              quae eum commodi eius. Magni ipsum non, cum, hic exercitationem
-              cumque est consectetur cupiditate sequi, praesentium fugiat
-              numquam.
-            </p>
+            {aboutDetails.map((item,index) => (
+              <div key={index}>
+                <h2>{item.name}</h2>
+                <h5>{item.title}</h5>
+                <p className="text-justify tracking-tight">{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

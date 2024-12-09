@@ -1,22 +1,37 @@
 export const navItems = [
   {
     id: "1",
-    title: "link1",
-    url: "#link1",
+    title: "home",
+    url: "/#home",
   },
   {
     id: "2",
-    title: "link2",
-    url: "#link2",
+    title: "About me",
+    url: "/#About",
   },
   {
     id: "3",
-    title: "link3",
-    url: "#link3",
+    title: "services",
+    url: "/#services",
   },
   {
     id: "4",
-    title: "link4",
-    url: "/link4",
+    title: "skills",
+    url: "/#skills",
+  },
+  {
+    id: "4",
+    title: "projects",
+    url: "/#projects",
+  },
+  {
+    id: "4",
+    title: "Testimonials",
+    url: "/#testimonials",
+  },
+  {
+    id: "4",
+    title: "blog",
+    url: "/blog",
   },
 ];

@@ -2,8 +2,10 @@ import React from "react";
 import Section from "../Components/Title.jsx/Section";
 import heroImage from "../assets/hero.jpg";
 import { aboutDetails } from "../Constants/Index";
+import Projects from "./Section/Projects";
 const Home = () => {
   return (
+    <>
     <Section>
       <h1 className="heading">home page</h1>
       <div>
@@ -28,47 +30,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="">
-        <div className="grid grid-cols-1 md:grid-cols-3 ">
-          <div>
-            {" "}
-            <iframe
-              src="https://engineershome.vercel.app/"
-              width="375px"
-              height="500px"
-              frameborder="0"
-            ></iframe>
-          </div>
-          <div>
-            {" "}
-            <iframe
-              src="https://helloshe.org/"
-              width="375px"
-              height="500px"
-              frameborder="0"
-            ></iframe>
-          </div>
-          <div>
-            {" "}
-            <iframe
-              src="https://photoholicah.vercel.app/"
-              width="375px"
-              height="500px"
-              frameborder="0"
-            ></iframe>
-          </div>
-          <div>
-            {" "}
-            <iframe
-              src="https://rswa-rowmari.vercel.app/"
-              width="375px"
-              height="500px"
-              frameborder="0"
-            ></iframe>
-          </div>
-        </div>
-      </div>
+     
     </Section>
+    <Projects />
+    </>
   );
 };
 

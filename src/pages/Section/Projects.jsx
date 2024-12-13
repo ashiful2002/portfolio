@@ -5,11 +5,13 @@ import { projects } from "../../Constants/Index";
 const Projects = () => {
   return (
     <Section id="projects">
+      
       <PageTitle heading="projects" />
       <div>
         <div className="">
+        <p className="px-2">There are some projects i've recently done</p>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2 border rounded">
-            <p className="px-2">There are some projects i've recently done</p>
             {projects.map((item) => (
               <div className="border rounded-md shadow m-2 mb-2" key={item.id}>
                 <a href={item.url} target="_blank" rel="noopener noreferrer">

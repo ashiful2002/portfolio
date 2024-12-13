@@ -1,7 +1,6 @@
 import React from "react";
 import Section from "../../Components/Title.jsx/Section";
 import heroImage from "../../assets/hero.jpg";
-import PageTitle from "../../Components/Title.jsx/PageTitle";
 import { aboutDetails } from "../../Constants/Index";
 
 const Hero = () => {

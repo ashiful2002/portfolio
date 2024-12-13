@@ -1,3 +1,11 @@
+import html from "../assets/Skills/html.svg";
+import css from "../assets/Skills/css.svg";
+import javascript from "../assets/Skills/javascript.svg";
+import react from "../assets/Skills/react.svg";
+import bootstrap from "../assets/Skills/bootstrap.svg";
+import tailwindcss from "../assets/Skills/tailwindcss.svg";
+import git from "../assets/Skills/git.svg";
+
 import engineersHome from "../assets/engineershome.jpg";
 import rswa from "../assets/rswa.jpg";
 import ah from "../assets/ah.jpg";
@@ -46,7 +54,7 @@ export const aboutDetails = [
     id: "0",
     name: "ashiful islam Mukto",
     title: "Web Developer (Front End)",
-    desc: "Hello, I am a skilled frontend web developer with expertise in building responsive, user-friendly, and visually appealing web interfaces. Proficient in modern technologies like Tailwind CSS, React Bootstrap, JavaScript (JS), and ReactJS, I specialize in crafting seamless user experiences and dynamic web applications.With a passion for clean, efficient code and a deep understanding of design principles, I thrive in translating complex ideas into functional, engaging digital products. Whether it's optimizing performance, enhancing accessibility, or delivering pixel-perfect designs, I am committed to creating web solutions that stand out.",
+    desc: "Hello! I am ashiful islam mukto, a self tought front end  web developer with expertise in building responsive, user-friendly, and visually appealing web interfaces. Proficient in modern technologies like Tailwind CSS, React Bootstrap, JavaScript (JS), React-tailwind and ReactJS, I specialize in crafting seamless user experiences and dynamic web applications.With a passion for clean, efficient code and a deep understanding of design principles, I thrive in translating complex ideas into functional, engaging digital products. Whether it's optimizing performance, enhancing accessibility, or delivering pixel-perfect designs, I am committed to creating web solutions that stand out.",
   },
 ];
 
@@ -61,15 +69,15 @@ export const projects = [
   {
     id: "0",
     title: "Engineers Home Consulteansey",
-    desc: "a engineering consealtunsey for civil engineers.",
+    desc: "a engineering Consultancy for civil engineers. They provide many services like indoor and outdoor designs etc.",
     url: "https://engineershome.vercel.app/",
     img: engineersHome,
   },
   {
     id: "1",
     title: "RSWA",
-    desc: "Rowmari Students Welfare Association, established on September 23, 2009, is a dedicated social welfare organization focused on the advancement and well-being of students.",
-    url: "https://rswa-rowmari.vercel.app/about",
+    desc: "Rowmari Students Welfare Association, a social and students welfare association",
+    url: "https://rswa-rowmari.vercel.app",
     img: rswa,
   },
 
@@ -79,5 +87,64 @@ export const projects = [
     desc: "website for a photographer who loves to capture the wordl",
     url: "https://photoholicah.vercel.app/",
     img: ah,
+  },
+];
+
+export const skills = [
+  {
+    id: "0",
+    title: "html",
+    level: "5",
+    icon: html,
+    percent: "90",
+    strokeColor: "green",
+  },
+  {
+    id: "1",
+    title: "css",
+    level: "5",
+    icon: css,
+    percent: "70",
+    strokeColor: "#ffec6e",
+  },
+  {
+    id: "2",
+    title: "javascript",
+    level: "5",
+    icon: javascript,
+    percent: "40",
+    strokeColor: "#cc8254",
+  },
+  {
+    id: "3",
+    title: "react",
+    level: "5",
+    icon: react,
+    percent: "50",
+    strokeColor: "#cc8254",
+  },
+  {
+    id: "4",
+    title: "react-bootstrap",
+    level: "5",
+    icon: bootstrap,
+    percent: "85",
+    strokeColor: "#5aa35a",
+  },
+  {
+    id: "5",
+    title: "react-tailwind",
+    level: "5",
+    icon: tailwindcss,
+    percent: "80",
+    strokeColor: "#5aa35a",
+  },
+  {
+    id: "6",
+    title: "git",
+    level: "5",
+    icon: git,
+    percent: "10",
+    strokeColor: "#a14842",
   },
 ];

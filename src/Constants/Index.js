@@ -11,6 +11,69 @@ import rswa from "../assets/rswa.jpg";
 import ah from "../assets/ah.jpg";
 import helloshe from "../assets/helloshe.jpg";
 
+import { FaHtml5, FaCss3, FaJs, FaReact, FaGitAlt } from "react-icons/fa";
+import { SiReactbootstrap } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+
+export const skillsDetails = [
+  {
+    id: "0",
+    title: "html",
+    level: "5",
+    icon: FaHtml5,
+    percent: "90",
+    strokeColor: "green",
+  },
+  {
+    id: "1",
+    title: "css",
+    level: "5",
+    icon: FaCss3,
+    percent: "70",
+    strokeColor: "#ffec6e",
+  },
+  {
+    id: "2",
+    title: "javascript",
+    level: "5",
+    icon:FaJs,
+    percent: "40",
+    strokeColor: "#cc8254",
+  },
+  {
+    id: "3",
+    title: "react",
+    level: "5",
+    icon: FaReact,
+    percent: "50",
+    strokeColor: "#cc8254",
+  },
+  {
+    id: "4",
+    title: "react-bootstrap",
+    level: "5",
+    icon: SiReactbootstrap,
+    percent: "85",
+    strokeColor: "#5aa35a",
+  },
+  {
+    id: "5",
+    title: "react-tailwind",
+    level: "5",
+    icon: RiTailwindCssFill,
+    percent: "80",
+    strokeColor: "#5aa35a",
+  },
+  {
+    id: "6",
+    title: "git",
+    level: "5",
+    icon: FaGitAlt,
+    percent: "10",
+    strokeColor: "#a14842",
+  },
+];
+
 export const navItems = [
   {
     id: "1",
@@ -47,6 +110,11 @@ export const navItems = [
     title: "blog",
     url: "/blog",
   },
+  {
+    id: "5",
+    title: "practice",
+    url: "/practice",
+  },
 ];
 
 export const aboutDetails = [
@@ -69,7 +137,7 @@ export const projects = [
   {
     id: "0",
     title: "Engineers Home Consulteansey",
-    desc: "a engineering Consultancy for civil engineers. They provide many services like indoor and outdoor designs etc.",
+    desc: "A engineering Consultancy for civil engineers. They provide many services like indoor and outdoor designs etc.",
     url: "https://engineershome.vercel.app/",
     img: engineersHome,
   },
@@ -84,7 +152,7 @@ export const projects = [
   {
     id: "3",
     title: "photoholic ah",
-    desc: "website for a photographer who loves to capture the wordl",
+    desc: "Website for a photographer who loves to capture the wordl",
     url: "https://photoholicah.vercel.app/",
     img: ah,
   },

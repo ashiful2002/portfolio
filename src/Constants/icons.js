@@ -1,5 +1,3 @@
-// src/constants/icons.js
-
 import { FaHome, FaUser, FaCog, FaBell } from "react-icons/fa";
 
 export const icons = [
@@ -8,5 +6,3 @@ export const icons = [
   { id: 3, name: "settings", icon: FaCog },
   { id: 4, name: "notifications", icon: FaBell },
 ];
-
- 

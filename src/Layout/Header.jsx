@@ -13,8 +13,8 @@ const Header = () => {
         <Container>
           <Navbar.Brand href="/">
             <div className="rounded  ring-green-500 shadow hover:ring-red-600">
-              <h1 className="bg-red-600 rounded-md text-white px-2">
-                A.islam
+              <h1 className="bg-blue-600 rounded-md text-white px-2">
+                A. islam
               </h1>
             </div>
             {/* <img src={logo} alt="logo" width={90} className="bg-red-600 rounded-md" srcset="" /> */}

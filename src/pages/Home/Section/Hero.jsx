@@ -1,7 +1,8 @@
 import React from "react";
-import Section from "../../Components/Title.jsx/Section";
-import heroImage from "../../assets/hero.jpg";
-import { aboutDetails } from "../../Constants/Index";
+
+import heroImage from "../../../assets/hero.jpg";
+import { aboutDetails } from "../../../Constants/Index";
+import Section from "../../../Components/Title.jsx/Section";
 
 const Hero = () => {
   return (

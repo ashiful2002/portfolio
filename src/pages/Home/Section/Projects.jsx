@@ -1,7 +1,7 @@
 import React from "react";
-import Section from "../../Components/Title.jsx/Section";
-import PageTitle from "../../Components/Title.jsx/PageTitle";
-import { projects } from "../../Constants/Index";
+import { projects } from "../../../Constants/Index";
+import Section from "../../../Components/Title.jsx/Section";
+import PageTitle from "../../../Components/Title.jsx/PageTitle";
 const Projects = () => {
   return (
     <Section id="projects">

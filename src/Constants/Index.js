@@ -16,29 +16,29 @@ import { SiReactbootstrap } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 
 export const skillsDetails = [
-  {
-    id: "0",
-    title: "html",
-    level: "5",
-    icon: FaHtml5,
-    percent: "90",
-    strokeColor: "green",
-  },
-  {
-    id: "1",
-    title: "css",
-    level: "5",
-    icon: FaCss3,
-    percent: "70",
-    strokeColor: "#ffec6e",
-  },
+  // {
+  //   id: "0",
+  //   title: "html",
+  //   level: "5",
+  //   icon: FaHtml5,
+  //   percent: "90",
+  //   strokeColor: "#F1672B",
+  // },
+  // {
+  //   id: "1",
+  //   title: "css",
+  //   level: "5",
+  //   icon: FaCss3,
+  //   percent: "70",
+  //   strokeColor: "#663399",
+  // },
   {
     id: "2",
     title: "javascript",
     level: "5",
     icon:FaJs,
     percent: "40",
-    strokeColor: "#cc8254",
+    strokeColor: "#F7DF1E",
   },
   {
     id: "3",
@@ -46,7 +46,7 @@ export const skillsDetails = [
     level: "5",
     icon: FaReact,
     percent: "50",
-    strokeColor: "#cc8254",
+    strokeColor: "#4AD5FF",
   },
   {
     id: "4",
@@ -54,7 +54,7 @@ export const skillsDetails = [
     level: "5",
     icon: SiReactbootstrap,
     percent: "85",
-    strokeColor: "#5aa35a",
+    strokeColor: "#6D52F9",
   },
   {
     id: "5",
@@ -62,7 +62,7 @@ export const skillsDetails = [
     level: "5",
     icon: RiTailwindCssFill,
     percent: "80",
-    strokeColor: "#5aa35a",
+    strokeColor: "#349FAF",
   },
   {
     id: "6",
@@ -70,7 +70,7 @@ export const skillsDetails = [
     level: "5",
     icon: FaGitAlt,
     percent: "10",
-    strokeColor: "#a14842",
+    strokeColor: "#F15233",
   },
 ];
 
@@ -80,11 +80,11 @@ export const navItems = [
     title: "home",
     url: "/#home",
   },
-  {
-    id: "2",
-    title: "About me",
-    url: "/#About",
-  },
+  // {
+  //   id: "2",
+  //   title: "About me",
+  //   url: "/#About",
+  // },
   {
     id: "3",
     title: "services",
@@ -100,11 +100,11 @@ export const navItems = [
     title: "projects",
     url: "/#projects",
   },
-  {
-    id: "4",
-    title: "Testimonials",
-    url: "/#testimonials",
-  },
+  // {
+  //   id: "4",
+  //   title: "Testimonials",
+  //   url: "/#testimonials",
+  // },
   {
     id: "4",
     title: "blog",
@@ -158,61 +158,61 @@ export const projects = [
   },
 ];
 
-export const skills = [
-  {
-    id: "0",
-    title: "html",
-    level: "5",
-    icon: html,
-    percent: "90",
-    strokeColor: "green",
-  },
-  {
-    id: "1",
-    title: "css",
-    level: "5",
-    icon: css,
-    percent: "70",
-    strokeColor: "#ffec6e",
-  },
-  {
-    id: "2",
-    title: "javascript",
-    level: "5",
-    icon: javascript,
-    percent: "40",
-    strokeColor: "#cc8254",
-  },
-  {
-    id: "3",
-    title: "react",
-    level: "5",
-    icon: react,
-    percent: "50",
-    strokeColor: "#cc8254",
-  },
-  {
-    id: "4",
-    title: "react-bootstrap",
-    level: "5",
-    icon: bootstrap,
-    percent: "85",
-    strokeColor: "#5aa35a",
-  },
-  {
-    id: "5",
-    title: "react-tailwind",
-    level: "5",
-    icon: tailwindcss,
-    percent: "80",
-    strokeColor: "#5aa35a",
-  },
-  {
-    id: "6",
-    title: "git",
-    level: "5",
-    icon: git,
-    percent: "10",
-    strokeColor: "#a14842",
-  },
-];
+// export const skills = [
+//   {
+//     id: "0",
+//     title: "html",
+//     level: "5",
+//     icon: html,
+//     percent: "90",
+//     strokeColor: "green",
+//   },
+//   {
+//     id: "1",
+//     title: "css",
+//     level: "5",
+//     icon: css,
+//     percent: "70",
+//     strokeColor: "#ffec6e",
+//   },
+//   {
+//     id: "2",
+//     title: "javascript",
+//     level: "5",
+//     icon: javascript,
+//     percent: "40",
+//     strokeColor: "#cc8254",
+//   },
+//   {
+//     id: "3",
+//     title: "react",
+//     level: "5",
+//     icon: react,
+//     percent: "50",
+//     strokeColor: "#cc8254",
+//   },
+//   {
+//     id: "4",
+//     title: "react-bootstrap",
+//     level: "5",
+//     icon: bootstrap,
+//     percent: "85",
+//     strokeColor: "#5aa35a",
+//   },
+//   {
+//     id: "5",
+//     title: "react-tailwind",
+//     level: "5",
+//     icon: tailwindcss,
+//     percent: "80",
+//     strokeColor: "#5aa35a",
+//   },
+//   {
+//     id: "6",
+//     title: "git",
+//     level: "5",
+//     icon: git,
+//     percent: "10",
+//     strokeColor: "#a14842",
+//   },
+// ];

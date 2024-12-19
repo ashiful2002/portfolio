@@ -2,8 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 
 import ErrorPage from "../pages/ErrorPage";
 import Header from "../Layout/Header";
-import Home from "../pages/Home";
+import Home from "../pages/Home/Home";
 import Practice from "../pages/Practices/Practice";
+import Blog from "../pages/Blog";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/practice",
         element: <Practice />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
       },
       {
         path: "*",

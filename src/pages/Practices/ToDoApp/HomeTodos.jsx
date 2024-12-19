@@ -3,8 +3,8 @@ import PageTitle from "../../../Components/Title.jsx/PageTitle";
 import Todos from "./Todos";
 import NewTodo from "./NewTodo";
 const dummytodos = [
- 
- 
+  
+  
 ];
 const HomeTodos = () => {
   const [todos, setTodos] = useState(dummytodos);
@@ -16,7 +16,7 @@ const HomeTodos = () => {
     <div>
       <PageTitle
         heading="basic todo app"
-        className="text-teal-600 bg-transparent"
+        className="text-teal-600 btext-[#006A55] bg-transparent"
       />
       <div>
         <NewTodo onTodo={handleNewTodos} />

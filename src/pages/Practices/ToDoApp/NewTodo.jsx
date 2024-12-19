@@ -19,6 +19,7 @@ const NewTodo = ({ onTodo }) => {
   //   };
   const handleSubmit = (e) => {
     e.preventDefault();
+    setTodo("");
     onTodo({ todo });
     // console.log(todo);
   };
@@ -44,7 +45,9 @@ const NewTodo = ({ onTodo }) => {
           onChange={handleAgeChange}
         /> */}
 
-        <Button type="submit">Add</Button>
+        <div className="text-center">
+          <Button type="submit">Add</Button>
+        </div>
         {/* <button type="submit">submit</button> */}
       </form>
     </Card>

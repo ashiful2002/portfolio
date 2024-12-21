@@ -8,20 +8,16 @@ const newId = uuidv4();
 
 const NewTodo = ({ onTodo }) => {
   const [todo, setTodo] = useState("");
-  //   const [age, setAge] = useState("");
 
   const handleChange = (e) => {
     setTodo(e.target.value);
   };
-  //   const handleAgeChange = (e) => {
-  //     setAge(e.target.value);
 
-  //   };
   const handleSubmit = (e) => {
     e.preventDefault();
     setTodo("");
     onTodo({ todo });
-    // console.log(todo);
+    console.log({todo});
   };
   return (
     <Card>
@@ -36,14 +32,7 @@ const NewTodo = ({ onTodo }) => {
           value={todo}
           onChange={handleChange}
         />
-        {/* <label htmlFor="age">Age:</label>
-        <Input required
-          type="number"
-          name="age"
-          id="age"
-          value={age}
-          onChange={handleAgeChange}
-        /> */}
+        
 
         <div className="text-center">
           <Button type="submit">Add</Button>

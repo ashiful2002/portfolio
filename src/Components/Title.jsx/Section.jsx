@@ -1,11 +1,11 @@
 import React from "react";
 
-const Section = ({children, classname, id}) => {
+const Section = ({ children, classname, id }) => {
   return (
-    <div className={`container  px-0 mx-auto my-3 ${classname}`} id={id}>
+    <div className={`${classname} container mx-auto my-3 px-0`} id={id}>
       {children}
     </div>
   );
-}; 
+};
 
 export default Section;

@@ -2,6 +2,7 @@ import React from "react";
 import PageTitle from "../../Components/Title.jsx/PageTitle.jsx";
 import Section from "../../Components/Title.jsx/Section.jsx";
 import HomeTodos from "./ToDoApp/HomeTodos.jsx";
+import CompleteTodo from "./complete todo app/CompleteTodoApp.jsx";
 
 const Practice = () => {
   return (
@@ -9,23 +10,12 @@ const Practice = () => {
       <PageTitle heading="Practice" title="Practice" />
 
       <HomeTodos />
+      <CompleteTodo />
     </Section>
   );
 };
 
 export default Practice;
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import React, { useState } from "react";
 

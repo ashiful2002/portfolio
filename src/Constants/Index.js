@@ -16,22 +16,22 @@ import { SiReactbootstrap } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 
 export const skillsDetails = [
-  // {
-  //   id: "0",
-  //   title: "html",
-  //   level: "5",
-  //   icon: FaHtml5,
-  //   percent: "90",
-  //   strokeColor: "#F1672B",
-  // },
-  // {
-  //   id: "1",
-  //   title: "css",
-  //   level: "5",
-  //   icon: FaCss3,
-  //   percent: "70",
-  //   strokeColor: "#663399",
-  // },
+  {
+    id: "0",
+    title: "html 5",
+    level: "5",
+    icon: FaHtml5,
+    percent: "90",
+    strokeColor: "#F1672B",
+  },
+  {
+    id: "1",
+    title: "css3",
+    level: "5",
+    icon: FaCss3,
+    percent: "75",
+    strokeColor: "#663399",
+  },
   {
     id: "2",
     title: "javascript",

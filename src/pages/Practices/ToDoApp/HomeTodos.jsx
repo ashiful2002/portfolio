@@ -12,7 +12,7 @@ const HomeTodos = () => {
   const handleNewTodos = (newTodo) => {
     setTodos([...todos, newTodo]);
   };
-  return (
+  return ( 
     <div>
       <PageTitle
         heading="basic todo app"

@@ -8,7 +8,7 @@ const Todos = ({ todos }) => {
           <ul>
             <li className="capitalize">{todo}</li>
           </ul>
-        </Card>
+        </Card> 
       ))}
     </div>
   );

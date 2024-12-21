@@ -1,11 +1,11 @@
 import React from "react";
 
-const Button = ({ children, varient, href, onClick }) => {
+const Button = ({ children, varient, href, onClick ,disabled }) => {
   
   const classes =
     "my-3 min-w-10 rounded  px-3 py-2 font-semibold capitalize tracking-wider text-white";
   const renderbtn = () => (
-    <button
+    <button disabled={disabled}
       onClick={onClick}
       className={`${classes} bg-violet-500 hover:bg-violet-600`}
     >
@@ -14,6 +14,7 @@ const Button = ({ children, varient, href, onClick }) => {
   );
   const rendersecondaryBtn = () => (
     <button
+ 
       onClick={onClick}
       varient={varient}
       className={`${classes} bg-red-600 hover:bg-red-700`}

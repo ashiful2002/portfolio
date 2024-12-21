@@ -1,11 +1,3 @@
-import html from "../assets/Skills/html.svg";
-import css from "../assets/Skills/css.svg";
-import javascript from "../assets/Skills/javascript.svg";
-import react from "../assets/Skills/react.svg";
-import bootstrap from "../assets/Skills/bootstrap.svg";
-import tailwindcss from "../assets/Skills/tailwindcss.svg";
-import git from "../assets/Skills/git.svg";
-
 import engineersHome from "../assets/engineershome.jpg";
 import rswa from "../assets/rswa.jpg";
 import ah from "../assets/ah.jpg";
@@ -14,65 +6,6 @@ import helloshe from "../assets/helloshe.jpg";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaGitAlt } from "react-icons/fa";
 import { SiReactbootstrap } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-
-export const skillsDetails = [
-  {
-    id: "0",
-    title: "html 5",
-    level: "5",
-    icon: FaHtml5,
-    percent: "90",
-    strokeColor: "#F1672B",
-  },
-  {
-    id: "1",
-    title: "css3",
-    level: "5",
-    icon: FaCss3,
-    percent: "75",
-    strokeColor: "#663399",
-  },
-  {
-    id: "2",
-    title: "javascript",
-    level: "5",
-    icon:FaJs,
-    percent: "40",
-    strokeColor: "#F7DF1E",
-  },
-  {
-    id: "3",
-    title: "react",
-    level: "5",
-    icon: FaReact,
-    percent: "50",
-    strokeColor: "#4AD5FF",
-  },
-  {
-    id: "4",
-    title: "react-bootstrap",
-    level: "5",
-    icon: SiReactbootstrap,
-    percent: "85",
-    strokeColor: "#6D52F9",
-  },
-  {
-    id: "5",
-    title: "react-tailwind",
-    level: "5",
-    icon: RiTailwindCssFill,
-    percent: "80",
-    strokeColor: "#349FAF",
-  },
-  {
-    id: "6",
-    title: "git",
-    level: "5",
-    icon: FaGitAlt,
-    percent: "10",
-    strokeColor: "#F15233",
-  },
-];
 
 export const navItems = [
   {
@@ -130,7 +63,7 @@ export const projects = [
   {
     id: "2",
     title: "Hello She",
-    desc: "Hello She is a non-profit organization dedicated to raising awareness about Cyber Security among women and female students. We believe that in today’s digital age, everyone deserves to feel safe online, and our goal is to provide the knowledge and tools necessary to achieve that.",
+    desc: "Hello She is a non-profit organization dedicated to raising awareness about Cyber Security among women and female students. We believe that in today’s digital age, everyone deserves to feel safe online, and our goal is to provide the knowledge and tools necessary to achieve that. this is just a landing page without functionality",
     url: "https://helloshe.org/",
     img: helloshe,
   },
@@ -144,7 +77,7 @@ export const projects = [
   {
     id: "1",
     title: "RSWA",
-    desc: "Rowmari Students Welfare Association, a social and students welfare association",
+    desc: "Rowmari Students Welfare Association, a social and students welfare association. This is a web application with various functionality. ",
     url: "https://rswa-rowmari.vercel.app",
     img: rswa,
   },
@@ -155,6 +88,64 @@ export const projects = [
     desc: "Website for a photographer who loves to capture the wordl",
     url: "https://photoholicah.vercel.app/",
     img: ah,
+  },
+];
+export const skillsDetails = [
+  {
+    id: "0",
+    title: "html 5",
+    level: "5",
+    icon: FaHtml5,
+    percent: "90",
+    strokeColor: "#F1672B",
+  },
+  {
+    id: "1",
+    title: "css3",
+    level: "5",
+    icon: FaCss3,
+    percent: "75",
+    strokeColor: "#663399",
+  },
+  {
+    id: "2",
+    title: "javascript",
+    level: "5",
+    icon: FaJs,
+    percent: "40",
+    strokeColor: "#F7DF1E",
+  },
+  {
+    id: "3",
+    title: "react",
+    level: "5",
+    icon: FaReact,
+    percent: "50",
+    strokeColor: "#4AD5FF",
+  },
+  {
+    id: "4",
+    title: "react-bootstrap",
+    level: "5",
+    icon: SiReactbootstrap,
+    percent: "85",
+    strokeColor: "#6D52F9",
+  },
+  {
+    id: "5",
+    title: "react-tailwind",
+    level: "5",
+    icon: RiTailwindCssFill,
+    percent: "80",
+    strokeColor: "#349FAF",
+  },
+  {
+    id: "6",
+    title: "git",
+    level: "5",
+    icon: FaGitAlt,
+    percent: "10",
+    strokeColor: "#F15233",
   },
 ];
 

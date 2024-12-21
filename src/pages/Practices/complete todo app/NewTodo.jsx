@@ -45,7 +45,9 @@ const NewTodo = (props) => {
             onChange={handleChange}
           />
         </div>
-        <Button type="submit">Add todo</Button>
+        <div className="flex justify-end">
+          <Button type="submit">Add todo</Button>
+        </div>
       </form>
     </Card>
   );

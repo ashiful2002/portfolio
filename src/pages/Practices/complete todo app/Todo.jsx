@@ -20,7 +20,8 @@ const Todo = (props) => {
             <p className="capitalize">{desc}</p>
           </div>
           <div>
-            <Button
+            <Button 
+            varient="delete"
               onClick={() => {
                 handleClick(id);
               }}

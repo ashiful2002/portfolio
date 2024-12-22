@@ -16,6 +16,10 @@ p a {
 
 @layer components {
   .heading {
-    @apply bg-blue-600 capitalize text-center rounded text-white;
+    @apply rounded bg-primary-color text-center capitalize text-white;
+  }
+
+  .btn-primary {
+    @apply  px-5 py-2 font-semibold text-white shadow-md  focus:outline-none focus:ring focus:ring- -400 focus:ring-opacity-75;
   }
 }

@@ -28,17 +28,7 @@ const Hero = () => {
               </div>
             ))}
           </div>
-          <div className="capitalize">
-            <h2 className="bg-primary-color text-center">heading</h2>
-            <p className="bg-secondary-color rounded p-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-              enim odio dolore, ducimus inventore velit? Natus quisquam, alias
-              quam in nemo mollitia magnam, quidem laborum rerum quibusdam ex
-              obcaecati, quas itaque optio. Vel tenetur nisi nostrum rerum ipsa
-              ratione debitis!
-            </p>
-            <Button>click</Button>
-          </div>
+          
         </div>
       </div>
     </Section>

@@ -112,7 +112,7 @@ export const skillsDetails = [
     title: "javascript",
     level: "5",
     icon: FaJs,
-    percent: "40",
+    percent: "50",
     strokeColor: "#F7DF1E",
   },
   {
@@ -120,7 +120,7 @@ export const skillsDetails = [
     title: "react",
     level: "5",
     icon: FaReact,
-    percent: "50",
+    percent: "65",
     strokeColor: "#4AD5FF",
   },
   {

@@ -3,6 +3,7 @@ import PageTitle from "../../Components/Title.jsx/PageTitle.jsx";
 import Section from "../../Components/Title.jsx/Section.jsx";
 import HomeTodos from "./ToDoApp/HomeTodos.jsx";
 import CompleteTodo from "./complete todo app/CompleteTodoApp.jsx";
+import CountryApp from "./Country App/Index";
 
 const Practice = () => {
   return (
@@ -11,6 +12,7 @@ const Practice = () => {
 
       <HomeTodos />
       <CompleteTodo />
+      <CountryApp />
     </Section>
   );
 };

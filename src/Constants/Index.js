@@ -29,25 +29,45 @@ export const navItems = [
     url: "/#skills",
   },
   {
-    id: "4",
+    id: "5",
     title: "projects",
     url: "/#projects",
   },
   // {
-  //   id: "4",
+  //   id: "6",
   //   title: "Testimonials",
   //   url: "/#testimonials",
   // },
   {
-    id: "4",
+    id: "7",
     title: "blog",
     url: "/blog",
   },
   {
-    id: "5",
+    id: "8",
     title: "practice",
     url: "/practice",
   },
+  // {
+  //   id: "9",
+  //   title: "todo app",
+  //   url: "/practice/#todoAPP",
+  // },
+  // {
+  //   id: "10",
+  //   title: "Complete todo app",
+  //   url: "/practice/#completeTodoApp",
+  // },
+  // {
+  //   id: "11",
+  //   title: "Fake Store",
+  //   url: "/practice/#fakeStore",
+  // },
+  // {
+  //   id: "12",
+  //   title: "Country App",
+  //   url: "/practice/#countryApp",
+  // },
 ];
 
 export const aboutDetails = [
@@ -133,7 +153,7 @@ export const skillsDetails = [
   },
   {
     id: "5",
-    title: "react-tailwind",
+    title: "tailwind Css",
     level: "5",
     icon: RiTailwindCssFill,
     percent: "80",

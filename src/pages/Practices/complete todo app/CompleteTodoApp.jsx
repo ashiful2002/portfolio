@@ -24,7 +24,7 @@ const CompleteTodo = () => {
   };
 
   return (
-    <Section>
+    <Section id="completeTodoApp">
       <div className="flex flex-col items-center justify-center">
         <PageTitle
           heading="Complete Toto app"

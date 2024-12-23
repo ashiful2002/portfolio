@@ -2,18 +2,24 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { navItems } from "../Constants/Index.js";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import Footer from "./Footer";
 
 import logo from "../assets/logo.png";
+import { NavDropdown } from "react-bootstrap";
 const Header = () => {
   return (
     <>
-      <Navbar expand="md" collapseOnSelect className="bg-body-tertiary">
+      <Navbar
+        expand="md"
+        collapseOnSelect
+        className="bg-body-tertiary"
+        sticky="top"
+      >
         <Container>
           <Navbar.Brand href="/">
-            <div className="rounded  ring-green-500 shadow hover:ring-red-600">
-              <h1 className="bg-blue-600 rounded-md text-white px-2">
+            <div className="rounded shadow ring-green-500 hover:ring-red-600">
+              <h1 className="rounded-md bg-blue-600 px-2 text-white">
                 A. islam
               </h1>
             </div>
@@ -21,12 +27,12 @@ const Header = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto capitalize text-center my-3">
+            <Nav className="my-3 ms-auto text-center capitalize">
               {navItems.map((item) => (
                 <Nav.Link key={item.id} href={item.url}>
                   {item.title}
                 </Nav.Link>
-                //  <Link to={item.url} key={item.id}>{item.title}</Link>
+                // <Link to={item.url} key={item.id}>{item.title}</Link>
               ))}
             </Nav>
           </Navbar.Collapse>

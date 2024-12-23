@@ -12,7 +12,7 @@ const NewTodo = ({ onTodo }) => {
   const handleChange = (e) => {
     setTodo(e.target.value);
   };
-
+ 
   const handleSubmit = (e) => {
     e.preventDefault();
     setTodo("");

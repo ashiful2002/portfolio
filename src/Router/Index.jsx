@@ -5,6 +5,7 @@ import Header from "../Layout/Header";
 import Home from "../pages/Home/Home";
 import Practice from "../pages/Practices/Practice";
 import Blog from "../pages/Blog";
+import MotionHeader from "../Layout/MotionHeader";
 
 const router = createBrowserRouter([
   {

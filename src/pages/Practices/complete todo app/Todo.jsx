@@ -7,6 +7,7 @@ import Card from "../../../Components/Card";
 const Todo = (props) => {
   const { title, desc } = props.todo;
   const { id } = props;
+
   const handleClick = (id) => {
     props.onRemoveTodo(id);
   };
@@ -20,8 +21,8 @@ const Todo = (props) => {
             <p className="capitalize">{desc}</p>
           </div>
           <div>
-            <Button 
-            varient="delete"
+            <Button
+              varient="delete"
               onClick={() => {
                 handleClick(id);
               }}

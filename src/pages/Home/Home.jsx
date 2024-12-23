@@ -6,6 +6,7 @@ import Hero from "./Section/Hero";
 const Home = () => {
   return (
     <>
+
       <Hero />
       <Skills />
       <Projects />

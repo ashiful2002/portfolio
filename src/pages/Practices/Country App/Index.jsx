@@ -5,8 +5,9 @@ import Section from "../../../Components/Title.jsx/Section";
 import PageTitle from "../../../Components/Title.jsx/PageTitle";
 import Countries from "./Countries";
 import Search from "./Search";
+import Rspinner from "../../../Components/Spinner";
 const url = "https://restcountries.com/v3.1/all";
-
+ 
 const CountryApp = () => {
   const [isLoading, setisLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -47,14 +48,14 @@ const CountryApp = () => {
     setFilterCountries(newCountries);
   };
   return (
-    <Section>
+    <Section id="countryApp">
       <PageTitle
         heading="country app"
         className="bg-transparent text-teal-600"
       />
       <div>
         <Search onSearchedValue={handleSearchedValue} />
-        {isLoading && <h2>loading...</h2>}
+        {isLoading && <Rspinner>Loading Country data</Rspinner>}
         {error && <h2>{error.message}</h2>}
         {countries && (
           <Countries

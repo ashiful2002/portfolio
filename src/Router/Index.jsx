@@ -10,7 +10,7 @@ import MotionHeader from "../Layout/MotionHeader";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Header />,
+    element: <MotionHeader />,
     children: [
       {
         path: "/",

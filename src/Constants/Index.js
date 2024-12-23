@@ -75,7 +75,7 @@ export const aboutDetails = [
     id: "0",
     name: "ashiful islam Mukto",
     title: "Web Developer (Front End)",
-    desc: "Hello! I am ashiful islam mukto, a self tought front end  web developer with expertise in building responsive, user-friendly, and visually appealing web interfaces. Proficient in modern technologies like Tailwind CSS, React Bootstrap, JavaScript (JS), React-tailwind and ReactJS, I specialize in crafting seamless user experiences and dynamic web applications.With a passion for clean, efficient code and a deep understanding of design principles, I thrive in translating complex ideas into functional, engaging digital products. Whether it's optimizing performance, enhancing accessibility, or delivering pixel-perfect designs, I am committed to creating web solutions that stand out.",
+    desc: "Hello! I am ashiful islam mukto, a self tought front end  web developer with expertise in building responsive, user-friendly, and visually appealing web interfaces. Proficient in modern technologies like Tailwind CSS, React Bootstrap, JavaScript (JS), and ReactJS, I specialize in crafting seamless user experiences and dynamic web applications.With a passion for clean, efficient code and a deep understanding of design principles, I thrive in translating complex ideas into functional, engaging digital products. Whether it's optimizing performance, enhancing accessibility, or delivering pixel-perfect designs, I am committed to creating web solutions that stand out.",
   },
 ];
 

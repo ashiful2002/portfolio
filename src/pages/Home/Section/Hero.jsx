@@ -1,6 +1,8 @@
 import React from "react";
 
 import heroImage from "../../../assets/hero.jpg";
+import heroImage2 from "../../../assets/heroimage2.jpg";
+import heroImage3 from "../../../assets/heroimage3.jpg";
 import { aboutDetails } from "../../../Constants/Index";
 import Section from "../../../Components/Title.jsx/Section";
 import Button from "../../../Components/Button.jsx";
@@ -12,10 +14,10 @@ const Hero = () => {
         <div className="flex flex-col items-center justify-center rounded bg-slate-600 p-2 text-neutral-100 xl:flex-row">
           <div className="xl:w-1/2">
             <img
-              src={heroImage}
+              src={heroImage3}
               alt="heroImage"
               srcset=""
-              className="w-[450px] rounded-xl p-2 md:w-full"
+              className="w-[450px] rounded-xl p-2 md:w-[500px]"
             />
           </div>
 

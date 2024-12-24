@@ -2,7 +2,7 @@ import React from "react";
 
 import heroImage from "../../../assets/hero.jpg";
 import heroImage2 from "../../../assets/heroimage2.jpg";
-import heroImage3 from "../../../assets/heroimage3.jpg";
+import heroImage3 from "../../../assets/heroimage3.png";
 import { aboutDetails } from "../../../Constants/Index";
 import Section from "../../../Components/Title.jsx/Section";
 import Button from "../../../Components/Button.jsx";

@@ -3,17 +3,17 @@ import { SoicalMidea } from "../../../Constants/Index";
 
 const Socials = () => {
   return (
-    <div>
-      <div className="flex items-center justify-center gap-4">
+    <>
+      <div className="my-4 flex items-center justify-center gap-4">
         {SoicalMidea.map(({ id, url, icon: Icon, title }) => (
           <div key={id} className="">
             <a href={url}>
-              <Icon className="text-2xl text-[#45ffdad9]" />
+              <Icon className="text-2xl text-violet-500" />
             </a>
           </div>
         ))}
       </div>
-    </div>
+    </>
   );
 };
 

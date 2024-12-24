@@ -18,7 +18,7 @@ const Hero = () => {
               src={heroImage3}
               alt="heroImage"
               srcset=""
-              className="w-screen rounded-xl p-2 md:w-[500px]"
+              className="w-[350px]  rounded-full  ring ring-violet-600  md:w-[500px]"
             />
           </div>
 
@@ -27,13 +27,13 @@ const Hero = () => {
               <div key={index} className="mt-4">
                 <h2 className="text-capitalize">{item.name}</h2>
                 <h5>{item.title}</h5>
+                <Button className="mt-0 text-sm">Download Resume</Button>
                 <p className="text-justify tracking-tight">{item.desc}</p>
               </div>
             ))}
           </div>
           <Socials />
         </div>
-       
       </div>
     </Section>
   );

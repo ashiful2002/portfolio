@@ -11,14 +11,14 @@ import Socials from "./Socials.jsx";
 const Hero = () => {
   return (
     <Section id="home" classname="">
-      <div>
-        <div className="mt-[70px] flex flex-col items-center justify-center rounded bg-slate-600 p-2 text-neutral-100 xl:flex-row">
+      <div className="bg-slate-600">
+        <div className="mt-[70px] flex flex-col items-center justify-center rounded p-2 text-neutral-100 xl:flex-row">
           <div className="xl:w-1/2">
             <img
               src={heroImage3}
               alt="heroImage"
               srcset=""
-              className="w-[350px]  rounded-full  ring ring-violet-600  md:w-[500px]"
+              className="w-[350px] rounded-xl ring-violet-600 md:w-[500px]"
             />
           </div>
 
@@ -32,8 +32,8 @@ const Hero = () => {
               </div>
             ))}
           </div>
-          <Socials />
         </div>
+        <Socials />
       </div>
     </Section>
   );

@@ -14,7 +14,7 @@ const Header = () => {
         expand="md"
         collapseOnSelect
         className="bg-body-tertiary"
-        sticky="top"
+        fixed="top"
       >
         <Container>
           <Navbar.Brand href="/">
@@ -23,14 +23,13 @@ const Header = () => {
                 A. islam
               </h1>
             </div>
-            {/* <img src={logo} alt="logo" width={90} className="bg-red-600 rounded-md" srcset="" /> */}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="my-3 ms-auto text-center capitalize">
-              {navItems.map((item) => (
-                <Nav.Link key={item.id} href={item.url}>
-                  {item.title}
+              {navItems.map(({id,url,title}) => (
+                <Nav.Link key={id} href={url}>
+                  {title}
                 </Nav.Link>
                 // <Link to={item.url} key={item.id}>{item.title}</Link>
               ))}

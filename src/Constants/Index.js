@@ -3,9 +3,23 @@ import rswa from "../assets/rswa.jpg";
 import ah from "../assets/ah.jpg";
 import helloshe from "../assets/helloshe.jpg";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaGitAlt } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaGitAlt,
+  FaLandmark,
+  FaWeebly,
+  FaRegStopCircle,
+  FaPage4,
+  FaPagelines,
+  FaSatellite,
+} from "react-icons/fa";
 import { SiReactbootstrap } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { FaFaceAngry } from "react-icons/fa6";
+import { FcStackOfPhotos } from "react-icons/fc";
 
 export const navItems = [
   {
@@ -23,6 +37,7 @@ export const navItems = [
     title: "services",
     url: "/#services",
   },
+
   {
     id: "4",
     title: "skills",
@@ -79,6 +94,32 @@ export const aboutDetails = [
   },
 ];
 
+export const services = [
+  {
+    id: "0",
+    icon: FaSatellite,
+    title: "landing page design",
+    desc: "Qualified web designs and attractive effects which catches visitor's eye.",
+  },
+  {
+    id: "1",
+    icon: FaWeebly,
+    title: "web development",
+    desc: "Clean and fresh issue free code to make your website dynamic perfectly.",
+  },
+  {
+    id: "2",
+    icon: FaHtml5,
+    title: "psd to html",
+    desc: "I'll convert your PSD file to pixel perfect HTML design. All type of scratch to HTML is included like img to HTML, XD to HTML Etc",
+  },
+  {
+    id: "3",
+    icon: FaRegStopCircle,
+    title: "responsive design",
+    desc: "Responsive Design which will be working almost all browsers and screens, Mobile, TaB, PC etc",
+  },
+];
 export const projects = [
   {
     id: "2",
@@ -88,18 +129,18 @@ export const projects = [
     img: helloshe,
   },
   {
-    id: "0",
-    title: "Engineers Home Consulteansey",
-    desc: "A engineering Consultancy for civil engineers. They provide many services like indoor and outdoor designs etc.",
-    url: "https://engineershome.vercel.app/",
-    img: engineersHome,
-  },
-  {
     id: "1",
     title: "RSWA",
     desc: "Rowmari Students Welfare Association, a social and students welfare association. This is a web application with various functionality. ",
     url: "https://rswa-rowmari.vercel.app",
     img: rswa,
+  },
+  {
+    id: "0",
+    title: "Engineers Home Consulteansey",
+    desc: "A engineering Consultancy for civil engineers. They provide many services like indoor and outdoor designs etc.",
+    url: "https://engineershome.vercel.app/",
+    img: engineersHome,
   },
 
   {
@@ -127,6 +168,15 @@ export const skillsDetails = [
     percent: "75",
     strokeColor: "#663399",
   },
+
+  {
+    id: "5",
+    title: "tailwind Css",
+    level: "5",
+    icon: RiTailwindCssFill,
+    percent: "80",
+    strokeColor: "#349FAF",
+  },
   {
     id: "2",
     title: "javascript",
@@ -150,14 +200,6 @@ export const skillsDetails = [
     icon: SiReactbootstrap,
     percent: "85",
     strokeColor: "#6D52F9",
-  },
-  {
-    id: "5",
-    title: "tailwind Css",
-    level: "5",
-    icon: RiTailwindCssFill,
-    percent: "80",
-    strokeColor: "#349FAF",
   },
   {
     id: "6",

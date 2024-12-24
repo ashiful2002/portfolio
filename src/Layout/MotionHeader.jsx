@@ -5,6 +5,8 @@ import { Link, Outlet } from "react-router-dom";
 import { motion } from "motion/react";
 import { GiCrossMark } from "react-icons/gi";
 import { FaBars } from "react-icons/fa";
+import { RiMenu4Fill } from "react-icons/ri";
+import { IoMdMenu } from "react-icons/io";
 
 const MotionHeader = () => {
   const [toggle, setToggle] = useState(false);
@@ -17,7 +19,7 @@ const MotionHeader = () => {
   };
   return (
     <div className="">
-      <div className="container flex items-center justify-between mt-2"  >
+      <div className="container mt-2 flex items-center justify-between">
         <div className="">
           <Link to="/" className="no-underline">
             <h1 className="rounded bg-blue-600 px-2 text-white">A. Islam</h1>{" "}
@@ -27,25 +29,25 @@ const MotionHeader = () => {
           {
             <div onClick={handleToggle} className="mr-4">
               {toggle ? (
-                <GiCrossMark className="text-2xl md:hidden" />
+                <RiMenu4Fill className="text-4xl md:hidden" />
               ) : (
-                <FaBars className="text-2xl md:hidden" />
+                <IoMdMenu className="text-4xl md:hidden" />
               )}
             </div>
           }
           <motion.div
             className={`${
               toggle
-                ? "absolute -ml-[400px] mt-10 flex w-[440px]  overflow-hidden flex-col items-center rounded-xl justify-center bg-slate-800"
+                ? "absolute -ml-[325px] mt-10 flex w-screen flex-col items-center justify-center overflow-hidden rounded-xl bg-slate-800"
                 : "hidden"
-            } list-none md:flex md:w-auto md:items-center md:me-auto`}
+            } list-none md:me-auto md:flex md:w-auto md:items-center`}
           >
             {navItems.map(({ url, title, id }) => (
               <Link
                 key={id}
                 to={url}
                 onClick={handleMenuIteem}
-                className="w-full cursor-pointer rounded p-3 capitalize no-underline   "
+                className="w-full cursor-pointer rounded p-3 capitalize no-underline"
               >
                 {title}
               </Link>

@@ -7,10 +7,10 @@ import { skillsDetails } from "../../../Constants/Index";
 
 const Skills = () => {
   return (
-    <Section id="skills">
+    <Section id="skills" classname="">
       <PageTitle heading="skills" />
-      <div className="">
-        <div className="rounded bg-slate-200">
+      <div className="p-1">
+        <div className="rounded bg-slate-200 ">
           {skillsDetails.map(
             ({ id, icon: Icon, strokeColor, percent, level, title }) => (
               <div key={id} className="p-2">

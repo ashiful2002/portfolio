@@ -9,15 +9,15 @@ import Button from "../../../Components/Button.jsx";
 
 const Hero = () => {
   return (
-    <Section id="home">
+    <Section id="home" classname="">
       <div>
-        <div className="flex flex-col items-center justify-center rounded bg-slate-600 p-2 text-neutral-100 xl:flex-row">
+        <div className="flex flex-col items-center justify-center mt-[70px] rounded bg-slate-600 p-2 text-neutral-100 xl:flex-row">
           <div className="xl:w-1/2">
             <img
               src={heroImage3}
               alt="heroImage"
               srcset=""
-              className="w-[450px] rounded-xl p-2 md:w-[500px]"
+              className="w-screen md:w-[500px] rounded-xl p-2 "
             />
           </div>
 

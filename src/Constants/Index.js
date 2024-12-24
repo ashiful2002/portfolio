@@ -18,11 +18,23 @@ import {
   FaPhone,
   FaLocationArrow,
   FaEnvelope,
+  FaFacebook,
+  FaWhatsapp,
+  FaGit,
+  FaGithub,
+  FaLinkedin,
 } from "react-icons/fa";
 import { SiReactbootstrap } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaFaceAngry, FaLocationCrosshairs, FaLocationPin, FaMapLocation, FaMapLocationDot } from "react-icons/fa6";
+import {
+  FaFaceAngry,
+  FaLocationCrosshairs,
+  FaLocationPin,
+  FaMapLocation,
+  FaMapLocationDot,
+} from "react-icons/fa6";
 import { FcStackOfPhotos } from "react-icons/fc";
+import { BsWhatsapp } from "react-icons/bs";
 
 export const navItems = [
   {
@@ -287,9 +299,41 @@ export const contactDetails = [
     url: "https://maps.app.goo.gl/iiMZZTxToZKc9eoQ9",
   },
   {
-    id: "0",
+    id: "2",
     title: "ashifulislam2002@gmail.com",
     icon: FaEnvelope,
     url: "mailto:ashifulislam2002@gmail.com",
+  },
+];
+export const SoicalMidea = [
+  {
+    id: "3",
+    title: "ashifulislam2002@gmail.com",
+    icon: FaEnvelope,
+    url: "mailto:ashifulislam2002@gmail.com",
+  },
+  {
+    id: "4",
+    title: "linked in",
+    icon: FaLinkedin,
+    url: "https://www.linkedin.com/in/ashiful-mukto-b2b1a9258?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRusKHJJNTzOzkiGI507DZQ%3D%3D",
+  },
+  {
+    id: "0",
+    title: "facebook",
+    icon: FaFacebook,
+    url: "#",
+  },
+  {
+    id: "1",
+    title: "whatsapp",
+    icon: FaWhatsapp,
+    url: "https://wa.me/+8801759907907",
+  },
+  {
+    id: "2",
+    title: "github",
+    icon: FaGithub,
+    url: "https://github.com/ashiful2002",
   },
 ];

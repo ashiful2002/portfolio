@@ -6,18 +6,19 @@ import heroImage3 from "../../../assets/heroimage3.png";
 import { aboutDetails } from "../../../Constants/Index";
 import Section from "../../../Components/Title.jsx/Section";
 import Button from "../../../Components/Button.jsx";
+import Socials from "./Socials.jsx";
 
 const Hero = () => {
   return (
     <Section id="home" classname="">
       <div>
-        <div className="flex flex-col items-center justify-center mt-[70px] rounded bg-slate-600 p-2 text-neutral-100 xl:flex-row">
+        <div className="mt-[70px] flex flex-col items-center justify-center rounded bg-slate-600 p-2 text-neutral-100 xl:flex-row">
           <div className="xl:w-1/2">
             <img
               src={heroImage3}
               alt="heroImage"
               srcset=""
-              className="w-screen md:w-[500px] rounded-xl p-2 "
+              className="w-screen rounded-xl p-2 md:w-[500px]"
             />
           </div>
 
@@ -30,8 +31,9 @@ const Hero = () => {
               </div>
             ))}
           </div>
-          
+          <Socials />
         </div>
+       
       </div>
     </Section>
   );

@@ -15,10 +15,13 @@ import {
   FaPage4,
   FaPagelines,
   FaSatellite,
+  FaPhone,
+  FaLocationArrow,
+  FaEnvelope,
 } from "react-icons/fa";
 import { SiReactbootstrap } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { FaFaceAngry } from "react-icons/fa6";
+import { FaFaceAngry, FaLocationCrosshairs, FaLocationPin, FaMapLocation, FaMapLocationDot } from "react-icons/fa6";
 import { FcStackOfPhotos } from "react-icons/fc";
 
 export const navItems = [
@@ -269,3 +272,24 @@ export const skillsDetails = [
 //     strokeColor: "#a14842",
 //   },
 // ];
+
+export const contactDetails = [
+  {
+    id: "0",
+    title: "+880 1759907907",
+    icon: FaPhone,
+    url: "tel:+8801759907907",
+  },
+  {
+    id: "1",
+    title: "Azimpur, Dhaka,bangladesh",
+    icon: FaMapLocationDot,
+    url: "https://maps.app.goo.gl/iiMZZTxToZKc9eoQ9",
+  },
+  {
+    id: "0",
+    title: "ashifulislam2002@gmail.com",
+    icon: FaEnvelope,
+    url: "mailto:ashifulislam2002@gmail.com",
+  },
+];

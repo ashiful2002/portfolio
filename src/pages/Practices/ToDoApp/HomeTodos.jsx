@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import PageTitle from "../../../Components/Title.jsx/PageTitle";
 import Todos from "./Todos";
 import NewTodo from "./NewTodo";
+import Toggle from "../../../Components/Toggle";
 const dummytodos = [];
 const HomeTodos = () => {
   const [todos, setTodos] = useState(dummytodos);
@@ -10,6 +11,9 @@ const HomeTodos = () => {
     setTodos([...todos, newTodo]);
   };
   return (
+    <Toggle>
+    
+    
     <div id="todoApp">
       <PageTitle
         heading="basic todo app"
@@ -21,6 +25,7 @@ const HomeTodos = () => {
         <Todos todos={todos} />
       </div>
     </div>
+    </Toggle>
   );
 };
 

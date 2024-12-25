@@ -5,17 +5,23 @@ import HomeTodos from "./ToDoApp/HomeTodos.jsx";
 import CompleteTodo from "./complete todo app/CompleteTodoApp.jsx";
 import CountryApp from "./Country App/Index";
 import FakeStoreApi from "./Sections/FakeStoreApi.jsx";
+import Components1 from "./UseContextHook/PropsDrilling/ParentComponent.jsx";
+import ParentComponent from "./UseContextHook/PropsDrilling/ParentComponent.jsx";
+import Toggle from "../../Components/Toggle.jsx";
 
 const Practice = () => {
   return (
-    <Section>
-      <PageTitle heading="Practice" title="Practice" />
+    <div className="mt-20">
+      <Section>
+        <PageTitle heading="Practice" title="Practice" />
 
-      <HomeTodos />
-      <CompleteTodo />
-      <FakeStoreApi />
-      <CountryApp />
-    </Section>
+        <HomeTodos />
+        <CompleteTodo />
+        <ParentComponent />
+        <FakeStoreApi />
+        <CountryApp />
+      </Section>
+    </div>
   );
 };
 

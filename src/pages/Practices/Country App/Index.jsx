@@ -6,8 +6,9 @@ import PageTitle from "../../../Components/Title.jsx/PageTitle";
 import Countries from "./Countries";
 import Search from "./Search";
 import Rspinner from "../../../Components/Spinner";
+import Toggle from "../../../Components/Toggle";
 const url = "https://restcountries.com/v3.1/all";
- 
+
 const CountryApp = () => {
   const [isLoading, setisLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -53,17 +54,19 @@ const CountryApp = () => {
         heading="country app"
         className="bg-transparent text-teal-600"
       />
-      <div>
-        <Search onSearchedValue={handleSearchedValue} />
-        {isLoading && <Rspinner>Loading Country data</Rspinner>}
-        {error && <h2>{error.message}</h2>}
-        {countries && (
-          <Countries
-            countries={fiteredCountries}
-            onRemovedCountry={handleRemovedCountry}
-          />
-        )}
-      </div>
+      <Toggle>
+        <div>
+          <Search onSearchedValue={handleSearchedValue} />
+          {isLoading && <Rspinner>Loading Country data</Rspinner>}
+          {error && <h2>{error.message}</h2>}
+          {countries && (
+            <Countries
+              countries={fiteredCountries}
+              onRemovedCountry={handleRemovedCountry}
+            />
+          )}
+        </div>
+      </Toggle>
     </Section>
   );
 };

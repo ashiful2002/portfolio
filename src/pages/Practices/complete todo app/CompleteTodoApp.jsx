@@ -6,6 +6,7 @@ import PageTitle from "../../../Components/Title.jsx/PageTitle";
 import Button from "../../../Components/Button";
 import Todos from "./Todos";
 import NewTodo from "./NewTodo";
+import Toggle from "../../../Components/Toggle";
 
 const CompleteTodo = () => {
   const [todos, setTodos] = useState([]);
@@ -24,27 +25,28 @@ const CompleteTodo = () => {
   };
 
   return (
-    <Section id="completeTodoApp">
-      <div className="flex flex-col items-center justify-center">
-        <PageTitle
-          heading="Complete Toto app"
-          className="bg-transparent text-teal-600"
-        />
-        <NewTodo onAddTodo={handleAddTodo} />
-        {todos && <Todos todos={todos} onRemoveTodo={handleRemoveTodo} />}
-        {todos && (
-          <Button 
-        
-            varient="asdf"
-            onClick={() => {
-              setTodos([]);
-            }}
-          >
-            Clear All todos
-          </Button>
-        )}
-      </div>
-    </Section>
+    <>
+      <Section id="completeTodoApp">
+        <PageTitle heading="Complete Toto app" />
+
+        <Toggle>
+          <div className="flex flex-col items-center justify-center">
+            <NewTodo onAddTodo={handleAddTodo} />
+            {todos && <Todos todos={todos} onRemoveTodo={handleRemoveTodo} />}
+            {todos && (
+              <Button
+                varient="asdf"
+                onClick={() => {
+                  setTodos([]);
+                }}
+              >
+                Clear All todos
+              </Button>
+            )}
+          </div>
+        </Toggle>
+      </Section>
+    </>
   );
 };
 

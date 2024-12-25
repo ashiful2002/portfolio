@@ -9,6 +9,7 @@ import * as motion from "motion/react-client";
 
 import { spring } from "motion";
 import { FaArrowUp } from "react-icons/fa6";
+import Toggle from "../../../Components/Toggle";
 const url = "https://fakestoreapi.com/products";
 
 const FakeStoreApi = () => {
@@ -28,38 +29,38 @@ const FakeStoreApi = () => {
   const handleBntClick = () => {
     setToggle(!toggle);
   };
-const up = < FaArrowUp />;
+  const up = <FaArrowUp />;
   return (
     <Section id="fakeStore">
       <PageTitle heading="Fake Store" />
-      <div>
-        {isLoading && <Rspinner>Store data is loading</Rspinner>}
-        {data.map(({ id, title, price, description, image, category }) => {
-          return (
-            <Card key={id} className="">
-              <img
-                src={image}
-                alt={title}
-                className="mx-auto mb-3 rounded-xl"
-                width={300}
-              />
-              <h5>{title}</h5>
-              <p>
-                Category : <span> {category}</span>
-              </p>
-              <p className="">
-               Price: {price} $
-              </p>
-              <motion.div>
-                <Button onClick={handleBntClick} className="mt-0">
-                  {toggle ? "hide" : "details"}
-                </Button>
-                {toggle && <motion.p>{description}</motion.p>}
-              </motion.div>
-            </Card>
-          );
-        })}
-      </div>
+      <Toggle>
+        <div>
+          {isLoading && <Rspinner>Store data is loading</Rspinner>}
+          {data.map(({ id, title, price, description, image, category }) => {
+            return (
+              <Card key={id} className="">
+                <img
+                  src={image}
+                  alt={title}
+                  className="mx-auto mb-3 rounded-xl"
+                  width={300}
+                />
+                <h5>{title}</h5>
+                <p>
+                  Category : <span> {category}</span>
+                </p>
+                <p className="">Price: {price} $</p>
+                <motion.div>
+                  <Button onClick={handleBntClick} className="mt-0">
+                    {toggle ? "hide" : "details"}
+                  </Button>
+                  {toggle && <motion.p>{description}</motion.p>}
+                </motion.div>
+              </Card>
+            );
+          })}
+        </div>
+      </Toggle>
     </Section>
   );
 };

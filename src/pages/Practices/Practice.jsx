@@ -8,6 +8,7 @@ import FakeStoreApi from "./Sections/FakeStoreApi.jsx";
 import Components1 from "./UseContextHook/PropsDrilling/ParentComponent.jsx";
 import ParentComponent from "./UseContextHook/PropsDrilling/ParentComponent.jsx";
 import Toggle from "../../Components/Toggle.jsx";
+import UseRefexample from "./Hooks/UseRefexample.jsx";
 
 const Practice = () => {
   return (
@@ -18,6 +19,7 @@ const Practice = () => {
         <HomeTodos />
         <CompleteTodo />
         <ParentComponent />
+        <UseRefexample />
         <FakeStoreApi />
         <CountryApp />
       </Section>

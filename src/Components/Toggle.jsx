@@ -3,7 +3,6 @@ import { motion } from "motion/react";
 import { FaArrowCircleDown, FaArrowCircleUp } from "react-icons/fa";
 
 import Button from "../Components/Button";
-import { FaArrowUp } from "react-icons/fa6";
 
 const Toggle = ({ children }) => {
   const [toggle, settoggle] = useState(false);

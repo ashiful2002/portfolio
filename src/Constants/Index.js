@@ -2,6 +2,7 @@ import engineersHome from "../assets/engineershome.jpg";
 import rswa from "../assets/rswa.jpg";
 import ah from "../assets/ah.jpg";
 import helloshe from "../assets/helloshe.jpg";
+import { v4 as uuidv4 } from "uuid";
 
 import {
   FaHtml5,
@@ -9,32 +10,19 @@ import {
   FaJs,
   FaReact,
   FaGitAlt,
-  FaLandmark,
   FaWeebly,
   FaRegStopCircle,
-  FaPage4,
-  FaPagelines,
   FaSatellite,
   FaPhone,
-  FaLocationArrow,
   FaEnvelope,
   FaFacebook,
   FaWhatsapp,
-  FaGit,
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
 import { SiReactbootstrap } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
-import {
-  FaFaceAngry,
-  FaLocationCrosshairs,
-  FaLocationPin,
-  FaMapLocation,
-  FaMapLocationDot,
-} from "react-icons/fa6";
-import { FcStackOfPhotos } from "react-icons/fc";
-import { BsWhatsapp } from "react-icons/bs";
+import { FaMapLocationDot } from "react-icons/fa6";
 
 export const navItems = [
   {
@@ -335,5 +323,20 @@ export const SoicalMidea = [
     title: "github",
     icon: FaGithub,
     url: "https://github.com/ashiful2002",
+  },
+];
+
+export const usersData = [
+  {
+    id: uuidv4(),
+    name: "ashiful islam",
+  },
+  {
+    id: uuidv4(),
+    name: "ariful islam",
+  },
+  {
+    id: uuidv4(),
+    name: "nasim mahmud",
   },
 ];

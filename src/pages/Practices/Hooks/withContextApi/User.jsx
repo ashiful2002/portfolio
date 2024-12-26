@@ -1,21 +1,30 @@
-import React from "react";
+import React, { useContext } from "react";
 import Card from "../../../../Components/Card";
 import { FaUser } from "react-icons/fa6";
 import Button from "../../../../Components/Button";
+import { UsersContext } from "./Hook/UserContext";
+import { useUsersContext } from "./Hook/useUsersContext";
 
-const User = ({ user, handleDeleteUser }) => {
+const User = ({ user }) => {
   const { name, id } = user;
+
+  const { users, setUsers } = useUsersContext();
+
   const deleteUser = (id) => {
-    handleDeleteUser(id);
+    const filtereduser = users.filter((user) => user.id !== id);
+    setUsers(filtereduser);
   };
   return (
-    <Card className="flex items-center justify-around ">
-      <FaUser className="mx-3 inline" />
-      <div>
-        <h2 className="inline capitalize">name : {name}</h2>
-        <p>Id: {id}</p>
+    <Card>
+      <div className="flex items-center">
+        <FaUser className="m-3 inline text-4xl" />
+        <div className="">
+          <h5 className="capitalize">name : {name}</h5>
+          <span className="">Id: {id.substring(0, 7)}</span>
+        </div>
       </div>
       <Button
+        className="ml-[275px]"
         varient="df"
         onClick={() => {
           deleteUser(user.id);

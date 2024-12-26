@@ -50,10 +50,7 @@ const CountryApp = () => {
   };
   return (
     <Section id="countryApp">
-      <PageTitle
-        heading="country app"
-        className="bg-transparent text-teal-600"
-      />
+      <PageTitle heading="country app" />
       <Toggle>
         <div>
           <Search onSearchedValue={handleSearchedValue} />

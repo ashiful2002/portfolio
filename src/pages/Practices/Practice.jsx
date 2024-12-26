@@ -9,6 +9,8 @@ import Components1 from "./UseContextHook/PropsDrilling/ParentComponent.jsx";
 import ParentComponent from "./UseContextHook/PropsDrilling/ParentComponent.jsx";
 import Toggle from "../../Components/Toggle.jsx";
 import UseRefexample from "./Hooks/UseRefexample.jsx";
+import UserManageMnetApp from "./Hooks/User Management aPP/Index.jsx";
+import App from "./Hooks/withContextApi/App.jsx";
 
 const Practice = () => {
   return (
@@ -20,6 +22,8 @@ const Practice = () => {
         <CompleteTodo />
         <ParentComponent />
         <UseRefexample />
+        <App />
+        <UserManageMnetApp />
         <FakeStoreApi />
         <CountryApp />
       </Section>

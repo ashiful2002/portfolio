@@ -340,3 +340,21 @@ export const usersData = [
     name: "nasim mahmud",
   },
 ];
+
+export const reducerData = [
+  {
+    id: uuidv4().substring(0, 7),
+    title: "naim mahmud",
+    desc: "student",
+  },
+  {
+    id: uuidv4().substring(0, 7),
+    title: "amit hasan ",
+    desc: "student",
+  },
+  {
+    id: uuidv4().substring(0, 7),
+    title: "murad hossain",
+    desc: "onterprenure",
+  },
+];

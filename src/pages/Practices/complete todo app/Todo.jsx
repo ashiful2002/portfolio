@@ -27,7 +27,7 @@ const Todo = (props) => {
                 handleClick(id);
               }}
             >
-              <FaTrash />
+              <FaTrash  className="mx-auto"/>
             </Button>
           </div>
         </div>

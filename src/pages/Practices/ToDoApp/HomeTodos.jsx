@@ -12,19 +12,19 @@ const HomeTodos = () => {
     setTodos([...todos, newTodo]);
   };
   return (
-    <Toggle>
-      <Section id="todoApp">
-        <PageTitle
-          heading="basic todo app"
-          className="btext-[#006A55] bg-transparent text-teal-600"
-        />
+    <Section id="todoApp">
+      <PageTitle
+        heading="basic todo app"
+        className=""
+      />
+      <Toggle>
         <div>
           <NewTodo onTodo={handleNewTodos} />
 
           <Todos todos={todos} />
         </div>
-      </Section>
-    </Toggle>
+      </Toggle>
+    </Section>
   );
 };
 

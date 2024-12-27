@@ -36,7 +36,7 @@ const NewTodo = (props) => {
         </div>
         <div>
           <label htmlFor="desc">Description: </label>
-          <Input
+          <Input.TextArea
             required
             type="text"
             id="desc"

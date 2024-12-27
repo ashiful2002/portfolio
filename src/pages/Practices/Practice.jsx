@@ -11,18 +11,18 @@ import Toggle from "../../Components/Toggle.jsx";
 import UseRefexample from "./Hooks/UseRefexample.jsx";
 import UserManageMnetApp from "./Hooks/User Management aPP/Index.jsx";
 import App from "./Hooks/withContextApi/App.jsx";
-
+import ReducerApp from "./USE_REDUCER_HOOK/ReducerApp.jsx";
 const Practice = () => {
   return (
     <div className="mt-20">
       <Section>
-        <PageTitle heading="Practice" title="Practice" />
-
+        <PageTitle heading="React Practice page" title="Practice" className="py-3 bg-secondary-color"  />
         <HomeTodos />
         <CompleteTodo />
+        <ReducerApp />
+        <App />
         <ParentComponent />
         <UseRefexample />
-        <App />
         <UserManageMnetApp />
         <FakeStoreApi />
         <CountryApp />

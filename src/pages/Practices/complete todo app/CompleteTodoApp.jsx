@@ -33,7 +33,7 @@ const CompleteTodo = () => {
           <div className="flex flex-col items-center justify-center">
             <NewTodo onAddTodo={handleAddTodo} />
             {todos && <Todos todos={todos} onRemoveTodo={handleRemoveTodo} />}
-            {todos && (
+            {todos.length > 1 && (
               <Button
                 varient="asdf"
                 onClick={() => {

@@ -1,5 +1,5 @@
 import { Input } from "antd";
-import React, { useState } from "react";
+import React, { useReducer, useState } from "react";
 import Button from "../../../Components/Button";
 import { v4 as uuidv4 } from "uuid";
 
@@ -8,10 +8,10 @@ const Modal = ({ text }) => {
 };
 const NewUser = ({ onNewTodo }) => {
   const [newName, setNewName] = useState("");
-
   const [isModalopen, setIsModalOpen] = useState(false);
   const [modalText, setModalText] = useState("");
 
+  const [] = useReducer()
   const handleNameChange = (e) => {
     setNewName(e.target.value);
   };

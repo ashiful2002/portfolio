@@ -18,16 +18,14 @@ const Header = () => {
       >
         <Container>
           <Navbar.Brand href="/">
-            <div className="rounded shadow ring-green-500 hover:ring-red-600">
-              <h1 className="rounded-md bg-blue-600 px-2 text-white">
-                A. islam
-              </h1>
+            <div className="rounded-md bg-blue-600 shadow-md shadow-blue-400">
+              <h1 className="px-2 text-white">A. islam</h1>
             </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="my-3 ms-auto text-center capitalize">
-              {navItems.map(({id,url,title}) => (
+              {navItems.map(({ id, url, title }) => (
                 <Nav.Link key={id} href={url}>
                   {title}
                 </Nav.Link>

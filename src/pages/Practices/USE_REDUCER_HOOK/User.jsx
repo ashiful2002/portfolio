@@ -8,7 +8,7 @@ const User = ({ user, onBtnId }) => {
     onBtnId(e);
   };
   return (
-    <>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
       {user.map((item) => (
         <Card key={item.id} className="flex items-center justify-between">
           <p className="my-1 ml-2 flex items-center capitalize">
@@ -25,7 +25,7 @@ const User = ({ user, onBtnId }) => {
           </Button>
         </Card>
       ))}
-    </>
+    </div>
   );
 };
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useReducer, useState } from "react";
 import Section from "../../../Components/Title.jsx/Section";
 import PageTitle from "../../../Components/Title.jsx/PageTitle";
 import Toggle from "../../../Components/Toggle";
@@ -9,8 +9,9 @@ import NewUser from "./NewUser";
 
 const ReducerApp = () => {
   const [user, setuser] = useState(reducerData);
-  
 
+  const [] = useReducer();
+  
   const handleBtnID = (receivedID) => {
     console.log(receivedID);
     const filteredUser = user.filter((prev) => prev.id !== receivedID);

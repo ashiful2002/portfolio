@@ -1,6 +1,5 @@
 import React from "react";
 
-import mealcounter from "../../../assets/mealCounter.pdf"
 import heroImage from "../../../assets/hero.jpg";
 import heroImage2 from "../../../assets/heroimage2.jpg";
 import heroImage3 from "../../../assets/heroimage3.png";
@@ -29,7 +28,7 @@ const Hero = () => {
                 <h2 className="text-capitalize">{item.name}</h2>
                 <h5>{item.title}</h5>
                < >
-               <Button className="mt-0 text-sm" ><a href="" className="no-underline text-white" download={mealcounter}>
+               <Button className="mt-0 text-sm" ><a href="" className="no-underline text-whitew" >
                Download Resume</a></Button>
                </>
                 <p className="text-justify tracking-tight">{item.desc}</p>

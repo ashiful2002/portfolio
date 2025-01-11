@@ -6,7 +6,7 @@ import { reducerData } from "../../../Constants/Index";
 import Users from "./Users";
 import User from "./User";
 import NewUser from "./NewUser";
-smsfrt
+
 const ReducerApp = () => {
   const [user, setuser] = useState(reducerData);
 

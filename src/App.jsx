@@ -5,8 +5,7 @@ import Features from "./Sections/Features.jsx";
 const App = () => {
   return (
     <div className=" ">
-      <Hero />
-       < Features  />
+      <h1>your website has been hacked</h1>
     </div>
   );
 };

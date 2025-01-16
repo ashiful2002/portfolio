@@ -6,7 +6,7 @@ import { contactDetails } from "../../../Constants/Index";
 const Contact = () => {
   return (
     <Section classname="bg-[#006A55]">
-      <PageTitle heading="Gei in Touch" />
+      <PageTitle heading="Get in Touch" />
       <div>
         <div className="my-3 flex flex-col items-center justify-center gap-4">
           {contactDetails.map(({ id, title, icon: Icon, url }) => (

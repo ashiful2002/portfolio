@@ -28,7 +28,7 @@ const Hero = () => {
                 <h2 className="text-capitalize">{item.name}</h2>
                 <h5>{item.title}</h5>
                < >
-               <Button className="mt-0 text-sm" ><a href="" className="no-underline text-whitew" >
+               <Button className="mt-0 text-sm" ><a href="" className="no-underline text-white" >
                Download Resume</a></Button>
                </>
                 <p className="text-justify tracking-tight">{item.desc}</p>

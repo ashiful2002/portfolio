@@ -4,10 +4,21 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { RouterProvider } from "react-router-dom";
 
+import App from "./App";
 import router from "../src/Router/Index.jsx";
+
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    {/* < App/>
+    {
+      if (timeResolved) {
+        <RouterProvider router={router}></RouterProvider>
+
+      } else {
+        <App/>
+      } 
+    } */}
     <RouterProvider router={router}></RouterProvider>
-  </StrictMode>
+  </StrictMode>,
 );

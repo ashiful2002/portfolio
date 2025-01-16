@@ -19,7 +19,7 @@ const Header = () => {
         <Container>
           <Navbar.Brand href="/">
             <div className="rounded-md bg-blue-600 shadow-md shadow-blue-400">
-              <h1 className="px-2 text-white">A. islam</h1>
+              <h1 className="px-2 text-white">A. Islam</h1>
             </div>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -110,12 +110,12 @@ export const services = [
     title: "web development",
     desc: "Clean and fresh issue free code to make your website dynamic perfectly.",
   },
-  {
-    id: "2",
-    icon: FaHtml5,
-    title: "psd to html",
-    desc: "I'll convert your PSD file to pixel perfect HTML design. All type of scratch to HTML is included like img to HTML, XD to HTML Etc",
-  },
+  // {
+  //   id: "2",
+  //   icon: FaHtml5,
+  //   title: "figma to ",
+  //   desc: "I'll convert your PSD file to pixel perfect HTML design. All type of scratch to HTML is included like img to HTML, XD to HTML Etc",
+  // },
   {
     id: "3",
     icon: FaRegStopCircle,

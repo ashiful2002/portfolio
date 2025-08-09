@@ -7,10 +7,16 @@ import { skillsDetails } from "../../../Constants/Index";
 
 const Skills = () => {
   return (
-    <Section id="skills" classname="">
-      <PageTitle heading="skills" />
+    <div id="skills" classname="">
+      {/* <PageTitle heading="skills" /> */}
+      <div className="flex flex-col items-center justify-center py-3">
+        <h2>Skills</h2>
+        <p className="px-2 first-letter:uppercase">
+          skills i use as a developer
+        </p>
+      </div>
       <div className="p-1">
-        <div className="rounded bg-slate-200 ">
+        <div className="">
           {skillsDetails.map(
             ({ id, icon: Icon, strokeColor, percent, level, title }) => (
               <div key={id} className="p-2">
@@ -36,7 +42,7 @@ const Skills = () => {
           )}
         </div>
       </div>
-    </Section>
+    </div>
   );
 };
 

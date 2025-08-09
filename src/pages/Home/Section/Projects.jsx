@@ -4,13 +4,19 @@ import Section from "../../../Components/Title.jsx/Section";
 import PageTitle from "../../../Components/Title.jsx/PageTitle";
 const Projects = () => {
   return (
-    <Section id="projects">
-      <PageTitle heading="projects" />
+    <div id="projects">
+      {/* <PageTitle heading="projects" /> */}
       <div>
         <div className="">
-          <p className="px-2">There are some projects i've recently done</p>
+          <div className="flex flex-col items-center justify-center">
+            <h2>Projects</h2>
+            <p className="px-2">
+              Some of my latest projects are here. you can get idea what i am
+              doing now.
+            </p>
+          </div>
 
-          <div className="grid grid-cols-1 gap-2 rounded border md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-2 rounded  md:grid-cols-3">
             {projects &&
               projects.map((item) => (
                 <div
@@ -35,7 +41,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </Section>
+    </div>
   );
 };
 

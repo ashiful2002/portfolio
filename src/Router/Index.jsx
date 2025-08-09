@@ -6,11 +6,12 @@ import Home from "../pages/Home/Home";
 import Practice from "../pages/Practices/Practice";
 import Blog from "../pages/Blog";
 import MotionHeader from "../Layout/MotionHeader";
+import RootLayout from "../Layout/RootLayout/RootLayout";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Header />,
+    element: <RootLayout />,
     children: [
       {
         path: "/",

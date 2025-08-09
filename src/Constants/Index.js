@@ -15,8 +15,6 @@ import {
   FaSatellite,
   FaPhone,
   FaEnvelope,
-  FaFacebook,
-  FaWhatsapp,
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
@@ -28,7 +26,7 @@ export const navItems = [
   {
     id: "1",
     title: "home",
-    url: "/#home",
+    url: "#home",
   },
   // {
   //   id: "2",
@@ -38,18 +36,18 @@ export const navItems = [
   {
     id: "3",
     title: "services",
-    url: "/#services",
+    url: "#services",
   },
 
   {
     id: "4",
     title: "skills",
-    url: "/#skills",
+    url: "#skills",
   },
   {
     id: "5",
     title: "projects",
-    url: "/#projects",
+    url: "#projects",
   },
   // {
   //   id: "6",
@@ -91,9 +89,9 @@ export const navItems = [
 export const aboutDetails = [
   {
     id: "0",
-    name: "ashiful islam Mukto",
-    title: "Web Developer (Front End)",
-    desc: "Hello! I am ashiful islam mukto, a self tought front end  web developer with expertise in building responsive, user-friendly, and visually appealing web interfaces. Proficient in modern technologies like Tailwind CSS, React Bootstrap, JavaScript (JS), and ReactJS, I specialize in crafting seamless user experiences and dynamic web applications.With a passion for clean, efficient code and a deep understanding of design principles, I thrive in translating complex ideas into functional, engaging digital products. Whether it's optimizing performance, enhancing accessibility, or delivering pixel-perfect designs, I am committed to creating web solutions that stand out.",
+    name: "ashiful islam (Mukto)",
+    title: "Web Developer",
+    desc: "A passionate frontEnd focused full stack web developer. I enjoy crafting clean, responsive, and user-friendly web applications that bring ideas to life. Constantly learning new tools and frameworks, I’m eager to solve real-world problems through code. Let’s build something amazing together!",
   },
 ];
 
@@ -306,18 +304,7 @@ export const SoicalMidea = [
     icon: FaLinkedin,
     url: "https://www.linkedin.com/in/ashiful-mukto-b2b1a9258?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRusKHJJNTzOzkiGI507DZQ%3D%3D",
   },
-  {
-    id: "0",
-    title: "facebook",
-    icon: FaFacebook,
-    url: "#",
-  },
-  {
-    id: "1",
-    title: "whatsapp",
-    icon: FaWhatsapp,
-    url: "https://wa.me/+8801759907907",
-  },
+ 
   {
     id: "2",
     title: "github",

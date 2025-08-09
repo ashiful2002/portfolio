@@ -11,11 +11,9 @@ const Home = () => {
   return (
     <>
       <Hero />
-      < DiceGame />
-      <Services />
-      <Skills />
       <Projects />
-      {/* <Testimonials /> */}
+      <Skills />
+      <Services />
       <Contact />
     </>
   );

@@ -7,7 +7,7 @@ import { skillsDetails } from "../../../Constants/Index";
 
 const Skills = () => {
   return (
-    <div id="skills" classname="">
+    <div id="skills" className="mt-20">
       {/* <PageTitle heading="skills" /> */}
       <div className="flex flex-col items-center justify-center py-3">
         <h2>Skills</h2>
@@ -16,7 +16,7 @@ const Skills = () => {
         </p>
       </div>
       <div className="p-1">
-        <div className="">
+        {/* <div className="">
           {skillsDetails.map(
             ({ id, icon: Icon, strokeColor, percent, level, title }) => (
               <div key={id} className="p-2">
@@ -40,6 +40,21 @@ const Skills = () => {
               </div>
             ),
           )}
+        </div> */}
+
+        <div className="flex flex-col gap-3 md:flex-row">
+          <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae
+            voluptate fugit magnam sed. Voluptate doloribus quidem quod eveniet
+            ipsam quisquam fuga, veritatis ab est velit, accusamus, excepturi
+            eos reiciendis sit.
+          </div>
+          <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
+            magnam modi autem aut soluta obcaecati, accusantium dignissimos
+            pariatur fugiat magni in tempora! At eos aperiam sunt? Dicta alias
+            pariatur enim.
+          </div>
         </div>
       </div>
     </div>

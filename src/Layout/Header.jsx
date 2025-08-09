@@ -37,8 +37,6 @@ const Header = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Outlet />
-      <Footer />
     </>
   );
 };

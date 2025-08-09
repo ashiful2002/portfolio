@@ -4,7 +4,7 @@ import Section from "../../../Components/Title.jsx/Section";
 import PageTitle from "../../../Components/Title.jsx/PageTitle";
 const Projects = () => {
   return (
-    <div id="projects">
+    <div className="mt-20" id="projects">
       {/* <PageTitle heading="projects" /> */}
       <div>
         <div className="">
@@ -16,7 +16,7 @@ const Projects = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-2 rounded  md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-2 rounded md:grid-cols-3 xl:grid-cols-4">
             {projects &&
               projects.map((item) => (
                 <div
@@ -29,7 +29,11 @@ const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <img src={item.img} alt={item.title} className="p-2" />
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      className="max-h-[300px] w-full object-cover p-2"
+                    />
 
                     <div className="">
                       <h2 className="px-2 capitalize">{item.title}</h2>

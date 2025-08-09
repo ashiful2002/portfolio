@@ -10,7 +10,7 @@ import DiceGame from "../../Components/DiceGame";
 const Home = () => {
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
       <Projects />
       <Skills />
       <Services />

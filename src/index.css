@@ -24,6 +24,6 @@ html {
   }
 
   .btn-primary {
-    @apply focus:ring- -400 px-5 py-2 font-semibold text-white shadow-md focus:outline-none focus:ring focus:ring-opacity-75;
+    @apply  px-5 py-2 font-semibold text-white shadow-md focus:outline-none focus:ring focus:ring-opacity-75;
   }
 }

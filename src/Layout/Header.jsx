@@ -2,8 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { navItems } from "../Constants/Index.js";
-import { NavLink, Outlet } from "react-router-dom";
-import Footer from "./Footer";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (

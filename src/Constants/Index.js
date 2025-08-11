@@ -3,6 +3,15 @@ import rswa from "../assets/rswa.jpg";
 import ah from "../assets/ah.jpg";
 import helloshe from "../assets/helloshe.jpg";
 import { v4 as uuidv4 } from "uuid";
+import { FaEnvelope, FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
+import {
+  FaSatellite,
+  FaWeebly,
+  FaSearch,
+  FaPaintBrush,
+  FaMobileAlt,
+  FaCode,
+} from "react-icons/fa";
 
 import {
   FaHtml5,
@@ -10,13 +19,8 @@ import {
   FaJs,
   FaReact,
   FaGitAlt,
-  FaWeebly,
   FaRegStopCircle,
-  FaSatellite,
   FaPhone,
-  FaEnvelope,
-  FaGithub,
-  FaLinkedin,
 } from "react-icons/fa";
 import { SiReactbootstrap } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -28,42 +32,43 @@ export const navItems = [
     title: "home",
     url: "/#home",
   },
-  // {
-  //   id: "2",
-  //   title: "About me",
-  //   url: "/#About",
-  // },
+  {
+    id: "2",
+    title: "About me",
+    url: "/#about",
+  },
   {
     id: "3",
+    title: "skills",
+    url: "/#skills",
+  },
+  {
+    id: "4",
+    title: "projects",
+    url: "/#projects",
+  },
+  {
+    id: "5",
     title: "services",
     url: "/#services",
   },
 
   {
-    id: "4",
-    title: "skills",
-    url: "/#skills",
+    id: "6",
+    title: "contact",
+    url: "/#contact",
   },
-  {
-    id: "5",
-    title: "projects",
-    url: "/#projects",
-  },
-  // {
-  //   id: "6",
-  //   title: "Testimonials",
-  //   url: "/#testimonials",
-  // },
+
   {
     id: "7",
     title: "blog",
     url: "/blog",
   },
-  {
-    id: "8",
-    title: "practice",
-    url: "/practice",
-  },
+  // {
+  //   id: "8",
+  //   title: "practice",
+  //   url: "/practice",
+  // },
   // {
   //   id: "9",
   //   title: "todo app",
@@ -85,7 +90,36 @@ export const navItems = [
   //   url: "/practice/#countryApp",
   // },
 ];
-
+export const SocialMedia = [
+  {
+    id: "3",
+    title: "ashifulislam2002@gmail.com",
+    icon: FaEnvelope,
+    url: "mailto:ashifulislam2002@gmail.com",
+    color: "#D44638", // Gmail red (optional)
+  },
+  {
+    id: "4",
+    title: "LinkedIn",
+    icon: FaLinkedin,
+    url: "https://www.linkedin.com/in/ashiful-islam-mukto/",
+    color: "#0A66C2", // LinkedIn blue
+  },
+  {
+    id: "2",
+    title: "GitHub",
+    icon: FaGithub,
+    url: "https://github.com/ashiful2002",
+    color: "#171515", // GitHub black
+  },
+  {
+    id: "5",
+    title: "Facebook",
+    icon: FaFacebook,
+    url: "https://www.facebook.com/ashifulislam.mukto/",
+    color: "#1877F2", // Official Facebook blue
+  },
+];
 export const aboutDetails = [
   {
     id: "0",
@@ -99,26 +133,44 @@ export const services = [
   {
     id: "0",
     icon: FaSatellite,
-    title: "landing page design",
-    desc: "Qualified web designs and attractive effects which catches visitor's eye.",
+    title: "Landing Page Design",
+    desc: "Qualified web designs with attractive effects that catch the visitor's eye and boost conversions.",
   },
   {
     id: "1",
     icon: FaWeebly,
-    title: "web development",
-    desc: "Clean and fresh issue free code to make your website dynamic perfectly.",
+    title: "Web Development",
+    desc: "Clean, efficient, and bug-free code that brings your website to life with dynamic functionality.",
   },
-  // {
-  //   id: "2",
-  //   icon: FaHtml5,
-  //   title: "figma to ",
-  //   desc: "I'll convert your PSD file to pixel perfect HTML design. All type of scratch to HTML is included like img to HTML, XD to HTML Etc",
-  // },
+  {
+    id: "2",
+    icon: FaRegStopCircle,
+    title: "Responsive Design",
+    desc: "Websites that adapt flawlessly to all screen sizes and browsers — mobile, tablet, or desktop.",
+  },
   {
     id: "3",
-    icon: FaRegStopCircle,
-    title: "responsive design",
-    desc: "Responsive Design which will be working almost all browsers and screens, Mobile, TaB, PC etc",
+    icon: FaSearch,
+    title: "SEO Optimization",
+    desc: "Improving your website’s visibility on search engines to attract more organic traffic.",
+  },
+  {
+    id: "4",
+    icon: FaPaintBrush,
+    title: "UI/UX Design",
+    desc: "Crafting intuitive and visually appealing user interfaces that enhance user experience.",
+  },
+  {
+    id: "5",
+    icon: FaMobileAlt,
+    title: "Mobile-Friendly Development",
+    desc: "Ensuring your website delivers smooth, fast, and responsive experiences on mobile devices.",
+  },
+  {
+    id: "6",
+    icon: FaCode,
+    title: "Custom Web Applications",
+    desc: "Building tailored web apps to solve specific business problems with scalable and maintainable code.",
   },
 ];
 export const projects = [
@@ -316,7 +368,7 @@ export const SoicalMidea = [
     id: "4",
     title: "linked in",
     icon: FaLinkedin,
-    url: "https://www.linkedin.com/in/ashiful-mukto-b2b1a9258?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BRusKHJJNTzOzkiGI507DZQ%3D%3D",
+    url: "https://www.linkedin.com/in/ashiful-islam-mukto/",
   },
 
   {

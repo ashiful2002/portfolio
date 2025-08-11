@@ -1,28 +1,122 @@
-import React from "react";
-import Section from "../../../Components/Title.jsx/Section";
-import PageTitle from "../../../Components/Title.jsx/PageTitle";
-import { contactDetails } from "../../../Constants/Index";
+import React, { useState } from "react";
+import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
+import Socials from "./Socials";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(`Thank you, ${name}! Your message has been sent.`);
+    // Reset form
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+  };
+
   return (
-    <Section classname="bg-[#006A55]">
-      <PageTitle heading="Get in Touch" />
-      <div>
-        <div className="my-3 flex flex-col items-center justify-center gap-4">
-          {contactDetails.map(({ id, title, icon: Icon, url }) => (
-            <div key={id} className="">
-              <a
-                href={url}
-                className="flex flex-col items-center justify-center gap-3 no-underline"
-              >
-                <Icon className="rounded text-5xl text-[#00ffccd0] hover:text-green-200" />
-                <p className="text-white no-underline"> {title}</p>
-              </a>
-            </div>
-          ))}
+    <section id="contact" className="mx-auto my-12 scroll-mt-16 p-6 lg:w-11/12">
+      <h2 className="heading">Contact Me</h2>
+
+      <div className="flex flex-col gap-8 md:flex-row md:justify-between">
+        {/* Contact info */}
+        <div className="flex flex-col gap-6">
+          <div className="flex items-center gap-4 text-gray-700">
+            <HiOutlineMail className="h-6 w-6 text-primary-color" />
+            <a
+              href="mailto:ashiful.islam@example.com"
+              className="hover:underline"
+            >
+              ashiful.islam@example.com
+            </a>
+          </div>
+
+          <div className="flex items-center gap-4 text-gray-700">
+            <HiOutlineLocationMarker className="h-6 w-6 text-primary-color" />
+            <span>Dhaka, Bangladesh</span>
+          </div>
+          <div className="xl:hidden">
+            <Socials />
+          </div>
         </div>
+        <div className="hidden xl:block">
+          <Socials />
+        </div>
+        {/* Email subscription form */}
+        <form
+          onSubmit={handleSubmit}
+          className="flex w-full max-w-md flex-col gap-4"
+        >
+          <label htmlFor="name" className="text-sm font-medium text-gray-700">
+            Your Name
+          </label>
+          <input
+            type="text"
+            id="name"
+            required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Your full name"
+            className="rounded border border-gray-300 px-4 py-2 focus:border-blue-600 focus:outline-none"
+          />
+
+          <label htmlFor="email" className="text-sm font-medium text-gray-700">
+            Your Email Address
+          </label>
+          <input
+            type="email"
+            id="email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="example@mail.com"
+            className="rounded border border-gray-300 px-4 py-2 focus:border-blue-600 focus:outline-none"
+          />
+
+          <label
+            htmlFor="subject"
+            className="text-sm font-medium text-gray-700"
+          >
+            Subject
+          </label>
+          <input
+            type="text"
+            id="subject"
+            required
+            value={subject}
+            onChange={(e) => setSubject(e.target.value)}
+            placeholder="Subject of your message"
+            className="rounded border border-gray-300 px-4 py-2 focus:border-blue-600 focus:outline-none"
+          />
+
+          <label
+            htmlFor="message"
+            className="text-sm font-medium text-gray-700"
+          >
+            Message
+          </label>
+          <textarea
+            id="message"
+            required
+            rows="5"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            placeholder="Write your message here..."
+            className="resize-none rounded border border-gray-300 px-4 py-2 focus:border-blue-600 focus:outline-none"
+          />
+
+          <button
+            type="submit"
+            className="rounded bg-blue-600 py-2 text-white transition-colors hover:bg-blue-700"
+          >
+            Send
+          </button>
+        </form>
       </div>
-    </Section>
+    </section>
   );
 };
 

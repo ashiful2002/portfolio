@@ -9,8 +9,8 @@ import coding from "../../../assets/coding.json";
 
 const Hero = () => {
   return (
-    <div id="home" className="mt-16 scroll-mt-16">
-      <div className="mt-[70px] flex flex-col items-center justify-center rounded p-2 xl:flex-row">
+    <div id="home" className="scroll-mt-20">
+      <div className="flex flex-col items-center justify-center rounded p-2 xl:flex-row">
         <div className="xl:w-1/2">
           <div className="mx-auto h-[350px] w-[350px] md:h-[500px] md:w-[700px]">
             <Lottie animationData={coding} loop={true} />
@@ -25,7 +25,7 @@ const Hero = () => {
               <a
                 href={resume}
                 download
-                className="bg-primary mt-2 inline-block rounded px-4 py-2 text-white no-underline transition hover:bg-blue-700"
+                className=":bg-blue-700 mt-2 inline-block rounded bg-secondary-color px-2 py-2 text-white no-underline transition md:px-4"
               >
                 Download Resume
               </a>

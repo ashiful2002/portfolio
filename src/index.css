@@ -18,12 +18,10 @@ a {
   font-family: "Poppins", serif;
 }
 
-.active {
-  color: "red";
-}
 @layer components {
   .heading {
-    @apply rounded bg-primary-color text-center capitalize text-white;
+    @apply mb-10 text-center text-3xl text-primary-color underline;
+    /* mb-6 text-center text-3xl font-bold text-primary-color */
   }
 
   .btn-primary {

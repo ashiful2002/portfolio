@@ -1,16 +1,23 @@
 import React from "react";
-import { SoicalMidea } from "../../../Constants/Index";
+
+import { SocialMedia } from "../../../Constants/Index";
 
 const Socials = () => {
   return (
     <>
       <div className="flex items-center justify-center gap-4 pb-5">
-        {SoicalMidea.map(({ id, url, icon: Icon, title }) => (
-          <div key={id} className="">
-            <a href={url}>
-              <Icon className="text-2xl text-secondary-color" />
-            </a>
-          </div>
+        {SocialMedia.map(({ id, icon: Icon, url, color, title }) => (
+          <a
+            key={id}
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={title}
+            className="mx-1"
+            style={{ color: color || "text-primary-color)" }}
+          >
+            <Icon size={26} />
+          </a>
         ))}
       </div>
     </>

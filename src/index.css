@@ -2,7 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+html {
+  scroll-behavior: smooth;
+}
 h1,
 h2,
 h3,
@@ -15,8 +17,9 @@ p,
 a {
   font-family: "Poppins", serif;
 }
-html {
-  scroll-behavior: smooth;
+
+.active {
+  color: "red";
 }
 @layer components {
   .heading {
@@ -24,6 +27,6 @@ html {
   }
 
   .btn-primary {
-    @apply  px-5 py-2 font-semibold text-white shadow-md focus:outline-none focus:ring focus:ring-opacity-75;
+    @apply px-5 py-2 font-semibold text-white shadow-md focus:outline-none focus:ring focus:ring-opacity-75;
   }
 }

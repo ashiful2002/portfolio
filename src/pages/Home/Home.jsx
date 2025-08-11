@@ -5,17 +5,16 @@ import Hero from "./Section/Hero";
 import Services from "./Section/Services";
 import Testimonials from "./Section/Testimonials";
 import Contact from "./Section/Contact";
-import DiceGame from "../../Components/DiceGame";
 
 const Home = () => {
   return (
-    <>
-      {/* <Hero /> */}
+    <div className="mx-auto w-full border">
+      <Hero />
       <Projects />
       <Skills />
       <Services />
       <Contact />
-    </>
+    </div>
   );
 };
 

@@ -36,18 +36,18 @@ export const navItems = [
   {
     id: "3",
     title: "services",
-    url: "#services",
+    url: "/#services",
   },
 
   {
     id: "4",
     title: "skills",
-    url: "#skills",
+    url: "/#skills",
   },
   {
     id: "5",
     title: "projects",
-    url: "#projects",
+    url: "/#projects",
   },
   // {
   //   id: "6",

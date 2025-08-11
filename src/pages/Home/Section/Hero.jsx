@@ -4,45 +4,38 @@ import { aboutDetails } from "../../../Constants/Index";
 import Section from "../../../Components/Title.jsx/Section";
 import Button from "../../../Components/Button.jsx";
 import Socials from "./Socials.jsx";
+import Lottie from "lottie-react";
+import coding from "../../../assets/coding.json";
 
 const Hero = () => {
   return (
-    <>
-      <div id="home" className="mt-24">
-        <div className="mt-[70px] flex flex-col items-center justify-center rounded p-2 xl:flex-row">
-          <div className="xl:w-1/2">
-            <img
-              src="https://i.ibb.co.com/TMvvzPgs/9-DEE4-F7-C-029-A-4-A3-A-9-B9-C-48861-DD72643.png"
-              alt="heroImage"
-              srcset=""
-              className="w-[350px] rounded-xl ring-violet-600 md:w-[500px]"
-            />
-          </div>
-
-          <div className="md:text-right xl:w-1/2">
-            {aboutDetails.map((item, index) => (
-              <div key={index} className="mt-4">
-                <h2 className="text-capitalize">{item.name}</h2>
-                <h5>{item.title}</h5>
-                <>
-                  <Button className="mt-0 text-sm">
-                    <a
-                      href={resume}
-                      type="file"
-                      className="text-white no-underline"
-                    >
-                      Download Resume
-                    </a>
-                  </Button>
-                </>
-                <p className="text-justify tracking-tight">{item.desc}</p>
-              </div>
-            ))}
+    <div id="home" className="mt-16 scroll-mt-16">
+      <div className="mt-[70px] flex flex-col items-center justify-center rounded p-2 xl:flex-row">
+        <div className="xl:w-1/2">
+          <div className="mx-auto h-[350px] w-[350px] md:h-[500px] md:w-[700px]">
+            <Lottie animationData={coding} loop={true} />
           </div>
         </div>
-        <Socials />
+
+        <div className="md:text-right xl:w-1/2">
+          {aboutDetails.map((item, index) => (
+            <div key={index} className="mt-4">
+              <h2 className="capitalize">{item.name}</h2>
+              <h5>{item.title}</h5>
+              <a
+                href={resume}
+                download
+                className="bg-primary mt-2 inline-block rounded px-4 py-2 text-white no-underline transition hover:bg-blue-700"
+              >
+                Download Resume
+              </a>
+              <p className="mt-3 text-justify tracking-tight">{item.desc}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    </>
+      <Socials />
+    </div>
   );
 };
 

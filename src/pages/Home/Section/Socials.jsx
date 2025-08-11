@@ -8,7 +8,7 @@ const Socials = () => {
         {SoicalMidea.map(({ id, url, icon: Icon, title }) => (
           <div key={id} className="">
             <a href={url}>
-              <Icon className="text-2xl text-violet-500" />
+              <Icon className="text-2xl text-secondary-color" />
             </a>
           </div>
         ))}

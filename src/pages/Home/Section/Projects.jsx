@@ -11,14 +11,14 @@ const truncateWords = (text, wordLimit) => {
 
 const Projects = () => {
   return (
-    <div className="mt-20" id="projects">
+    <div className="mx-auto  mt-16 scroll-mt-16" id="projects">
       <div>
         <div className="flex flex-col items-center justify-center">
-          <h2>Projects</h2>
+          <h2 className="text-primary-color">Projects</h2>
           <p className="px-2">Explore my latest work here</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-2 rounded md:grid-cols-3 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-2 rounded md:grid-cols-3 xl:grid-cols-4 mx-auto">
           {projects &&
             projects.map((item) => (
               <div className="m-2 mb-2 rounded-md border shadow" key={item.id}>

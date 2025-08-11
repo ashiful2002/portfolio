@@ -4,10 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary-color': '#2563EB',
-        'secondary-color': '#166534',
+        "primary-color": "#38b6ff",
+        "secondary-color": "#8c52ff",
       },
     },
   },
   plugins: [],
 };
+// 8c52ff

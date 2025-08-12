@@ -4,7 +4,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import { div } from "framer-motion/client";
 
 const ProjectDetails = () => {
-  const { projects } = useLoaderData();
+  const projects = useLoaderData();
   const { id } = useParams();
 
   const project = projects.find((p) => p.id === id);

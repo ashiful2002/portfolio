@@ -10,7 +10,7 @@ const truncateWords = (text, wordLimit) => {
 };
 
 const Projects = () => {
-  const {projects} = useLoaderData();
+  const projects = useLoaderData();
   // console.log(projects);
 
   return (

@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { navItems } from "../Constants/Index";
 import { HashLink } from "react-router-hash-link";
 import logo from "../assets/3.png";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+
 const Header = () => {
   const [activeId, setActiveId] = useState("");
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +17,7 @@ const Header = () => {
           }
         });
       },
-      { threshold: 0.5 },
+      { threshold: 0.5 }
     );
 
     navItems.forEach(({ url }) => {
@@ -28,38 +29,49 @@ const Header = () => {
     return () => observer.disconnect();
   }, []);
 
-  const handleLinkClick = () => setIsOpen(false);
+  const handleLinkClick = (id) => {
+    setIsOpen(false);
+    setActiveId(id);
+  };
 
   return (
     <nav className="fixed left-0 top-0 z-50 w-full bg-white shadow-md">
       <div className="flex h-16 items-center justify-between px-4 md:px-20">
-        <HashLink smooth to="/" onClick={handleLinkClick}>
+        <HashLink
+          smooth
+          to="/"
+          onClick={() => {
+            setIsOpen(false);
+            setActiveId("");
+          }}
+        >
           <img src={logo} alt="Ashiful Islam" className="h-10" />
         </HashLink>
 
         {/* Desktop Menu */}
         <div className="hidden space-x-6 md:flex">
-          {navItems.map(({ id, url, title }) => (
-            <HashLink
-              key={id}
-              smooth
-              to={url}
-              className={`relative capitalize no-underline transition-colors duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-primary-color after:transition-all after:duration-300 hover:after:w-full ${
-                activeId === url.replace("/#", "").replace("#", "")
-                  ? "text-primary-color after:w-full"
-                  : ""
-              }`}
-              onClick={handleLinkClick}
-            >
-              {title}
-            </HashLink>
-          ))}
+          {navItems.map(({ id, url, title }) => {
+            const sectionId = url.replace("/#", "").replace("#", "");
+            return (
+              <HashLink
+                key={id}
+                smooth
+                to={`/#${sectionId}`}
+                className={`relative capitalize no-underline transition-colors duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-primary-color after:transition-all after:duration-300 hover:after:w-full ${
+                  activeId === sectionId ? "text-primary-color after:w-full" : ""
+                }`}
+                onClick={() => handleLinkClick(sectionId)}
+              >
+                {title}
+              </HashLink>
+            );
+          })}
         </div>
 
         {/* Mobile menu button */}
-        <motion.button
+        <button
           className="block focus:outline-none md:hidden"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => setIsOpen((prev) => !prev)}
           aria-label="Toggle menu"
         >
           <svg
@@ -85,41 +97,53 @@ const Header = () => {
               />
             )}
           </svg>
-        </motion.button>
+        </button>
       </div>
 
       {/* Mobile Menu */}
-      <div
-        className={`transition-max-height overflow-hidden bg-white shadow-md duration-300 ease-in-out md:hidden ${
-          isOpen ? "max-h-screen" : "max-h-0"
-        }`}
-      >
-        <div className="flex flex-col space-y-4 px-4 py-4">
-          {navItems.map(({ id, url, title }) => (
-            <HashLink
-              key={id}
-              smooth
-              to={url}
-              className={`relative capitalize no-underline transition-colors duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-primary-color after:transition-all after:duration-300 hover:after:w-full ${
-                activeId === url.replace("/#", "").replace("#", "")
-                  ? "text-primary-color after:w-full"
-                  : ""
-              }`}
-              onClick={handleLinkClick}
+      <AnimatePresence>
+        {isOpen && (
+          <>
+            <motion.div
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="overflow-hidden bg-white shadow-md md:hidden"
             >
-              {title}
-            </HashLink>
-          ))}
-        </div>
-      </div>
+              <div className="flex flex-col space-y-4 px-4 py-4">
+                {navItems.map(({ id, url, title }) => {
+                  const sectionId = url.replace("/#", "").replace("#", "");
+                  return (
+                    <HashLink
+                      key={id}
+                      smooth
+                      to={`/#${sectionId}`}
+                      className={`relative capitalize no-underline transition-colors duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-primary-color after:transition-all after:duration-300 hover:after:w-full ${
+                        activeId === sectionId
+                          ? "text-primary-color after:w-full"
+                          : ""
+                      }`}
+                      onClick={() => handleLinkClick(sectionId)}
+                    >
+                      {title}
+                    </HashLink>
+                  );
+                })}
+              </div>
+            </motion.div>
 
-      {/* Overlay */}
-      {isOpen && (
-        <div
-          onClick={() => setIsOpen(false)}
-          className="bg- gray-100 fixed inset-0 z-40 bg-opacity-40 md:hidden"
-        />
-      )}
+            {/* Overlay */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.4 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsOpen(false)}
+              className="fixed inset-0 z-40 bg-gray-100 md:hidden"
+            />
+          </>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };

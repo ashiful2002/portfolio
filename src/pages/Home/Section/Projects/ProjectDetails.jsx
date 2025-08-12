@@ -4,7 +4,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import { div } from "framer-motion/client";
 
 const ProjectDetails = () => {
-  const projects = useLoaderData();
+  const { projects } = useLoaderData();
   const { id } = useParams();
 
   const project = projects.find((p) => p.id === id);
@@ -81,33 +81,6 @@ const ProjectDetails = () => {
               ))}
             </ul>
           </div>
-
-          {/* <div>
-            <h3 className="mb-2 text-lg font-semibold">Role</h3>
-            <p>{project.role || "N/A"}</p>
-          </div> */}
-          {/* 
-          <div className="flex flex-wrap gap-6">
-            <div>
-              <h3 className="mb-2 text-lg font-semibold">Date</h3>
-              <p>{project.date || "N/A"}</p>
-            </div>
-            <div>
-              <h3 className="mb-2 text-lg font-semibold">Duration</h3>
-              <p>{project.duration || "N/A"}</p>
-            </div>
-          </div> */}
-
-          {/* {project.collaborators && project.collaborators.length > 0 && (
-            <div>
-              <h3 className="mb-2 text-lg font-semibold">Collaborators</h3>
-              <ul className="list-inside list-disc space-y-1">
-                {project.collaborators.map((collab, idx) => (
-                  <li key={idx}>{collab}</li>
-                ))}
-              </ul>
-            </div>
-          )} */}
         </div>
       </div>
     </section>

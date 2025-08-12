@@ -10,8 +10,8 @@ const truncateWords = (text, wordLimit) => {
 };
 
 const Projects = () => {
-  const projects = useLoaderData();
-  console.log(projects);
+  const {projects} = useLoaderData();
+  // console.log(projects);
 
   return (
     <div className="mx-auto mt-2 scroll-mt-20" id="projects">
@@ -22,7 +22,7 @@ const Projects = () => {
         </div>
 
         <div className="mx-auto grid grid-cols-1 gap-2 rounded sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6">
-          {projects &&
+          {Array.isArray(projects) &&
             projects.map((item) => (
               <div className="m-2 mb-2 rounded-md border shadow" key={item.id}>
                 <a href={item.url}>

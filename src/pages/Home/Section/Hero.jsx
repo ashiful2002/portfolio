@@ -6,6 +6,7 @@ import Button from "../../../Components/Button.jsx";
 import Socials from "./Socials.jsx";
 import Lottie from "lottie-react";
 import coding from "../../../assets/coding.json";
+import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
@@ -21,7 +22,17 @@ const Hero = () => {
           {aboutDetails.map((item, index) => (
             <div key={index} className="mt-4">
               <h2 className="capitalize">{item.name}</h2>
-              <h5>{item.title}</h5>
+              {/* <h5>{item.title}</h5> */}
+              <h5>
+                <Typewriter
+                  options={{
+                    strings: item.titles,
+                    autoStart: true,
+                    loop: true,
+                    cursorClassName: "Typewriter__cursor",
+                  }}
+                />
+              </h5>
               <a
                 href={resume}
                 download

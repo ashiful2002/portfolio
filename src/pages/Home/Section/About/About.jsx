@@ -1,12 +1,21 @@
 import React from "react";
-
+import { motion } from "motion/react";
+import Socials from "../Socials";
 const AboutMe = () => {
   return (
     <section id="about" className="mx-auto my-12 max-w-7xl scroll-mt-16 p-6">
       <h2 className="heading">About Me</h2>
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         {/* 1. Image */}
-        <div className="my-4 flex flex-col items-center justify-center rounded p-4 shadow-md duration-300 hover:shadow-xl">
+        <motion.div
+          initial={{ x: -300 }}
+          animate={{ x: 0, y: 0 }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut", // equally smooth start and end
+          }}
+          className="my-4 flex flex-col items-center justify-center rounded p-4 shadow-md duration-300 hover:shadow-xl"
+        >
           <img
             src="https://i.ibb.co/j9sVq3P9/dream-h-p.jpg"
             alt="Ashiful Islam"
@@ -15,9 +24,17 @@ const AboutMe = () => {
           <p className="badge relative ml-[110px] mt-[290px] bg-secondary-color font-thin">
             Developer
           </p>
-        </div>
+        </motion.div>
         {/* 2. Text */}
-        <div className="rounded p-4 shadow-md duration-300 hover:shadow-xl">
+        <motion.div
+          initial={{ x: +300 }}
+          animate={{ x: 0, y: 0 }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut", // equally smooth start and end
+          }}
+          className="rounded p-4 shadow-md duration-300 hover:shadow-xl"
+        >
           <p className="mb-4 text-justify leading-relaxed">
             1. Hi, I'm <strong>Ashiful Islam</strong> — a passionate web
             developer with a love for crafting clean, efficient, and
@@ -36,11 +53,19 @@ const AboutMe = () => {
             projects that challenge me to learn new skills or think creatively
             is where I find the most joy.
           </p>
-        </div>
+        </motion.div>
       </div>
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
         {/* 3. Another text */}
-        <div className="rounded p-4 shadow-md duration-300 hover:shadow-xl">
+        <motion.div
+          initial={{ y: 600 }}
+          animate={{ x: 0, y: 0 }}
+          transition={{
+            duration: 3,
+            ease: "easeInOut", // equally smooth start and end
+          }}
+          className="rounded p-4 shadow-md duration-300 hover:shadow-xl"
+        >
           <p className="mb-4 text-justify leading-relaxed">
             3. Outside of programming, I’m a firm believer in a balanced life. I
             enjoy <strong>playing sports</strong>, especially football and
@@ -58,16 +83,24 @@ const AboutMe = () => {
             best work comes when you bring your whole self into it — and that’s
             exactly what I strive to do every day.
           </p>
-        </div>
+        </motion.div>
         {/* Show only on md and above */}
-        <div className="hidden rounded p-4 shadow-md duration-300 hover:shadow-xl md:block">
+        <motion.div
+          initial={{ y: 600 }}
+          animate={{ x: 0, y: 0 }}
+          transition={{
+            duration: 3,
+            ease: "easeInOut", // equally smooth start and end
+          }}
+          className="hidden rounded p-4 shadow-md duration-300 hover:shadow-xl md:block"
+        >
           <p className="text-justify leading-relaxed">
             4. In short, I’m a curious, dedicated, and creative person who loves
             blending technology and art to make meaningful things. I believe the
             best work comes when you bring your whole self into it — and that’s
             exactly what I strive to do every day.
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

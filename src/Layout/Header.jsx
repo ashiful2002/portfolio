@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { navItems } from "../Constants/Index";
 import { HashLink } from "react-router-hash-link";
 import logo from "../assets/3.png";
-
+import { motion } from "framer-motion";
 const Header = () => {
   const [activeId, setActiveId] = useState("");
   const [isOpen, setIsOpen] = useState(false);
@@ -57,7 +57,7 @@ const Header = () => {
         </div>
 
         {/* Mobile menu button */}
-        <button
+        <motion.button
           className="block focus:outline-none md:hidden"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
@@ -85,7 +85,7 @@ const Header = () => {
               />
             )}
           </svg>
-        </button>
+        </motion.button>
       </div>
 
       {/* Mobile Menu */}

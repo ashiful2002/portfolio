@@ -7,16 +7,27 @@ import Practice from "../pages/Practices/Practice";
 import Blog from "../pages/Blog";
 import MotionHeader from "../Layout/MotionHeader";
 import RootLayout from "../Layout/RootLayout/RootLayout";
-
+import project from "../../src/pages/Home/Section/Projects/projects.json";
+import ProjectDetails from "../pages/Home/Section/Projects/ProjectDetails";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    // hydrateFallbackElement: <Bspin />,
     children: [
       {
         path: "/",
         element: <Home />,
+        loader: () =>
+          fetch("../../src/pages/Home/Section/Projects/projects.json"),
       },
+      {
+        path: "/project/:id",
+        element: <ProjectDetails />,
+        loader: () =>
+          fetch("../../src/pages/Home/Section/Projects/projects.json"),
+      },
+
       {
         path: "/practice",
         element: <Practice />,

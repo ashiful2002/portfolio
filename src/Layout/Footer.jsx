@@ -8,12 +8,12 @@ const Footer = () => {
         <div className="text-center">
           <div>
             <p className="">
-              &copy; {fullYear} all right reserved by
+              &copy; {fullYear} | All Right Reserved by
               <a
                 href="https://ashiful-islam.vercel.app/"
-                className=" text-white ml-2"
+                className="ml-2 text-white"
               >
-                A. islam
+                Ashiful islam
               </a>
             </p>
           </div>

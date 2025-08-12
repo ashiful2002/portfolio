@@ -28,7 +28,7 @@ const Services = () => {
     //   </div>
     // </div>
     <section id="services" className="mx-auto my-12 scroll-mt-16 p-6">
-      <h2 className="heading">Services</h2>
+      <h2 className="heading">What i do</h2>
 
       {/* mx- auto ma x-w-7xl px-4 py-8 */}
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">

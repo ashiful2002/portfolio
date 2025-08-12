@@ -1,0 +1,105 @@
+[
+  {
+    "id": "1",
+    "title": "Real Estate Project",
+    "desc": "A role-based MERN application for property buying and selling. Users can browse and purchase properties, agents can list new ones, and admins can manage users, agents, and listings. Features CRUD operations and secure access with Firebase tokens.",
+    "url": "https://real-estate-client-2025.web.app",
+    "img": "https://camo.githubusercontent.com/250c84671ab743155e69ac9054a418af95fb5986a17a6fdae89e4929cbe4025d/68747470733a2f2f692e6962622e636f2e636f6d2f4b31776e4b58782f53637265656e73686f742d323032352d30382d30382d61742d332d32312d35312d504d2e706e67",
+    "techStack": ["React", "Node.js", "Express", "MongoDB", "Firebase"],
+    "features": [
+      "User authentication & role-based access",
+      "CRUD operations for properties",
+      "Admin dashboard to manage users and listings",
+      "Responsive design"
+    ],
+    "role": "Full Stack Developer",
+    "date": "2024-12",
+    "duration": "3 months",
+    "collaborators": ["John Doe", "Jane Smith"]
+  },
+  {
+    "id": "2",
+    "title": "Event Management Application",
+    "desc": "SODEV is a community-driven platform where users can create, join, and track social development events in their local area.",
+    "url": "https://event-management-app-b86d6.web.app/",
+    "img": "https://ashifulislam-portfolio-2002.web.app/assets/eventManagement-BNCHxb3G.png",
+    "techStack": ["React", "Firebase", "Tailwind CSS"],
+    "features": [
+      "Create and join events",
+      "Event tracking and notifications",
+      "User profiles and community engagement"
+    ],
+    "role": "Frontend Developer",
+    "date": "2024-10",
+    "duration": "2 months",
+    "collaborators": []
+  },
+  {
+    "id": "3",
+    "title": "Recipe Booking Platform",
+    "desc": "Cook_verse is a web application designed for food enthusiasts to explore and share recipes. Users can browse, save favorites, and contribute their own in an authenticated environment.",
+    "url": "https://books-recipe-app.web.app/",
+    "img": "https://ashifulislam-portfolio-2002.web.app/assets/cookverse-zoSthvfF.png",
+    "techStack": ["React", "Firebase", "Redux"],
+    "features": [
+      "Recipe browsing and searching",
+      "User authentication and profile management",
+      "Add and save favorite recipes"
+    ],
+    "role": "Full Stack Developer",
+    "date": "2024-11",
+    "duration": "2.5 months",
+    "collaborators": ["Alice Cooper"]
+  },
+  {
+    "id": "4",
+    "title": "Engineers Home Consultancy",
+    "desc": "An engineering consultancy for civil engineers. They provide services like indoor and outdoor designs, structural analysis, and project planning.",
+    "url": "https://engineershome.vercel.app/",
+    "img": "https://i.ibb.co.com/Qvj9zYQF/engineershome.jpg",
+    "techStack": ["Next.js", "Tailwind CSS"],
+    "features": [
+      "Service showcase",
+      "Contact form",
+      "Responsive design"
+    ],
+    "role": "Frontend Developer",
+    "date": "2024-09",
+    "duration": "1 month",
+    "collaborators": []
+  },
+  {
+    "id": "5",
+    "title": "RSWA",
+    "desc": "Rowmari Students Welfare Association, a social and student welfare association. This is a web application with various functionality.",
+    "url": "https://rswa-rowmari.vercel.app",
+    "img": "https://i.ibb.co.com/Wqhky3P/Screenshot-2025-08-12-at-2-35-32-PM.png",
+    "techStack": ["React", "Bootstrap"],
+    "features": [
+      "Member registration and login",
+      "Events and announcements",
+      "Admin panel"
+    ],
+    "role": "Full Stack Developer",
+    "date": "2025-01",
+    "duration": "3 months",
+    "collaborators": ["Team Member 1", "Team Member 2"]
+  },
+  {
+    "id": "6",
+    "title": "Hello She",
+    "desc": "Hello She is a non-profit organization dedicated to raising awareness about cyber security among women and female students. This is a landing page without functionality.",
+    "url": "https://helloshe.org/",
+    "img": "https://i.ibb.co.com/hFbb35Wc/helloshe.jpg",
+    "techStack": ["HTML", "CSS", "JavaScript"],
+    "features": [
+      "Informational landing page",
+      "Responsive design",
+      "SEO optimized"
+    ],
+    "role": "Frontend Developer",
+    "date": "2024-08",
+    "duration": "2 weeks",
+    "collaborators": []
+  }
+]

@@ -59,11 +59,11 @@ export const navItems = [
     url: "/#contact",
   },
 
-  {
-    id: "7",
-    title: "blog",
-    url: "/blog",
-  },
+  // {
+  //   id: "7",
+  //   title: "blog",
+  //   url: "/blog",
+  // },
   // {
   //   id: "8",
   //   title: "practice",
@@ -124,7 +124,12 @@ export const aboutDetails = [
   {
     id: "0",
     name: "ashiful islam (Mukto)",
-    title: "Web Developer",
+   titles: [
+      "Frontend Developer",
+      "Backend Developer",
+      "MERN Developer",
+      "Full Stack Web Developer"
+    ],
     desc: "A passionate frontEnd focused full stack web developer. I enjoy crafting clean, responsive, and user-friendly web applications that bring ideas to life. Constantly learning new tools and frameworks, I’m eager to solve real-world problems through code. Let’s build something amazing together!",
   },
 ];

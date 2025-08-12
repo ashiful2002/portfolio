@@ -1,6 +1,6 @@
 import React from "react";
-import { projects } from "../../../Constants/Index";
-import { Link } from "react-router-dom";
+// import { projects } from "../../../../Constants/Index";
+import { Link, useLoaderData } from "react-router-dom";
 
 const truncateWords = (text, wordLimit) => {
   const words = text.split(" ");
@@ -10,6 +10,9 @@ const truncateWords = (text, wordLimit) => {
 };
 
 const Projects = () => {
+  const projects = useLoaderData();
+  console.log(projects);
+
   return (
     <div className="mx-auto mt-2 scroll-mt-20" id="projects">
       <div>
@@ -18,7 +21,7 @@ const Projects = () => {
           <p className="px-2">Explore my latest work here</p>
         </div>
 
-        <div className="mx-auto grid grid-cols-1 gap-2 rounded md:grid-cols-3 xl:grid-cols-4">
+        <div className="mx-auto grid grid-cols-1 gap-2 rounded sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6">
           {projects &&
             projects.map((item) => (
               <div className="m-2 mb-2 rounded-md border shadow" key={item.id}>
@@ -34,7 +37,10 @@ const Projects = () => {
                   <h2 className="px-2 capitalize">{item.title}</h2>
                   <p className="px-2">{truncateWords(item.desc, 20)}</p>
                   <div className="px-2 pb-2">
-                    <Link className="btn btn-primary btn-sm" to="">
+                    <Link
+                      className="btn btn-sm btn-primary"
+                      to={`/project/${item.id}`}
+                    >
                       Details
                     </Link>
                   </div>

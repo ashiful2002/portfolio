@@ -20,6 +20,7 @@ import {
   SiFirebase,
   SiVisualstudiocode,
   SiReactbootstrap,
+  SiMongodb,
 } from "react-icons/si";
 
 const SkillsDetails = () => {
@@ -57,7 +58,7 @@ const SkillsDetails = () => {
       },
       {
         name: "MongoDB",
-        icon: <FaDatabase className="text-4xl text-green-700" />,
+        icon: <SiMongodb className="text-4xl text-green-700" />,
       },
     ],
     tools: [

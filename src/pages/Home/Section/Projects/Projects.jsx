@@ -10,6 +10,7 @@ const truncateWords = (text, wordLimit) => {
 
 const Projects = () => {
   const projects = useLoaderData();
+  console.log(projects);
 
   if (!Array.isArray(projects) || projects.length === 0) {
     return (

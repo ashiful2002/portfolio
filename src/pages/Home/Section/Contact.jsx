@@ -21,7 +21,7 @@ const Contact = () => {
     <section id="contact" className="mx-auto my-12 scroll-mt-16 p-6 lg:w-11/12">
       <h2 className="heading">Contact Me</h2>
 
-      <div className="flex flex-col gap-8 md:flex-row md:justify-between">
+      <div className="flex flex-col gap-8 md:flex-row md:justify-around">
         {/* Contact info */}
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-4 text-gray-700">
@@ -38,43 +38,54 @@ const Contact = () => {
             <HiOutlineLocationMarker className="h-6 w-6 text-primary-color" />
             <span>Dhaka, Bangladesh</span>
           </div>
-          <div className="xl:hidden">
+          <div className="">
             <Socials />
           </div>
         </div>
-        <div className="hidden xl:block">
+        {/* <div className="hidden xl:block">
           <Socials />
-        </div>
+        </div> */}
         {/* Email subscription form */}
         <form
           onSubmit={handleSubmit}
-          className="flex w-full max-w-md flex-col gap-4"
+          className="flex w-full max-w-md flex-col gap-3"
         >
-          <label htmlFor="name" className="text-sm font-medium text-gray-700">
-            Your Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            required
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder="Your full name"
-            className="rounded border border-gray-300 px-4 py-2 focus:border-blue-600 focus:outline-none"
-          />
-
-          <label htmlFor="email" className="text-sm font-medium text-gray-700">
-            Your Email Address
-          </label>
-          <input
-            type="email"
-            id="email"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="example@mail.com"
-            className="rounded border border-gray-300 px-4 py-2 focus:border-blue-600 focus:outline-none"
-          />
+          <div className="flex items-center gap-4">
+            <div>
+              <label
+                htmlFor="name"
+                className="text-sm font-medium text-gray-700"
+              >
+                Your Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                required
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Your full name"
+                className="rounded border border-gray-300 px-4 py-2 focus:border-blue-600 focus:outline-none"
+              />
+            </div>
+            <div>
+              <label
+                htmlFor="email"
+                className="text-sm font-medium text-gray-700"
+              >
+                Your Email Address
+              </label>
+              <input
+                type="email"
+                id="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="example@mail.com"
+                className="rounded border border-gray-300 px-4 py-2 focus:border-blue-600 focus:outline-none"
+              />
+            </div>
+          </div>
 
           <label
             htmlFor="subject"

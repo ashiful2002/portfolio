@@ -19,13 +19,17 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
         loader: () =>
-          fetch("../../src/pages/Home/Section/Projects/projects.json"),
+          fetch(
+            "https://raw.githubusercontent.com/ashiful2002/portfolio/refs/heads/main/src/pages/Home/Section/Projects/projects.json",
+          ).then((res) => res.json()),
       },
       {
         path: "/project/:id",
         element: <ProjectDetails />,
         loader: () =>
-          fetch("../../src/pages/Home/Section/Projects/projects.json"),
+          fetch(
+            "https://raw.githubusercontent.com/ashiful2002/portfolio/refs/heads/main/src/pages/Home/Section/Projects/projects.json",
+          ).then((res) => res.json()),
       },
 
       {

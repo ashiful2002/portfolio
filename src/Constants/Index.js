@@ -3,7 +3,7 @@ import rswa from "../assets/rswa.jpg";
 import ah from "../assets/ah.jpg";
 import helloshe from "../assets/helloshe.jpg";
 import { v4 as uuidv4 } from "uuid";
-import { FaEnvelope, FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
+import { FaEnvelope, FaLinkedin, FaGithub, FaFacebook, FaServer, FaProjectDiagram } from "react-icons/fa";
 import {
   FaSatellite,
   FaWeebly,
@@ -124,11 +124,11 @@ export const aboutDetails = [
   {
     id: "0",
     name: "ashiful islam (Mukto)",
-   titles: [
+    titles: [
       "Frontend Developer",
       "Backend Developer",
       "MERN Developer",
-      "Full Stack Web Developer"
+      "Full Stack Web Developer",
     ],
     desc: "A passionate frontEnd focused full stack web developer. I enjoy crafting clean, responsive, and user-friendly web applications that bring ideas to life. Constantly learning new tools and frameworks, I’m eager to solve real-world problems through code. Let’s build something amazing together!",
   },
@@ -137,47 +137,42 @@ export const aboutDetails = [
 export const services = [
   {
     id: "0",
-    icon: FaSatellite,
-    title: "Landing Page Design",
-    desc: "Qualified web designs with attractive effects that catch the visitor's eye and boost conversions.",
+    icon: FaCode,
+    title: "Frontend Development",
+    desc: "Building responsive, accessible, and high-performance user interfaces using React.js, Next.js, Tailwind CSS, and modern JavaScript.",
   },
   {
     id: "1",
-    icon: FaWeebly,
-    title: "Web Development",
-    desc: "Clean, efficient, and bug-free code that brings your website to life with dynamic functionality.",
+    icon: FaServer,
+    title: "Backend Development",
+    desc: "Developing secure and efficient server-side applications with Node.js, Express.js, and MongoDB, including REST API integration.",
   },
   {
     id: "2",
-    icon: FaRegStopCircle,
-    title: "Responsive Design",
-    desc: "Websites that adapt flawlessly to all screen sizes and browsers — mobile, tablet, or desktop.",
+    icon: FaMobileAlt,
+    title: "Responsive & Cross-Browser Design",
+    desc: "Ensuring seamless performance and design consistency across all devices and major browsers.",
   },
   {
     id: "3",
     icon: FaSearch,
-    title: "SEO Optimization",
-    desc: "Improving your website’s visibility on search engines to attract more organic traffic.",
+    title: "Performance Optimization",
+    desc: "Improving website load times, SEO readiness, and overall user experience using best development practices.",
   },
   {
     id: "4",
-    icon: FaPaintBrush,
-    title: "UI/UX Design",
-    desc: "Crafting intuitive and visually appealing user interfaces that enhance user experience.",
+    icon: FaProjectDiagram,
+    title: "Full Stack Web Applications",
+    desc: "Designing and developing complete web solutions from concept to deployment with scalable architecture.",
   },
   {
     id: "5",
-    icon: FaMobileAlt,
-    title: "Mobile-Friendly Development",
-    desc: "Ensuring your website delivers smooth, fast, and responsive experiences on mobile devices.",
-  },
-  {
-    id: "6",
-    icon: FaCode,
-    title: "Custom Web Applications",
-    desc: "Building tailored web apps to solve specific business problems with scalable and maintainable code.",
+    icon: FaPaintBrush,
+    title: "UI/UX Implementation",
+    desc: "Translating Figma or design mockups into pixel-perfect, interactive, and user-friendly interfaces.",
   },
 ];
+
 export const projects = [
   {
     id: "5",

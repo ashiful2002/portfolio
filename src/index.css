@@ -2,6 +2,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Quick visual proof that dark media query is detected */
+@media (prefers-color-scheme: dark) {
+  html::before {
+    content: "dark mode detected";
+    position: fixed;
+    top: 8px;
+    left: 8px;
+    background: #111;
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 6px;
+    z-index: 9999;
+  }
+}
 html {
   scroll-behavior: smooth;
 }

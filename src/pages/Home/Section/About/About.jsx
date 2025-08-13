@@ -1,41 +1,28 @@
 import React from "react";
 import { motion } from "motion/react";
 import Socials from "../Socials";
+import ProfileCard from "./ProfileCard";
+
 const AboutMe = () => {
   return (
-    <section id="about" className="mx-auto my-12 max-w-7xl scroll-mt-16 p-6">
-      <h2 className="heading">About Me</h2>
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+    <section
+      id="about"
+      className="mx-auto my-12 max-w-7xl scroll-mt-16 p-6 bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500"
+    >
+      <h2 className="heading text-3xl font-bold dark:text-white">About Me</h2>
+
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mt-6">
         {/* 1. Image */}
-        <motion.div
-          initial={{ x: -300 }}
-          animate={{ x: 0, y: 0 }}
-          transition={{
-            duration: 2,
-            ease: "easeInOut", // equally smooth start and end
-          }}
-          className="my-4 flex flex-col items-center justify-center rounded p-4 shadow-md duration-300 hover:shadow-xl"
-        >
-          <img
-            src="https://i.ibb.co/j9sVq3P9/dream-h-p.jpg"
-            alt="Ashiful Islam"
-            className="absolute h-[300px] w-[300px] rounded-full object-cover"
-          />
-          <p className="badge relative ml-[110px] mt-[290px] bg-secondary-color font-thin">
-            Developer
-          </p>
-        </motion.div>
+        <ProfileCard />
+
         {/* 2. Text */}
         <motion.div
           initial={{ x: +300 }}
           animate={{ x: 0, y: 0 }}
-          transition={{
-            duration: 2,
-            ease: "easeInOut", // equally smooth start and end
-          }}
-          className="rounded p-4 shadow-md duration-300 hover:shadow-xl"
+          transition={{ duration: 2, ease: "easeInOut" }}
+          className="rounded p-4 shadow-md duration-300 hover:shadow-xl bg-gray-50 dark:bg-gray-800"
         >
-          <p className="mb-4 text-justify leading-relaxed">
+          <p className="mb-4 text-justify leading-relaxed text-gray-800 dark:text-gray-200">
             1. Hi, I'm <strong>Ashiful Islam</strong> — a passionate web
             developer with a love for crafting clean, efficient, and
             user-friendly digital experiences. My programming journey began
@@ -44,29 +31,27 @@ const AboutMe = () => {
             mastering web technologies, continuously learning and experimenting
             to grow as a developer.
           </p>
-          <p className="mb-4 text-justify leading-relaxed">
-            2. I truly enjoy building{" "}
-            <em>dynamic websites and web applications</em> that not only look
-            great but also solve real-world problems. Whether it’s designing a
-            smooth user interface or optimizing backend logic, I thrive in
-            creating seamless experiences that delight users. Working on
-            projects that challenge me to learn new skills or think creatively
+
+          <p className="mb-4 text-justify leading-relaxed text-gray-800 dark:text-gray-200">
+            2. I truly enjoy building <em>dynamic websites and web applications</em>
+            that not only look great but also solve real-world problems. Whether
+            it’s designing a smooth user interface or optimizing backend logic, I
+            thrive in creating seamless experiences that delight users. Working
+            on projects that challenge me to learn new skills or think creatively
             is where I find the most joy.
           </p>
         </motion.div>
       </div>
+
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
         {/* 3. Another text */}
         <motion.div
           initial={{ y: 600 }}
           animate={{ x: 0, y: 0 }}
-          transition={{
-            duration: 3,
-            ease: "easeInOut", // equally smooth start and end
-          }}
-          className="rounded p-4 shadow-md duration-300 hover:shadow-xl"
+          transition={{ duration: 3, ease: "easeInOut" }}
+          className="rounded p-4 shadow-md duration-300 hover:shadow-xl bg-gray-50 dark:bg-gray-800"
         >
-          <p className="mb-4 text-justify leading-relaxed">
+          <p className="mb-4 text-justify leading-relaxed text-gray-800 dark:text-gray-200">
             3. Outside of programming, I’m a firm believer in a balanced life. I
             enjoy <strong>playing sports</strong>, especially football and
             badminton, which help me stay active and sharp. I’m also passionate
@@ -76,25 +61,24 @@ const AboutMe = () => {
             or creating art, I love spending time with friends, exploring new
             places, and discovering interesting books and podcasts.
           </p>
-          {/* Show only on small screens */}
-          <p className="text-justify leading-relaxed md:hidden">
+
+          {/* Small screens */}
+          <p className="text-justify leading-relaxed md:hidden text-gray-800 dark:text-gray-200">
             4. In short, I’m a curious, dedicated, and creative person who loves
             blending technology and art to make meaningful things. I believe the
             best work comes when you bring your whole self into it — and that’s
             exactly what I strive to do every day.
           </p>
         </motion.div>
-        {/* Show only on md and above */}
+
+        {/* Medium screens and above */}
         <motion.div
           initial={{ y: 600 }}
           animate={{ x: 0, y: 0 }}
-          transition={{
-            duration: 3,
-            ease: "easeInOut", // equally smooth start and end
-          }}
-          className="hidden rounded p-4 shadow-md duration-300 hover:shadow-xl md:block"
+          transition={{ duration: 3, ease: "easeInOut" }}
+          className="hidden rounded p-4 shadow-md duration-300 hover:shadow-xl md:block bg-gray-50 dark:bg-gray-800"
         >
-          <p className="text-justify leading-relaxed">
+          <p className="text-justify leading-relaxed text-gray-800 dark:text-gray-200">
             4. In short, I’m a curious, dedicated, and creative person who loves
             blending technology and art to make meaningful things. I believe the
             best work comes when you bring your whole self into it — and that’s

@@ -1,20 +1,19 @@
 import { useState, useEffect } from "react";
 import { navItems } from "../Constants/Index";
 import { HashLink } from "react-router-hash-link";
-import logo from "../assets/3.png";
+import logo from "../assets/4.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [activeId, setActiveId] = useState("");
   const [isOpen, setIsOpen] = useState(false);
 
+  // Track visible section for active link
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveId(entry.target.id);
-          }
+          if (entry.isIntersecting) setActiveId(entry.target.id);
         });
       },
       { threshold: 0.5 }
@@ -29,27 +28,20 @@ const Header = () => {
     return () => observer.disconnect();
   }, []);
 
-  const handleLinkClick = (id) => {
-    setIsOpen(false);
-    setActiveId(id);
-  };
-
   return (
-    <nav className="fixed left-0 top-0 z-50 w-full bg-white shadow-md">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white/30 backdrop-blur-lg border-b border-white/40 shadow-md">
       <div className="flex h-16 items-center justify-between px-4 md:px-20">
+        {/* Logo */}
         <HashLink
           smooth
           to="/"
-          onClick={() => {
-            setIsOpen(false);
-            setActiveId("");
-          }}
+          onClick={() => setActiveId("")}
         >
-          <img src={logo} alt="Ashiful Islam" className="h-10" />
+          <img src={logo} alt="Ashiful Islam" className="w-[180px]" />
         </HashLink>
 
         {/* Desktop Menu */}
-        <div className="hidden space-x-6 md:flex">
+        <div className="hidden md:flex space-x-6">
           {navItems.map(({ id, url, title }) => {
             const sectionId = url.replace("/#", "").replace("#", "");
             return (
@@ -60,7 +52,6 @@ const Header = () => {
                 className={`relative capitalize no-underline transition-colors duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-primary-color after:transition-all after:duration-300 hover:after:w-full ${
                   activeId === sectionId ? "text-primary-color after:w-full" : ""
                 }`}
-                onClick={() => handleLinkClick(sectionId)}
               >
                 {title}
               </HashLink>
@@ -68,9 +59,9 @@ const Header = () => {
           })}
         </div>
 
-        {/* Mobile menu button */}
+        {/* Mobile Menu Button */}
         <button
-          className="block focus:outline-none md:hidden"
+          className="md:hidden block focus:outline-none z-50"
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label="Toggle menu"
         >
@@ -109,25 +100,20 @@ const Header = () => {
               animate={{ height: "auto", opacity: 1 }}
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="overflow-hidden bg-white shadow-md md:hidden"
+              className="overflow-hidden md:hidden z-50 bg-white/30 backdrop-blur-lg border-b border-white/40 shadow-md"
             >
               <div className="flex flex-col space-y-4 px-4 py-4">
                 {navItems.map(({ id, url, title }) => {
                   const sectionId = url.replace("/#", "").replace("#", "");
                   return (
-                    <HashLink
+                    <a
                       key={id}
-                      smooth
-                      to={`/#${sectionId}`}
-                      className={`relative capitalize no-underline transition-colors duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-primary-color after:transition-all after:duration-300 hover:after:w-full ${
-                        activeId === sectionId
-                          ? "text-primary-color after:w-full"
-                          : ""
-                      }`}
-                      onClick={() => handleLinkClick(sectionId)}
+                      href={`#${sectionId}`}
+                      className={`relative capitalize no-underline transition-colors duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-primary-color after:transition-all after:duration-300 hover:after:w-full`}
+                      onClick={() => setIsOpen(false)}
                     >
                       {title}
-                    </HashLink>
+                    </a>
                   );
                 })}
               </div>

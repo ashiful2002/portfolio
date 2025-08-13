@@ -37,7 +37,8 @@ const skills = [
     id: 2,
     name: "Tailwind CSS",
     icon: <SiTailwindcss size={50} color="#38BDF8" />,
-  },  { id: 17, name: "Figma", icon: <FaFigma size={50} color="#F24E1E" /> },
+  },
+  { id: 17, name: "Figma", icon: <FaFigma size={50} color="#F24E1E" /> },
 
   { id: 3, name: "JavaScript", icon: <FaJsSquare size={50} color="#F0DB4F" /> },
   { id: 4, name: "React JS", icon: <FaReact size={50} color="#61DBFB" /> },
@@ -45,7 +46,8 @@ const skills = [
     id: 5,
     name: "React Bootstrap",
     icon: <SiReactbootstrap size={50} color="#41e0fd" />,
-  },  { id: 15, name: "Firebase", icon: <SiFirebase size={50} color="#FFCA28" /> },
+  },
+  { id: 15, name: "Firebase", icon: <SiFirebase size={50} color="#FFCA28" /> },
 
   { id: 6, name: "Next.js", icon: <SiNextdotjs size={50} color="#000000" /> },
 
@@ -110,7 +112,7 @@ const Skills = () => {
           {[...skills, ...skills, ...skills].map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center text-center"
+              className="mx-4 flex flex-col items-center justify-center text-center"
               title={skill.name}
             >
               {skill.icon}

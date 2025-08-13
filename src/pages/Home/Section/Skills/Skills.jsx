@@ -82,7 +82,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="mx-auto my-12 scroll-mt-16 space-y-10 overflow-hidden p-6"
+      className="mx-auto my-12 scroll-mt-16 space-y-10 overflow-hidden py-6"
     >
       <h2 className="heading mb-6">Skills</h2>
 
@@ -93,7 +93,7 @@ const Skills = () => {
           duration: 3,
           ease: "easeInOut", // equally smooth start and end
         }}
-        className="container"
+        className="mx-auto md:container"
       >
         <SkillsDetails />
       </motion.div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
 import Socials from "./Socials";
+import { toast, ToastContainer } from "react-toastify";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -9,7 +10,7 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Thank you, ${name}! Your message has been sent.`);
+    toast.success(`Thank you, ${name}! Your message has been sent.`);
     // Reset form
     setName("");
     setEmail("");
@@ -27,10 +28,10 @@ const Contact = () => {
           <div className="flex items-center gap-4 text-gray-700">
             <HiOutlineMail className="h-6 w-6 text-primary-color" />
             <a
-              href="mailto:ashiful.islam@example.com"
+              href="mailto:ashifulislam2002@gmail.com"
               className="hover:underline"
             >
-              ashiful.islam@example.com
+              ashifulislam2002@gmail.com
             </a>
           </div>
 
@@ -48,13 +49,14 @@ const Contact = () => {
         {/* Email subscription form */}
         <form
           onSubmit={handleSubmit}
-          className="flex w-full max-w-md flex-col gap-3"
+          className="flex w-full max-w-md flex-col gap-4 md:max-w-2xl"
         >
-          <div className="flex items-center gap-4">
-            <div>
+          {/* Name & Email */}
+          <div className="flex flex-col gap-4 md:flex-row md:gap-4">
+            <div className="flex flex-1 flex-col">
               <label
                 htmlFor="name"
-                className="text-sm font-medium text-gray-700"
+                className="text-sm font-medium text-gray-700 dark:text-gray-200"
               >
                 Your Name
               </label>
@@ -65,13 +67,13 @@ const Contact = () => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Your full name"
-                className="rounded border border-gray-300 px-4 py-2 focus:border-blue-600 focus:outline-none"
+                className="w-full rounded border border-gray-300 bg-white px-4 py-2 focus:border-blue-600 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100"
               />
             </div>
-            <div>
+            <div className="flex flex-1 flex-col">
               <label
                 htmlFor="email"
-                className="text-sm font-medium text-gray-700"
+                className="text-sm font-medium text-gray-700 dark:text-gray-200"
               >
                 Your Email Address
               </label>
@@ -82,42 +84,48 @@ const Contact = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="example@mail.com"
-                className="rounded border border-gray-300 px-4 py-2 focus:border-blue-600 focus:outline-none"
+                className="w-full rounded border border-gray-300 bg-white px-4 py-2 focus:border-blue-600 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100"
               />
             </div>
           </div>
 
-          <label
-            htmlFor="subject"
-            className="text-sm font-medium text-gray-700"
-          >
-            Subject
-          </label>
-          <input
-            type="text"
-            id="subject"
-            required
-            value={subject}
-            onChange={(e) => setSubject(e.target.value)}
-            placeholder="Subject of your message"
-            className="rounded border border-gray-300 px-4 py-2 focus:border-blue-600 focus:outline-none"
-          />
+          {/* Subject */}
+          <div className="flex flex-col">
+            <label
+              htmlFor="subject"
+              className="text-sm font-medium text-gray-700 dark:text-gray-200"
+            >
+              Subject
+            </label>
+            <input
+              type="text"
+              id="subject"
+              required
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+              placeholder="Subject of your message"
+              className="w-full rounded border border-gray-300 bg-white px-4 py-2 focus:border-blue-600 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100"
+            />
+          </div>
 
-          <label
-            htmlFor="message"
-            className="text-sm font-medium text-gray-700"
-          >
-            Message
-          </label>
-          <textarea
-            id="message"
-            required
-            rows="5"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            placeholder="Write your message here..."
-            className="resize-none rounded border border-gray-300 px-4 py-2 focus:border-blue-600 focus:outline-none"
-          />
+          {/* Message */}
+          <div className="flex flex-col">
+            <label
+              htmlFor="message"
+              className="text-sm font-medium text-gray-700 dark:text-gray-200"
+            >
+              Message
+            </label>
+            <textarea
+              id="message"
+              required
+              rows="5"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              placeholder="Write your message here..."
+              className="w-full resize-none rounded border border-gray-300 bg-white px-4 py-2 focus:border-blue-600 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-gray-100"
+            />
+          </div>
 
           <button
             type="submit"
@@ -127,6 +135,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
+      <ToastContainer />
     </section>
   );
 };

@@ -1,26 +1,25 @@
 import React from "react";
 import { services } from "../../../Constants/Index";
-import Card from "../../../Components/Card";
 
 const Services = () => {
   return (
     <section id="services" className="mx-auto my-12 scroll-mt-16 p-6">
-      <h2 className="heading">What i do</h2>
+      <h2 className="heading mb-8 text-center">What I Do</h2>
 
-      {/* mx- auto ma x-w-7xl px-4 py-8 */}
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         {services.map(({ id, title, desc, icon: Icon }) => (
-          <Card
+          <div
             key={id}
-            className="transection-all shadow- hove r:bg-[#407cff] flex flex-col items-center justify-between gap-4 rounded-lg bg-primary-color p-6 py-4 transition-all duration-300 hover:bg-secondary-color hover:shadow-lg"
-            style={{ minHeight: "300px" }} // Optional: make cards uniform height
+            className="relative rounded-xl bg-gradient-to-r from-sky-400 to-blue-600 p-[2px] transition-transform hover:scale-105"
           >
-            <Icon className="text-5xl text-white" />
-            <h3 className="text-center text-xl font-semibold capitalize text-white">
-              {title}
-            </h3>
-            <p className="text-center text-white">{desc}</p>
-          </Card>
+            <div className="flex h-full flex-col items-center rounded-xl bg-white p-6 text-center">
+              <div className="mb-3 flex justify-center">
+                <Icon className="text-4xl text-sky-500" />
+              </div>
+              <h4 className="text-lg font-bold">{title}</h4>
+              <p className="mt-2 text-start text-sm text-gray-600">{desc}</p>
+            </div>
+          </div>
         ))}
       </div>
     </section>

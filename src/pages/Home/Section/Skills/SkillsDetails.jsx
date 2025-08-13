@@ -91,7 +91,7 @@ const SkillsDetails = () => {
         {Object.keys(skillsData).map((category) => (
           <button
             key={category}
-            className={`rounded-md px-4 py-2 font-semibold transition duration-200 ${
+            className={`rounded-md px-4 py-2 mb-4 font-semibold transition duration-200 ${
               skills === category
                 ? "bg-sky-500 text-white"
                 : "bg-gray-200 hover:bg-gray-300"

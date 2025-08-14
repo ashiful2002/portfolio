@@ -66,14 +66,16 @@ export default function ThreeBackground() {
       );
     };
     window.addEventListener("resize", handleResize);
-document.addEventListener("mousemove", (event) => {
-  particlesMesh.rotation.y = event.clientX * 0.0005;
-  particlesMesh.rotation.x = event.clientY * 0.0005;
-});
+    document.addEventListener("mousemove", (event) => {
+      particlesMesh.rotation.y = event.clientX * 0.0005;
+      particlesMesh.rotation.x = event.clientY * 0.0005;
+    });
 
     return () => {
       window.removeEventListener("resize", handleResize);
-      mountRef.current.removeChild(renderer.domElement);
+      if (mountRef.current && renderer.domElement.parentNode) {
+        mountRef.current.removeChild(renderer.domElement);
+      }
     };
   }, []);
 

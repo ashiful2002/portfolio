@@ -5,12 +5,12 @@ import Socials from "./Socials.jsx";
 import Lottie from "lottie-react";
 import coding from "../../../assets/coding.json";
 import Typewriter from "typewriter-effect";
-
+import { MdDownloadForOffline } from "react-icons/md";
 const Hero = () => {
   return (
     <div
       id="home"
-      className="scroll-mt-20 bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500"
+      className="scroll-mt-20 bg-white text-gray-900 transition-colors duration-500 dark:bg-gray-900 dark:text-gray-100"
     >
       <div className="flex flex-col items-center justify-center rounded p-2 xl:flex-row">
         <div className="xl:w-1/2">
@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="md:text-right xl:w-1/2">
           {aboutDetails.map((item, index) => (
             <div key={index} className="mt-4">
-              <h2 className="capitalize text-3xl font-bold dark:text-white">
+              <h2 className="text-3xl font-bold capitalize dark:text-white">
                 {item.name}
               </h2>
               <h5 className="mt-1 text-lg text-gray-700 dark:text-gray-300">
@@ -38,9 +38,10 @@ const Hero = () => {
               <a
                 href={resume}
                 download
-                className="mt-2 inline-block rounded bg-secondary-color px-2 py-2 text-white transition hover:bg-secondary-color/80 dark:hover:bg-secondary-color/90 md:px-4"
+                className="mt-2 inline-flex items-center justify-center gap-2 rounded bg-secondary-color px-2 py-2 text-white no-underline transition hover:bg-secondary-color/80 md:px-4 dark:hover:bg-secondary-color/90"
               >
-                Download Resume
+                <span>Download Resume</span>
+                <MdDownloadForOffline className="inline rounded-full bg-white text-xl text-primary-color" />
               </a>
               <p className="mt-3 text-justify tracking-tight text-gray-800 dark:text-gray-300">
                 {item.desc}

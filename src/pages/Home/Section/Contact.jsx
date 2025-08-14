@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="mx-auto my-12 scroll-mt-16 p-6 lg:w-11/12">
+    <section id="contact" className="mx-auto my-12 max-w-7xl scroll-mt-16 p-6">
       <h2 className="heading">Contact Me</h2>
 
       <div className="flex flex-col gap-8 md:flex-row md:justify-around">
@@ -39,7 +39,7 @@ const Contact = () => {
             <HiOutlineLocationMarker className="h-6 w-6 text-primary-color" />
             <span>Dhaka, Bangladesh</span>
           </div>
-          <div className="">
+          <div className="flex">
             <Socials />
           </div>
         </div>

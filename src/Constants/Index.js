@@ -3,7 +3,14 @@ import rswa from "../assets/rswa.jpg";
 import ah from "../assets/ah.jpg";
 import helloshe from "../assets/helloshe.jpg";
 import { v4 as uuidv4 } from "uuid";
-import { FaEnvelope, FaLinkedin, FaGithub, FaFacebook, FaServer, FaProjectDiagram } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaLinkedin,
+  FaGithub,
+  FaFacebook,
+  FaServer,
+  FaProjectDiagram,
+} from "react-icons/fa";
 import {
   FaSatellite,
   FaWeebly,
@@ -125,9 +132,11 @@ export const aboutDetails = [
     id: "0",
     name: "ashiful islam (Mukto)",
     titles: [
+      "Web Developer",
       "Frontend Developer",
-      "Backend Developer",
-      "MERN Developer",
+      "React Developer",
+      // "Backend Developer",
+      "Junior MERN Developer",
       "Full Stack Web Developer",
     ],
     desc: "A passionate frontEnd focused full stack web developer. I enjoy crafting clean, responsive, and user-friendly web applications that bring ideas to life. Constantly learning new tools and frameworks, I’m eager to solve real-world problems through code. Let’s build something amazing together!",

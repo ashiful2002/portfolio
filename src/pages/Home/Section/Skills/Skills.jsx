@@ -93,7 +93,7 @@ const Skills = () => {
           duration: 3,
           ease: "easeInOut", // equally smooth start and end
         }}
-        className="mx-auto md:container"
+        className="mx-auto max-w-7xl"
       >
         <SkillsDetails />
       </motion.div>

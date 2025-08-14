@@ -81,7 +81,7 @@ const ProjectDetails = () => {
             {project.desc}
           </p>
 
-          <div className="flex gap-5">
+          <div className="flex w-6/12 flex-col gap-2 sm:flex-row sm:gap-5">
             <a
               href={project.url}
               target="_blank"

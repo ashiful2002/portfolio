@@ -3,9 +3,8 @@ import { Outlet } from "react-router-dom";
 import Footer from "../Footer";
 
 const RootLayout = () => {
-
   return (
-    <div>
+    <div className="dark:bg-gray-900">
       <Header />
       <Outlet />
       <Footer />

@@ -44,7 +44,7 @@ const SkillsDetails = () => {
       },
       {
         name: "Next.js",
-        icon: <SiNextdotjs className="text-4xl text-black" />,
+        icon: <SiNextdotjs className="text-4xl text-black dark:text-white" />,
       },
     ],
     backend: [
@@ -54,7 +54,9 @@ const SkillsDetails = () => {
       },
       {
         name: "Express.js",
-        icon: <SiExpress className="text-4xl text-gray-700" />,
+        icon: (
+          <SiExpress className="text-4xl text-gray-700 dark:text-gray-300" />
+        ),
       },
       {
         name: "MongoDB",
@@ -63,9 +65,15 @@ const SkillsDetails = () => {
     ],
     tools: [
       { name: "Git", icon: <FaGitAlt className="text-4xl text-orange-500" /> },
-      { name: "GitHub", icon: <FaGithub className="text-4xl text-black" /> },
+      {
+        name: "GitHub",
+        icon: <FaGithub className="text-4xl text-black dark:text-white" />,
+      },
       { name: "NPM", icon: <FaNpm className="text-4xl text-red-600" /> },
-      { name: "Vercel", icon: <SiVercel className="text-4xl text-black" /> },
+      {
+        name: "Vercel",
+        icon: <SiVercel className="text-4xl text-black dark:text-white" />,
+      },
       {
         name: "Postman",
         icon: <SiPostman className="text-4xl text-orange-500" />,
@@ -84,17 +92,15 @@ const SkillsDetails = () => {
 
   return (
     <div className="p-6 text-center">
-      {/* <h2 className="mb-6 text-3xl font-bold">My Skills</h2> */}
-
       {/* Buttons */}
       <div className="mb-6 flex flex-wrap justify-center gap-4">
         {Object.keys(skillsData).map((category) => (
           <button
             key={category}
-            className={`rounded-md px-4 py-2 mb-4 font-semibold transition duration-200 ${
+            className={`mb-4 rounded-md px-4 py-2 font-semibold transition duration-200 ${
               skills === category
                 ? "bg-sky-500 text-white"
-                : "bg-gray-200 hover:bg-gray-300"
+                : "bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-100 dark:hover:bg-gray-600"
             }`}
             onClick={() => setSkills(category)}
           >
@@ -108,10 +114,12 @@ const SkillsDetails = () => {
         {skillsData[skills].map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center rounded-lg bg-white p-4 shadow-md transition hover:shadow-lg"
+            className="flex flex-col items-center rounded-lg bg-white/30 p-4 shadow-md transition hover:shadow-lg dark:bg-gray-800"
           >
             {skill.icon}
-            <p className="mt-2 text-lg font-medium">{skill.name}</p>
+            <p className="mt-2 text-lg font-medium text-gray-900 dark:text-gray-100">
+              {skill.name}
+            </p>
           </div>
         ))}
       </div>

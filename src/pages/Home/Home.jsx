@@ -9,7 +9,7 @@ import AboutMe from "./Section/About/About";
 
 const Home = () => {
   return (
-    <div className="mx-auto w-full border">
+    <div className="mx-auto w-full dark:bg-gray-900">
       <Hero />
       <AboutMe />
       <Skills />

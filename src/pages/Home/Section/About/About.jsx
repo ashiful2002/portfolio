@@ -7,11 +7,11 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="mx-auto my-12 max-w-7xl scroll-mt-16 p-6 bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-500"
+      className="b g-white mx-auto my-12 max-w-7xl scroll-mt-16 p-6 text-gray-900 transition-colors duration-500 dark:bg-gray-900 dark:text-gray-100"
     >
-      <h2 className="heading text-3xl font-bold dark:text-white">About Me</h2>
+      <h2 className="heading">About Me</h2>
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 mt-6">
+      <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
         {/* 1. Image */}
         <ProfileCard />
 
@@ -20,7 +20,7 @@ const AboutMe = () => {
           initial={{ x: +300 }}
           animate={{ x: 0, y: 0 }}
           transition={{ duration: 2, ease: "easeInOut" }}
-          className="rounded p-4 shadow-md duration-300 hover:shadow-xl bg-gray-50 dark:bg-gray-800"
+          className="rounded bg-gray-50 p-4 shadow-md duration-300 hover:shadow-xl dark:bg-gray-800"
         >
           <p className="mb-4 text-justify leading-relaxed text-gray-800 dark:text-gray-200">
             1. Hi, I'm <strong>Ashiful Islam</strong> — a passionate web
@@ -33,12 +33,13 @@ const AboutMe = () => {
           </p>
 
           <p className="mb-4 text-justify leading-relaxed text-gray-800 dark:text-gray-200">
-            2. I truly enjoy building <em>dynamic websites and web applications</em>
+            2. I truly enjoy building{" "}
+            <em>dynamic websites and web applications</em>
             that not only look great but also solve real-world problems. Whether
-            it’s designing a smooth user interface or optimizing backend logic, I
-            thrive in creating seamless experiences that delight users. Working
-            on projects that challenge me to learn new skills or think creatively
-            is where I find the most joy.
+            it’s designing a smooth user interface or optimizing backend logic,
+            I thrive in creating seamless experiences that delight users.
+            Working on projects that challenge me to learn new skills or think
+            creatively is where I find the most joy.
           </p>
         </motion.div>
       </div>
@@ -49,7 +50,7 @@ const AboutMe = () => {
           initial={{ y: 600 }}
           animate={{ x: 0, y: 0 }}
           transition={{ duration: 3, ease: "easeInOut" }}
-          className="rounded p-4 shadow-md duration-300 hover:shadow-xl bg-gray-50 dark:bg-gray-800"
+          className="rounded bg-gray-50 p-4 shadow-md duration-300 hover:shadow-xl dark:bg-gray-800"
         >
           <p className="mb-4 text-justify leading-relaxed text-gray-800 dark:text-gray-200">
             3. Outside of programming, I’m a firm believer in a balanced life. I
@@ -63,7 +64,7 @@ const AboutMe = () => {
           </p>
 
           {/* Small screens */}
-          <p className="text-justify leading-relaxed md:hidden text-gray-800 dark:text-gray-200">
+          <p className="text-justify leading-relaxed text-gray-800 md:hidden dark:text-gray-200">
             4. In short, I’m a curious, dedicated, and creative person who loves
             blending technology and art to make meaningful things. I believe the
             best work comes when you bring your whole self into it — and that’s
@@ -76,7 +77,7 @@ const AboutMe = () => {
           initial={{ y: 600 }}
           animate={{ x: 0, y: 0 }}
           transition={{ duration: 3, ease: "easeInOut" }}
-          className="hidden rounded p-4 shadow-md duration-300 hover:shadow-xl md:block bg-gray-50 dark:bg-gray-800"
+          className="hidden rounded bg-gray-50 p-4 shadow-md duration-300 hover:shadow-xl md:block dark:bg-gray-800"
         >
           <p className="text-justify leading-relaxed text-gray-800 dark:text-gray-200">
             4. In short, I’m a curious, dedicated, and creative person who loves

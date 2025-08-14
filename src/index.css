@@ -1,25 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Mozilla+Headline:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* Quick visual proof that dark media query is detected */
-@media (prefers-color-scheme: dark) {
-  html::before {
-    content: "dark mode detected";
-    position: fixed;
-    top: 8px;
-    left: 8px;
-    background: #111;
-    color: #fff;
-    padding: 4px 8px;
-    font-size: 12px;
-    border-radius: 6px;
-    z-index: 9999;
-  }
-}
+
+/* Global smooth scroll */
 html {
   scroll-behavior: smooth;
 }
+
+/* Headings font */
 h1,
 h2,
 h3,
@@ -28,18 +18,24 @@ h5,
 h6 {
   font-family: "Mozilla Headline", serif;
 }
+
+/* Paragraphs and links font */
 p,
 a {
-  font-family: "Poppins", serif;
+  font-family: "Poppins", sans-serif;
 }
 
+/* Dark mode for body text */
+
 @layer components {
+  /* Section headings */
   .heading {
     @apply mb-10 text-center text-3xl text-primary-color underline;
-    /* mb-6 text-center text-3xl font-bold text-primary-color */
   }
 
+  /* Buttons */
   .btn-primary {
-    @apply px-5 py-2 font-semibold text-white shadow-md focus:outline-none focus:ring focus:ring-opacity-75;
+    @apply px-5 py-2 font-semibold text-white shadow-md transition-colors duration-200 focus:outline-none focus:ring focus:ring-opacity-75;
+    @apply bg-primary-color hover:bg-primary-color/90 dark:bg-primary-color dark:hover:bg-primary-color/80;
   }
 }

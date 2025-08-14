@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { navItems } from "../Constants/Index";
 import { HashLink } from "react-router-hash-link";
-import logo from "../assets/4.png";
-import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {
   const [activeId, setActiveId] = useState("");
@@ -16,7 +14,7 @@ const Header = () => {
           if (entry.isIntersecting) setActiveId(entry.target.id);
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
 
     navItems.forEach(({ url }) => {
@@ -29,19 +27,19 @@ const Header = () => {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-white/30 backdrop-blur-lg border-b border-white/40 shadow-md">
+    <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/40 bg-white/30 shadow-md backdrop-blur-lg dark:border-gray-700 dark:bg-gray-900">
       <div className="flex h-16 items-center justify-between px-4 md:px-20">
         {/* Logo */}
-        <HashLink
-          smooth
-          to="/"
-          onClick={() => setActiveId("")}
-        >
-          <img src={logo} alt="Ashiful Islam" className="w-[180px]" />
+        <HashLink smooth to="/" onClick={() => setActiveId("")}>
+          <img
+            src="https://i.ibb.co/1JKmxQgt/4.png"
+            alt="Ashiful Islam"
+            className="-ml-4 w-[199px] sm:ml-0"
+          />
         </HashLink>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden space-x-6 md:flex">
           {navItems.map(({ id, url, title }) => {
             const sectionId = url.replace("/#", "").replace("#", "");
             return (
@@ -50,7 +48,9 @@ const Header = () => {
                 smooth
                 to={`/#${sectionId}`}
                 className={`relative capitalize no-underline transition-colors duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-primary-color after:transition-all after:duration-300 hover:after:w-full ${
-                  activeId === sectionId ? "text-primary-color after:w-full" : ""
+                  activeId === sectionId
+                    ? "text-primary-color after:w-full"
+                    : "text-gray-900 dark:text-gray-100"
                 }`}
               >
                 {title}
@@ -61,12 +61,12 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden block focus:outline-none z-50"
+          className="z-50 block focus:outline-none md:hidden"
           onClick={() => setIsOpen((prev) => !prev)}
           aria-label="Toggle menu"
         >
           <svg
-            className="h-6 w-6 text-gray-800"
+            className="h-6 w-6 text-gray-800 dark:text-gray-100"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -92,44 +92,36 @@ const Header = () => {
       </div>
 
       {/* Mobile Menu */}
-      <AnimatePresence>
-        {isOpen && (
-          <>
-            <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="overflow-hidden md:hidden z-50 bg-white/30 backdrop-blur-lg border-b border-white/40 shadow-md"
-            >
-              <div className="flex flex-col space-y-4 px-4 py-4">
-                {navItems.map(({ id, url, title }) => {
-                  const sectionId = url.replace("/#", "").replace("#", "");
-                  return (
-                    <a
-                      key={id}
-                      href={`#${sectionId}`}
-                      className={`relative capitalize no-underline transition-colors duration-300 after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-primary-color after:transition-all after:duration-300 hover:after:w-full`}
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {title}
-                    </a>
-                  );
-                })}
-              </div>
-            </motion.div>
+      <div
+        className={`overflow-hidden border-t transition-all duration-300 ease-in-out md:hidden ${
+          isOpen ? "max-h-96 py-4" : "max-h-0 py-0"
+        } border-gray-200 bg-white dark:border-gray-700 dark:bg-blue-800`}
+      >
+        <div className="flex flex-col space-y-3 px-4">
+          {navItems.map((item) => {
+            const sectionId = item.url.replace("/#", "").replace("#", "");
+            const isActive = activeId === sectionId;
 
-            {/* Overlay */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.4 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setIsOpen(false)}
-              className="fixed inset-0 z-40 bg-gray-100 md:hidden"
-            />
-          </>
-        )}
-      </AnimatePresence>
+            return (
+              <a
+                key={item.id}
+                href={item.url}
+                onClick={() => setIsOpen(false)}
+                className={`relative py-2 capitalize transition-colors hover:text-primary-color dark:hover:text-primary-color ${
+                  isActive
+                    ? "font-semibold text-primary-color"
+                    : "text-gray-900 dark:text-gray-100"
+                }`}
+              >
+                {item.title}
+                {isActive && (
+                  <span className="absolute -bottom-0 left-0 h-[2px] w-12 bg-primary-color"></span>
+                )}
+              </a>
+            );
+          })}
+        </div>
+      </div>
     </nav>
   );
 };

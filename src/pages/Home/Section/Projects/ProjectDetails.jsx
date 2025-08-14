@@ -45,6 +45,7 @@ const ProjectDetails = () => {
         Project not found
       </div>
     );
+  console.log(project);
 
   return (
     <section className="mx-auto max-w-7xl scroll-mt-16 px-6 py-24">
@@ -81,7 +82,7 @@ const ProjectDetails = () => {
                 rel="noopener noreferrer"
                 className="inline-block rounded bg-secondary-color px-3 py-2 text-white transition-colors duration-200 hover:bg-primary-color"
               >
-               Source Code
+                Source Code
               </a>
             )}
           </div>

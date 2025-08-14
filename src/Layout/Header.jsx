@@ -27,7 +27,7 @@ const Header = () => {
   }, []);
 
   return (
-    <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/40 bg-white/30 shadow-md backdrop-blur-lg dark:border-gray-700 dark:bg-gray-900">
+    <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/40 bg-white/40 shadow-md backdrop-blur-lg dark:border-gray-700 dark:bg-gray-900/10">
       <div className="flex h-16 items-center justify-between px-4 md:px-20">
         {/* Logo */}
         <HashLink smooth to="/" onClick={() => setActiveId("")}>
@@ -95,7 +95,7 @@ const Header = () => {
       <div
         className={`overflow-hidden border-t transition-all duration-300 ease-in-out md:hidden ${
           isOpen ? "max-h-96 py-4" : "max-h-0 py-0"
-        } border-gray-200 bg-white dark:border-gray-700 dark:bg-blue-800`}
+        } bg- white mx-2 rounded border-gray-200 dark:border-gray-700 dark:bg-blue-950/30`}
       >
         <div className="flex flex-col space-y-3 px-4">
           {navItems.map((item) => {
@@ -107,7 +107,7 @@ const Header = () => {
                 key={item.id}
                 href={item.url}
                 onClick={() => setIsOpen(false)}
-                className={`relative py-2 capitalize transition-colors hover:text-primary-color dark:hover:text-primary-color ${
+                className={`relative py-2 capitalize no-underline transition-colors hover:text-primary-color dark:hover:text-primary-color ${
                   isActive
                     ? "font-semibold text-primary-color"
                     : "text-gray-900 dark:text-gray-100"

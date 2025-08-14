@@ -56,7 +56,7 @@
     "desc": "This is a simple react based fully crud app using REST api to create, update and delete functionality. SODEV is a community-driven platform where users can create, join, and track social development events in their local area.",
     "url": "https://event-management-app-b86d6.web.app/",
     "repoUrl": "https://github.com/ashiful2002/Event_management_app",
-    "img": "https://ashifulislam-portfolio-2002.web.app/assets/eventManagement-BNCHxb3G.png",
+    "img": "https://raw.githubusercontent.com/ashiful2002/Event_management_app/refs/heads/main/src/assets/event_management.png",
     "techStack": [
       "React",
       "Firebase",

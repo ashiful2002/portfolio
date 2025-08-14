@@ -10,7 +10,7 @@ const truncateWords = (text, wordLimit) => {
 
 const Projects = () => {
   const projects = useLoaderData();
-  console.log(projects);
+  // console.log(projects);
 
   if (!Array.isArray(projects) || projects.length === 0) {
     return (
@@ -65,7 +65,7 @@ const Projects = () => {
                 </p>
                 <div className="px-2 pb-2">
                   <Link
-                    className="mb-4 rounded-md bg-primary-color px-4 py-2 text-white no-underline shadow-md transition duration-200 hover:bg-sky-600 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-sky-300"
+                    className="mb-4 rounded-md bg-primary-color px-3 py-1 text-white no-underline shadow-md transition duration-200 hover:bg-sky-600 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-sky-300"
                     to={`/project/${item.id}`}
                   >
                     Details

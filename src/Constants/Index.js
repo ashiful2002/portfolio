@@ -1,6 +1,5 @@
 import engineersHome from "../assets/engineershome.jpg";
 import rswa from "../assets/rswa.jpg";
-import ah from "../assets/ah.jpg";
 import helloshe from "../assets/helloshe.jpg";
 import { v4 as uuidv4 } from "uuid";
 import {
@@ -182,51 +181,51 @@ export const services = [
   },
 ];
 
-export const projects = [
-  {
-    id: "5",
-    title: "Real Estate Project",
-    desc: "A role-based MERN application for property buying and selling. Users can browse and purchase properties, agents can list new ones, and admins can manage users, agents, and listings. Features CRUD operations and secure access with Firebase tokens.",
-    url: "https://real-estate-client-2025.web.app",
-    img: "https://camo.githubusercontent.com/250c84671ab743155e69ac9054a418af95fb5986a17a6fdae89e4929cbe4025d/68747470733a2f2f692e6962622e636f2e636f6d2f4b31776e4b58782f53637265656e73686f742d323032352d30382d30382d61742d332d32312d35312d504d2e706e67",
-  },
-  {
-    id: "4",
-    title: "Event management application",
-    desc: "SODEV is a community-driven event management platform where users can create, join, and track social development events in their local area.",
-    url: "https://event-management-app-b86d6.web.app/",
-    img: "https://ashifulislam-portfolio-2002.web.app/assets/eventManagement-BNCHxb3G.png",
-  },
-  {
-    id: "5",
-    title: "Recipe booking platform",
-    desc: "Cook_verse is a web application designed for food enthusiasts who love to explore and share their favorite recipes. The app allows users to browse featured recipes, save their favorites, and contribute their own — all in a smooth, authenticated environment.",
-    url: "https://books-recipe-app.web.app/",
-    img: "https://ashifulislam-portfolio-2002.web.app/assets/cookverse-zoSthvfF.png",
-  },
+// export const projects = [
+//   {
+//     id: "5",
+//     title: "Real Estate Project",
+//     desc: "A role-based MERN application for property buying and selling. Users can browse and purchase properties, agents can list new ones, and admins can manage users, agents, and listings. Features CRUD operations and secure access with Firebase tokens.",
+//     url: "https://real-estate-client-2025.web.app",
+//     img: "https://camo.githubusercontent.com/250c84671ab743155e69ac9054a418af95fb5986a17a6fdae89e4929cbe4025d/68747470733a2f2f692e6962622e636f2e636f6d2f4b31776e4b58782f53637265656e73686f742d323032352d30382d30382d61742d332d32312d35312d504d2e706e67",
+//   },
+//   {
+//     id: "4",
+//     title: "Event management application",
+//     desc: "SODEV is a community-driven event management platform where users can create, join, and track social development events in their local area.",
+//     url: "https://event-management-app-b86d6.web.app/",
+//     img: "https://ashifulislam-portfolio-2002.web.app/assets/eventManagement-BNCHxb3G.png",
+//   },
+//   {
+//     id: "5",
+//     title: "Recipe booking platform",
+//     desc: "Cook_verse is a web application designed for food enthusiasts who love to explore and share their favorite recipes. The app allows users to browse featured recipes, save their favorites, and contribute their own — all in a smooth, authenticated environment.",
+//     url: "https://books-recipe-app.web.app/",
+//     img: "https://ashifulislam-portfolio-2002.web.app/assets/cookverse-zoSthvfF.png",
+//   },
 
-  {
-    id: "2",
-    title: "Hello She",
-    desc: "Hello She is a non-profit organization dedicated to raising awareness about Cyber Security among women and female students. We believe that in today’s digital age, everyone deserves to feel safe online, and our goal is to provide the knowledge and tools necessary to achieve that. this is just a landing page without functionality",
-    url: "https://helloshe.org/",
-    img: helloshe,
-  },
-  {
-    id: "1",
-    title: "RSWA",
-    desc: "Rowmari Students Welfare Association, a social and students welfare association. This is a web application with various functionality. ",
-    url: "https://rswa-rowmari.vercel.app",
-    img: rswa,
-  },
-  {
-    id: "0",
-    title: "Engineers Home Consulteansey",
-    desc: "A engineering Consultancy for civil engineers. They provide many services like indoor and outdoor designs etc.",
-    url: "https://engineershome.vercel.app/",
-    img: engineersHome,
-  },
-];
+//   {
+//     id: "2",
+//     title: "Hello She",
+//     desc: "Hello She is a non-profit organization dedicated to raising awareness about Cyber Security among women and female students. We believe that in today’s digital age, everyone deserves to feel safe online, and our goal is to provide the knowledge and tools necessary to achieve that. this is just a landing page without functionality",
+//     url: "https://helloshe.org/",
+//     img: helloshe,
+//   },
+//   {
+//     id: "1",
+//     title: "RSWA",
+//     desc: "Rowmari Students Welfare Association, a social and students welfare association. This is a web application with various functionality. ",
+//     url: "https://rswa-rowmari.vercel.app",
+//     img: rswa,
+//   },
+//   {
+//     id: "0",
+//     title: "Engineers Home Consulteansey",
+//     desc: "A engineering Consultancy for civil engineers. They provide many services like indoor and outdoor designs etc.",
+//     url: "https://engineershome.vercel.app/",
+//     img: engineersHome,
+//   },
+// ];
 export const skillsDetails = [
   {
     id: "0",

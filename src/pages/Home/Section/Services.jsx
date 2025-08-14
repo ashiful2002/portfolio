@@ -13,18 +13,25 @@ const Services = () => {
         {services.map(({ id, title, desc, icon: Icon }) => (
           <div
             key={id}
-            className="relative rounded-xl bg-gradient-to-r from-sky-400 to-blue-600 p-[2px] shadow-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-xl dark:hover:shadow-blue-900/30"
+            className="relative rounded-xl bg-gradient-to-r from-sky-400 via-blue-500 to-blue-600 p-[2px]"
           >
-            <div className="flex h-full flex-col items-center rounded-xl p-6 text-center transition-colors duration-300 dark:bg-gray-800">
-              <div className="mb-3 flex justify-center">
-                <Icon className="text-4xl text-sky-500 dark:text-sky-400" />
+            <div className="relative overflow-hidden rounded-xl">
+              {/* Background color */}
+              <div className="absolute inset-0 bg-gray-50 dark:bg-gray-800"></div>
+
+              {/* Gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-sky-400/20 via-blue-500/10 to-blue-600/20"></div>
+
+              {/* Content */}
+              <div className="text-cente relative z-10 p-6 h-[260px]">
+                <Icon className="mx-auto text-4xl text-primary-color" />
+                <h4 className="mt-3 text-lg font-bold text-gray-800 dark:text-gray-100">
+                  {title}
+                </h4>
+                <p className="mt-2 text-sm text-gray-600 dark:text-gray-300">
+                  {desc}
+                </p>
               </div>
-              <h4 className="text-lg font-bold text-gray-800 dark:text-gray-100">
-                {title}
-              </h4>
-              <p className="mt-2 text-start text-sm text-gray-600 dark:text-gray-300">
-                {desc}
-              </p>
             </div>
           </div>
         ))}

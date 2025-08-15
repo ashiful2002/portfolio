@@ -4,11 +4,12 @@ import ErrorPage from "../pages/ErrorPage";
 import Home from "../pages/Home/Home";
 import RootLayout from "../Layout/RootLayout/RootLayout";
 import ProjectDetails from "../pages/Home/Section/Projects/ProjectDetails";
+import Rspinner from "../Components/Spinner";
 const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
-    // hydrateFallbackElement: <Bspin />,
+    hydrateFallbackElement: <Rspinner />,
     children: [
       {
         path: "/",
@@ -27,8 +28,6 @@ const router = createBrowserRouter([
           ).then((res) => res.json()),
       },
 
-      
-      
       {
         path: "*",
         element: <ErrorPage />,

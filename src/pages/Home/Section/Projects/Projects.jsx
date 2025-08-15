@@ -15,7 +15,7 @@ const Projects = () => {
   if (!Array.isArray(projects) || projects.length === 0) {
     return (
       <div
-        className="dark:text-gray-50-100 mx-auto mt-2 scroll-mt-20 dark:bg-gray-900"
+        className="dark:text-gray-50-100 container mx-auto my-12 mt-2 max-w-7xl scroll-mt-20 dark:bg-gray-900"
         id="projects"
       >
         <h2 className="heading">Projects</h2>
@@ -26,7 +26,7 @@ const Projects = () => {
 
   return (
     <div
-      className="mx-auto my-12 scroll-mt-16 space-y-10 overflow-hidden py-6 transition-colors duration-500 dark:bg-gray-900 dark:text-gray-100"
+      className="container mx-auto my-12 max-w-7xl scroll-mt-16 space-y-10 overflow-hidden py-6 transition-colors duration-500 dark:bg-gray-900 dark:text-gray-100"
       id="projects"
     >
       <div>
@@ -37,7 +37,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="mx-auto grid grid-cols-1 gap-2 rounded sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6">
+        <div className="mx-auto grid grid-cols-1 gap-2 rounded sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4">
           {projects.map((item) => (
             <div
               key={item.id}
@@ -60,7 +60,7 @@ const Projects = () => {
                 <h2 className="px-2 capitalize dark:text-white">
                   {item.title}
                 </h2>
-                <p className="px-2 text-gray-800 dark:text-gray-300">
+                <p className="px-2 text-sm text-gray-800 dark:text-gray-300">
                   {truncateWords(item.desc, 15)}
                 </p>
                 <div className="px-2 pb-2">

@@ -23,7 +23,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="mx-auto my-12 max-w-7xl scroll-mt-16 p-6 transition-colors duration-300 dark:bg-gray-900"
+      className="container mx-auto my-12 max-w-7xl scroll-mt-16 p-6 transition-colors duration-300 dark:bg-gray-900"
     >
       <h2 className="heading">Contact Me</h2>
 

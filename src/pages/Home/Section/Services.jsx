@@ -5,11 +5,11 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="hite mx-auto my-12 scroll-mt-16 p-6 transition-colors duration-300 dark:bg-gray-900"
+      className="container mx-auto my-12 max-w-7xl scroll-mt-16 p-6 transition-colors duration-300 dark:bg-gray-900"
     >
       <h2 className="heading mb-8 text-center">What I Do</h2>
 
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+      <div className="mx-auto grid grid-cols-1 gap-2 rounded sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4">
         {services.map(({ id, title, desc, icon: Icon }) => (
           <div
             key={id}
@@ -23,7 +23,7 @@ const Services = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-sky-400/20 via-blue-500/10 to-blue-600/20"></div>
 
               {/* Content */}
-              <div className="text-cente relative z-10 p-6 h-[260px]">
+              <div className="text-cente relative z-10 h-[260px] p-6">
                 <Icon className="mx-auto text-4xl text-primary-color" />
                 <h4 className="mt-3 text-lg font-bold text-gray-800 dark:text-gray-100">
                   {title}

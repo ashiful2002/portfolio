@@ -91,7 +91,7 @@ const SkillsDetails = () => {
   };
 
   return (
-    <div className="p-6 text-center">
+    <div className="p-6 text-center container mx-auto my-12 max-w-7xl">
       {/* Buttons */}
       <div className="mb-6 flex flex-wrap justify-center gap-4">
         {Object.keys(skillsData).map((category) => (
@@ -112,26 +112,6 @@ const SkillsDetails = () => {
       {/* Skills Grid */}
       <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
         {skillsData[skills].map((skill, index) => (
-          // <div
-          //   key={index}
-          //   className="relative rounded-lg p-[2px] shadow-md transition hover:scale-[1.02] hover:shadow-lg dark:bg-gradient-to-r dark:from-sky-400 dark:via-blue-500 dark:to-blue-600 dark:hover:shadow-blue-900/30"
-          // >
-          //   <div className="relative overflow-hidden rounded-lg">
-          //     {/* Background color */}
-          //     <div className="absolute inset-0 dark:bg-gray-800"></div>
-
-          //     {/* Gradient overlay */}
-          //     <div className="absolute inset-0 bg-gradient-to-br to-blue-600/20 dark:from-sky-400/20 dark:via-blue-500/10"></div>
-
-          //     {/* Content */}
-          //     <div className="relative z-10 flex flex-col items-center p-4">
-          //       {skill.icon}
-          //       <p className="mt-2 text-lg font-medium text-gray-900 dark:text-gray-100">
-          //         {skill.name}
-          //       </p>
-          //     </div>
-          //   </div>
-          // </div>
           <div
             key={index}
             className="flex flex-col items-center rounded-lg bg-white/30 p-4 shadow-md transition hover:shadow-lg dark:bg-gray-800"

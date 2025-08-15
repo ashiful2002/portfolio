@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <section
       id="about"
-      className="b g-white mx-auto my-12 max-w-7xl scroll-mt-16 p-6 text-gray-900 transition-colors duration-500 dark:bg-gray-900 dark:text-gray-100"
+      className="container mx-auto my-12 max-w-7xl scroll-mt-16 p-6 text-gray-900 transition-colors duration-500 dark:bg-gray-900 dark:text-gray-100"
     >
       <h2 className="heading">About Me</h2>
 

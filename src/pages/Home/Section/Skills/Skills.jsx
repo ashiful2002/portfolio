@@ -106,7 +106,7 @@ const Skills = () => {
         initial={{ y: -600 }}
         animate={{ x: 0, y: 0 }}
         transition={{ duration: 3, ease: "easeInOut" }}
-        className="mx-auto max-w-7xl"
+        className="max-w-7x l mx-auto sm:container"
       >
         <SkillsDetails />
       </motion.div>

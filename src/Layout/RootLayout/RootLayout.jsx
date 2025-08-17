@@ -4,7 +4,7 @@ import Footer from "../Footer";
 
 const RootLayout = () => {
   return (
-    <div className="border border-red-900 dark:bg-gray-900">
+    <div className="dark:bg-gray-900">
       <Header />
       <Outlet />
       <Footer />

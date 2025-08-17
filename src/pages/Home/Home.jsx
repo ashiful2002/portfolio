@@ -3,8 +3,8 @@ import Projects from "./Section/Projects/Projects";
 import Skills from "./Section/Skills/Skills";
 import Hero from "./Section/Hero";
 import Services from "./Section/Services";
-import Contact from "./Section/Contact";
 import AboutMe from "./Section/About/About";
+import Contact from "./Section/Contact/Contact";
 
 const Home = () => {
   return (

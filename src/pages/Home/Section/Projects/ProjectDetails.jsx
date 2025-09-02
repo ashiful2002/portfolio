@@ -1,5 +1,6 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+// Font Awesome Icons
 import {
   FaCheckCircle,
   FaReact,
@@ -9,10 +10,15 @@ import {
   FaCss3Alt,
   FaGitAlt,
   FaFigma,
+  FaGithub,
+  FaChartBar,
+  FaJs,
 } from "react-icons/fa";
-import { FiExternalLink } from "react-icons/fi";
-import { FaGithub } from "react-icons/fa";
 
+// Feather Icons
+import { FiExternalLink } from "react-icons/fi";
+
+// Simple Icons
 import {
   SiTailwindcss,
   SiNextdotjs,
@@ -24,8 +30,17 @@ import {
   SiVercel,
   SiPostman,
   SiVisualstudiocode,
+  SiTypescript,
+  SiNetlify,
+  SiDocker,
+  SiJsonwebtokens,
+  SiStripe,
+  SiAxios,
+  SiReactquery,
+  SiReacthookform,
+  SiReactrouter,
+  SiReact,
 } from "react-icons/si";
-
 const techIcons = {
   React: <FaReact className="text-sky-400" />,
   "Next.js": <SiNextdotjs className="text-black dark:text-white" />,
@@ -44,7 +59,7 @@ const techIcons = {
   Figma: <FaFigma className="text-pink-500" />,
   "VS Code": <SiVisualstudiocode className="text-blue-500" />,
   "React Bootstrap": <SiReactbootstrap className="text-[#41e0fd]" />,
-  "Ant Design": <SiAntdesign className="text-blue-500" />, 
+  "Ant Design": <SiAntdesign className="text-blue-500" />,
 
   // 🔹 New Suggested Icons
   TypeScript: <SiTypescript className="text-blue-600" />,
@@ -56,13 +71,12 @@ const techIcons = {
   "TanStack Query": <SiReactquery className="text-red-500" />,
   "React Hook Form": <SiReacthookform className="text-pink-400" />,
   "React Router": <SiReactrouter className="text-red-600" />,
-  Recharts: <SiRecharts className="text-teal-500" />,
+  Recharts: <FaChartBar className="text-teal-500" />,
   "React Icons": <SiReact className="text-sky-500" />,
-  "SweetAlert2": <SiJavascript className="text-yellow-400" />,
+  SweetAlert2: <FaJs className="text-yellow-400" />,
   "React Hot Toast": <SiReact className="text-orange-400" />,
   "React Helmet": <SiReact className="text-green-400" />,
 };
-
 
 const ProjectDetails = () => {
   const projects = useLoaderData();

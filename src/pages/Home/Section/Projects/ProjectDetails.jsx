@@ -13,10 +13,12 @@ import {
   FaGithub,
   FaChartBar,
   FaJs,
+  FaNpm,
 } from "react-icons/fa";
-
 // Feather Icons
 import { FiExternalLink } from "react-icons/fi";
+import { CiCircleAlert } from "react-icons/ci";
+import { IoCheckmarkCircleSharp } from "react-icons/io5";
 
 // Simple Icons
 import {
@@ -67,15 +69,15 @@ const techIcons = {
   Docker: <SiDocker className="text-blue-400" />,
   JWT: <SiJsonwebtokens className="text-pink-600" />,
   Stripe: <SiStripe className="text-purple-600" />,
-  Axios: <SiAxios className="text-indigo-500" />,
+  axios: <SiAxios className="text-violet-500" />,
   "TanStack Query": <SiReactquery className="text-red-500" />,
   "React Hook Form": <SiReacthookform className="text-pink-400" />,
   "React Router": <SiReactrouter className="text-red-600" />,
-  Recharts: <FaChartBar className="text-teal-500" />,
-  "React Icons": <SiReact className="text-sky-500" />,
-  SweetAlert2: <FaJs className="text-yellow-400" />,
-  "React Hot Toast": <SiReact className="text-orange-400" />,
-  "React Helmet": <SiReact className="text-green-400" />,
+  recharts: <FaChartBar className="text-teal-500" />,
+  "react-icon": <SiReact className="text-red-500" />,
+  "sweet alert2": <CiCircleAlert className="text-orange-600" />,
+  "react-hot-toast": <IoCheckmarkCircleSharp className="text-green-400" />,
+  "react-helmet": <FaNpm className="text-red-500" />,
 };
 
 const ProjectDetails = () => {

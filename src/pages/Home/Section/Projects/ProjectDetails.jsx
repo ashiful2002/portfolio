@@ -44,8 +44,25 @@ const techIcons = {
   Figma: <FaFigma className="text-pink-500" />,
   "VS Code": <SiVisualstudiocode className="text-blue-500" />,
   "React Bootstrap": <SiReactbootstrap className="text-[#41e0fd]" />,
-  "Ant Design": <SiAntdesign className="text-blue-500" />, // Added
+  "Ant Design": <SiAntdesign className="text-blue-500" />, 
+
+  // 🔹 New Suggested Icons
+  TypeScript: <SiTypescript className="text-blue-600" />,
+  Netlify: <SiNetlify className="text-cyan-500" />,
+  Docker: <SiDocker className="text-blue-400" />,
+  JWT: <SiJsonwebtokens className="text-pink-600" />,
+  Stripe: <SiStripe className="text-purple-600" />,
+  Axios: <SiAxios className="text-indigo-500" />,
+  "TanStack Query": <SiReactquery className="text-red-500" />,
+  "React Hook Form": <SiReacthookform className="text-pink-400" />,
+  "React Router": <SiReactrouter className="text-red-600" />,
+  Recharts: <SiRecharts className="text-teal-500" />,
+  "React Icons": <SiReact className="text-sky-500" />,
+  "SweetAlert2": <SiJavascript className="text-yellow-400" />,
+  "React Hot Toast": <SiReact className="text-orange-400" />,
+  "React Helmet": <SiReact className="text-green-400" />,
 };
+
 
 const ProjectDetails = () => {
   const projects = useLoaderData();
@@ -221,7 +238,7 @@ const ProjectDetails = () => {
           {/* Features */}
           <div>
             <h3 className="mb-2 text-lg font-semibold dark:text-white">
-              Features
+              Main Features
             </h3>
             <ul className="list-inside list-disc space-y-2">
               {project.features?.map((feature, idx) => (
@@ -237,18 +254,21 @@ const ProjectDetails = () => {
 
           {/* Additional Features */}
           <div>
-            <h3 className="mb-2 text-lg font-semibold dark:text-white">
-              Additional Features
-            </h3>
+            {project?.additionalFeatures?.length > 0 && (
+              <h3 className="mb-2 text-lg font-semibold dark:text-white">
+                Additional Features
+              </h3>
+            )}
             <ul className="list-inside list-disc space-y-2">
-              {project.additionalFeatures?.map((feature, idx) => (
-                <li key={idx} className="flex items-start gap-2">
-                  <FaCheckCircle className="mt-1 text-secondary-color" />
-                  <span className="text-gray-800 dark:text-gray-300">
-                    {feature}
-                  </span>
-                </li>
-              ))}
+              {project?.additionalFeatures?.length > 0 &&
+                project.additionalFeatures.map((feature, idx) => (
+                  <li key={idx} className="flex items-start gap-2">
+                    <FaCheckCircle className="mt-1 text-secondary-color" />
+                    <span className="text-gray-800 dark:text-gray-300">
+                      {feature}
+                    </span>
+                  </li>
+                ))}
             </ul>
           </div>
         </div>

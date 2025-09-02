@@ -17,12 +17,12 @@ export default function ProfileCard() {
 
       {/* Foreground image */}
       <img
-        src="https://i.ibb.co.com/tTHFhyPS/ashiful.png"
+        src="https://i.ibb.co.com/v4WVkV8m/ashiful.png"
         alt="Ashiful Islam"
         className="absolute z-10 h-[300px] w-[300px] rounded-full object-cover"
       />
 
-      <p className="badge relative z-10 ml-[110px] mt-[290px] bg-secondary-color font-thin dark:bg-secondary-color/90 text-white">
+      <p className="badge relative z-10 ml-[110px] mt-[290px] bg-secondary-color font-thin text-white dark:bg-secondary-color/90">
         Developer
       </p>
     </motion.div>

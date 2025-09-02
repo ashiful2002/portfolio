@@ -10,6 +10,7 @@ import {
   FaJsSquare,
   FaCss3Alt,
   FaFigma,
+  FaHtml5,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -28,7 +29,8 @@ const SkillsDetails = () => {
 
   const skillsData = {
     frontend: [
-      { name: "CSS", icon: <FaCss3Alt className="text-4xl text-blue-500" /> },
+      { name: "HTML5", icon: <FaHtml5 className="text-4xl text-orange-500" /> },
+      { name: "CSS3", icon: <FaCss3Alt className="text-4xl text-blue-500" /> },
       {
         name: "Tailwind CSS",
         icon: <SiTailwindcss className="text-4xl text-sky-400" />,
@@ -62,6 +64,10 @@ const SkillsDetails = () => {
         name: "MongoDB",
         icon: <SiMongodb className="text-4xl text-green-700" />,
       },
+      {
+        name: "Next.js",
+        icon: <SiNextdotjs className="text-4xl dark:text-white" />,
+      },
     ],
     tools: [
       { name: "Git", icon: <FaGitAlt className="text-4xl text-orange-500" /> },
@@ -91,7 +97,7 @@ const SkillsDetails = () => {
   };
 
   return (
-    <div className="p-6 text-center container mx-auto my-12 max-w-7xl">
+    <div className="container mx-auto my-12 max-w-7xl p-6 text-center">
       {/* Buttons */}
       <div className="mb-6 flex flex-wrap justify-center gap-4">
         {Object.keys(skillsData).map((category) => (

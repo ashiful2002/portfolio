@@ -119,17 +119,26 @@
   },
   {
     "id": "4",
-    "title": "Engineers Home",
-    "desc": "'Engineers Home Consultancy' A simple, responsive landing page built with React and Tailwind CSS for an engineering consultancy. Showcases their services, projects, and portfolio, providing an elegant online presence for civil engineering clients.",
+    "title": "Muktanchal research center",
+    "desc": "'Muktanchal research center' is a virtual musiam. visitors can explore here the history of free land during libaration war of bangaldesh held on 1971. This is a great platform to show the history of this free land of bangladeshg during libaration war.",
     "url": "https://www.engineershome.com.bd",
-    "repoUrl": "https://github.com/ashiful2002/engineershome",
-    "img": "https://i.ibb.co.com/Qvj9zYQF/engineershome.jpg",
-    "techStack": ["React", "Tailwind CSS", "Bootstrap"],
+    "repoUrl": "https://github.com/ashiful2002/muktanchan-research-center",
+    "img": "https://i.ibb.co.com/qYRyqnSW/Screenshot-2025-09-02-at-4-13-19-PM.png",
+    "techStack": [
+      "React",
+      "Tailwind CSS",
+      "React-router",
+      "Firebase",
+      "Node.js",
+      "Express",
+      "Express",
+      "MongoDB"
+    ],
     "features": [
-      "Showcase company services and portfolio",
-      "Contact form for client inquiries",
-      "Fully responsive design across devices",
-      "Clean and modern UI/UX"
+      "firebase authentication",
+      "Dashboard control",
+      "Fully Crup Operation",
+      "image upload using imgbb api"
     ],
     "role": "Frontend Developer",
     "date": "2024-09",
@@ -168,8 +177,28 @@
     "duration": "3 months",
     "collaborators": ["Team Member 1", "Team Member 2"]
   },
+
   {
     "id": "6",
+    "title": "Engineers Home",
+    "desc": "'Engineers Home Consultancy' A simple, responsive landing page built with React and Tailwind CSS for an engineering consultancy. Showcases their services, projects, and portfolio, providing an elegant online presence for civil engineering clients.",
+    "url": "https://www.engineershome.com.bd",
+    "repoUrl": "https://github.com/ashiful2002/engineershome",
+    "img": "https://i.ibb.co.com/Qvj9zYQF/engineershome.jpg",
+    "techStack": ["React", "Tailwind CSS", "Bootstrap"],
+    "features": [
+      "Showcase company services and portfolio",
+      "Contact form for client inquiries",
+      "Fully responsive design across devices",
+      "Clean and modern UI/UX"
+    ],
+    "role": "Frontend Developer",
+    "date": "2024-09",
+    "duration": "1 month",
+    "collaborators": []
+  },
+  {
+    "id": "7",
     "title": "Hello She",
     "desc": "Hello She is a non-profit organization dedicated to raising awareness about cyber security among women and female students. This is a landing page without functionality.",
     "url": "https://helloshe.org/",

@@ -1,5 +1,4 @@
 import React from "react";
-import resume from "../../../assets/resume/Ashiful_Islam_Resume.pdf";
 import { aboutDetails } from "../../../Constants/Index";
 import Socials from "./Socials.jsx";
 import Lottie from "lottie-react";

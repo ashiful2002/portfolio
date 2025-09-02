@@ -44,8 +44,7 @@ const AboutMe = () => {
         </motion.div>
       </div>
 
-      <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
-        {/* 3. Another text */}
+      {/* <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
         <motion.div
           initial={{ y: 600 }}
           animate={{ x: 0, y: 0 }}
@@ -63,7 +62,6 @@ const AboutMe = () => {
             places, and discovering interesting books and podcasts.
           </p>
 
-          {/* Small screens */}
           <p className="text-justify leading-relaxed text-gray-800 md:hidden dark:text-gray-200">
             4. In short, I’m a curious, dedicated, and creative person who loves
             blending technology and art to make meaningful things. I believe the
@@ -71,8 +69,6 @@ const AboutMe = () => {
             exactly what I strive to do every day.
           </p>
         </motion.div>
-
-        {/* Medium screens and above */}
         <motion.div
           initial={{ y: 600 }}
           animate={{ x: 0, y: 0 }}
@@ -86,7 +82,7 @@ const AboutMe = () => {
             exactly what I strive to do every day.
           </p>
         </motion.div>
-      </div>
+      </div> */}
     </section>
   );
 };

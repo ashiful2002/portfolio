@@ -32,7 +32,7 @@ const Header = () => {
         {/* Logo */}
         <HashLink smooth to="/" onClick={() => setActiveId("")}>
           <img
-            src="https://i.ibb.co/1JKmxQgt/4.png"
+            src="https://i.ibb.co.com/F4QZzP97/ai-logo.png"
             alt="Ashiful Islam"
             className="-ml-4 w-[199px] sm:ml-0"
           />

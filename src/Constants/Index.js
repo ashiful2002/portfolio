@@ -1,6 +1,3 @@
-import engineersHome from "../assets/engineershome.jpg";
-import rswa from "../assets/rswa.jpg";
-import helloshe from "../assets/helloshe.jpg";
 import { v4 as uuidv4 } from "uuid";
 import {
   FaEnvelope,
@@ -11,8 +8,7 @@ import {
   FaProjectDiagram,
 } from "react-icons/fa";
 import {
-  FaSatellite,
-  FaWeebly,
+
   FaSearch,
   FaPaintBrush,
   FaMobileAlt,
@@ -25,7 +21,6 @@ import {
   FaJs,
   FaReact,
   FaGitAlt,
-  FaRegStopCircle,
   FaPhone,
 } from "react-icons/fa";
 import { SiReactbootstrap } from "react-icons/si";

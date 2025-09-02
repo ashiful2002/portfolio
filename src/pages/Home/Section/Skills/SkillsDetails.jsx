@@ -120,14 +120,16 @@ const SkillsDetails = () => {
         {skillsData[skills].map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center rounded-lg bg-white/30 p-4 shadow-md transition hover:shadow-lg dark:bg-gray-800"
+            className="group flex flex-col items-center justify-center rounded-xl bg-white/30 p-4 shadow-md backdrop-blur-md transition-all duration-300 ease-in-out hover:scale-105 hover:bg-white/40 hover:shadow-xl dark:bg-gray-800 dark:hover:bg-gray-700"
           >
-            {" "}
-            {skill.icon}{" "}
+            <div className="transition-transform duration-300 group-hover:scale-125">
+              {React.cloneElement(skill.icon, {
+                className: `${skill.icon.props.className} transition-colors duration-300 group-hover:drop-shadow-[0_0_10px_currentColor]`,
+              })}
+            </div>
             <p className="mt-2 text-lg font-medium text-gray-900 dark:text-gray-100">
-              {" "}
-              {skill.name}{" "}
-            </p>{" "}
+              {skill.name}
+            </p>
           </div>
         ))}
       </div>

@@ -101,7 +101,6 @@ const Skills = () => {
       className="mx-auto my-12 scroll-mt-16 space-y-10 overflow-hidden py-6 transition-colors duration-500 dark:bg-gray-900 dark:text-gray-100"
     >
       <h2 className="heading">Skills</h2>
-
       <motion.div
         initial={{ y: -600 }}
         animate={{ x: 0, y: 0 }}

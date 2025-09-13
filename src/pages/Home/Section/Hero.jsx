@@ -38,7 +38,7 @@ const Hero = () => {
               </h5>
 
               <a
-                href="https://drive.google.com/uc?export=download&id=1rNELkS3bVynILzDvII7mJu5QHDkHBHGl"
+                href="https://drive.google.com/uc?export=download&id=1H8JWMB9qJDaS11qBxASqgAHRfQw9ntej"
                 className="mt-2 inline-flex items-center justify-center gap-2 rounded bg-secondary-color px-2 py-2 text-white no-underline transition hover:bg-secondary-color/80 md:px-4 dark:hover:bg-secondary-color/90"
               >
                 <span>Download Resume</span>

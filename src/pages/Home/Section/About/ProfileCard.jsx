@@ -17,7 +17,7 @@ export default function ProfileCard() {
 
       {/* Foreground image */}
       <img
-        src="https://i.ibb.co.com/v4WVkV8m/ashiful.png"
+        src="https://i.ibb.co.com/9msDZ6QW/Mukto.png"
         alt="Ashiful Islam"
         className="absolute z-10 h-[300px] w-[300px] rounded-full object-cover"
       />

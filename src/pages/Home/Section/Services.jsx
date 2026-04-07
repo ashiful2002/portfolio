@@ -1,5 +1,4 @@
-import React from "react";
-import { services } from "../../../Constants/Index";
+ import { services } from "../../../Constants/Index";
 
 const Services = () => {
   return (

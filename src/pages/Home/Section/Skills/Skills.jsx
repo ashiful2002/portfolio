@@ -24,7 +24,17 @@ import {
   SiVisualstudiocode,
 } from "react-icons/si";
 
+import { FaDocker, FaLinux } from "react-icons/fa";
+import {
+  SiPostgresql,
+  SiPrisma,
+  SiJsonwebtokens,
+  SiPnpm,
+} from "react-icons/si";
+import { TbApi } from "react-icons/tb";
+
 const skills = [
+  // 🔹 Frontend
   {
     id: 0,
     name: "HTML5",
@@ -36,50 +46,90 @@ const skills = [
     name: "Tailwind CSS",
     icon: <SiTailwindcss size={50} color="#38BDF8" />,
   },
-  { id: 17, name: "Figma", icon: <FaFigma size={50} color="#F24E1E" /> },
   { id: 3, name: "JavaScript", icon: <FaJsSquare size={50} color="#F0DB4F" /> },
   { id: 4, name: "React JS", icon: <FaReact size={50} color="#61DBFB" /> },
   {
     id: 5,
-    name: "React Bootstrap",
-    icon: <SiReactbootstrap size={50} color="#41e0fd" />,
-  },
-  { id: 15, name: "Firebase", icon: <SiFirebase size={50} color="#FFCA28" /> },
-  {
-    id: 6,
     name: "Next.js",
     icon: <SiNextdotjs size={50} className="dark:text-white" />,
   },
-  { id: 7, name: "Node.js", icon: <FaNodeJs size={50} color="#3C873A" /> },
   {
-    id: 8,
+    id: 6,
+    name: "React Bootstrap",
+    icon: <SiReactbootstrap size={50} color="#41e0fd" />,
+  },
+  { id: 7, name: "Figma", icon: <FaFigma size={50} color="#F24E1E" /> },
+
+  // 🔹 Backend
+  { id: 8, name: "Node.js", icon: <FaNodeJs size={50} color="#3C873A" /> },
+  {
+    id: 9,
     name: "Express.js",
     icon: <SiExpress size={50} className="dark:text-gray-300" />,
   },
-  { id: 9, name: "MongoDB", icon: <SiMongodb size={50} color="#4DB33D" /> },
-  { id: 10, name: "Git", icon: <FaGitAlt size={50} color="#F05032" /> },
+  {
+    id: 10,
+    name: "REST API",
+    icon: <TbApi size={50} className="text-emerald-500" />,
+  },
   {
     id: 11,
+    name: "Authentication (JWT)",
+    icon: <SiJsonwebtokens size={50} className="text-pink-500" />,
+  },
+
+  // 🔹 Database & ORM
+  { id: 12, name: "MongoDB", icon: <SiMongodb size={50} color="#4DB33D" /> },
+  {
+    id: 13,
+    name: "PostgreSQL",
+    icon: <SiPostgresql size={50} className="text-blue-600" />,
+  },
+  {
+    id: 14,
+    name: "Prisma",
+    icon: <SiPrisma size={50} className="text-indigo-500" />,
+  },
+
+  // 🔹 DevOps & Tools
+  {
+    id: 15,
+    name: "Docker",
+    icon: <FaDocker size={50} className="text-blue-500" />,
+  },
+  { id: 16, name: "Firebase", icon: <SiFirebase size={50} color="#FFCA28" /> },
+  { id: 17, name: "Git", icon: <FaGitAlt size={50} color="#F05032" /> },
+  {
+    id: 18,
     name: "GitHub",
     icon: <FaGithub size={50} className="dark:text-white" />,
   },
-  { id: 12, name: "NPM", icon: <FaNpm size={50} color="#CB3837" /> },
+  { id: 19, name: "NPM", icon: <FaNpm size={50} color="#CB3837" /> },
   {
-    id: 13,
+    id: 20,
+    name: "PNPM",
+    icon: <SiPnpm size={50} className="text-orange-600" />,
+  },
+  {
+    id: 21,
     name: "Vercel",
     icon: <SiVercel size={50} className="dark:text-white" />,
   },
-  { id: 14, name: "Postman", icon: <SiPostman size={50} color="#FF6C37" /> },
+  { id: 22, name: "Postman", icon: <SiPostman size={50} color="#FF6C37" /> },
   {
-    id: 16,
+    id: 23,
     name: "VS Code",
     icon: <SiVisualstudiocode size={50} color="#007ACC" />,
+  },
+  {
+    id: 24,
+    name: "Linux",
+    icon: <FaLinux size={50} className="text-yellow-600" />,
   },
 ];
 
 const Skills = () => {
-  // Scroll duration can be adjusted here
-  const scrollDuration = 15; // slower: higher, faster: lower
+  const scrollDuration = 25; // slower: higher, faster: lower
 
   const scrollingVariants = {
     animate: {

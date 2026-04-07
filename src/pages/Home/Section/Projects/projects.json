@@ -1,11 +1,73 @@
 [
   {
+    "id": "7",
+    "title": "MMDB - Subscription-based Movie Review App",
+    "desc": "MMDB is a movie review platform that allows users to browse and subscribe to curated movie content. Built as a landing page, it emphasizes responsive design, accessibility, and SEO best practices to provide a polished user experience.",
+    "url": "https://mm-db.vercel.app",
+    "repoUrl": "dfsg",
+    "img": "https://i.ibb.co.com/Y4mDFSqC/Screenshot-2026-04-07-at-7-16-39-PM.png",
+    "techStack": [
+      "Nextjs",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Node.js",
+      "Express",
+      "postgreSQL",
+      "Better-auth",
+      "JWT",
+      "Stripe",
+      "React Hook Form",
+      "react-hot-toast",
+      "react-icon"
+    ],
+    "features": [
+      "Informational landing page with polished UI",
+      "Fully responsive design for mobile and desktop",
+      "SEO optimized for better search visibility"
+    ],
+    "role": "Full Stack Developer",
+    "date": "2024-08",
+    "duration": "4 weeks",
+    "collaborators": []
+  },
+
+  {
+    "id": "8",
+    "title": "FoodHub - Food Ordering Platform",
+    "desc": "FoodHub is a full-featured food ordering platform. The frontend communicates with backend REST APIs to manage meals, handle orders, and authenticate users. The platform provides an intuitive interface for customers, providers, and admins, ensuring smooth and efficient food ordering experiences.",
+    "url": "https://food-hub-app-steel.vercel.app",
+    "repoUrl": "your-repo-link",
+    "img": "https://i.ibb.co.com/20mWvd3T/Screenshot-2026-04-07-at-7-15-56-PM.png",
+    "techStack": [
+      "Nextjs",
+      "Tailwind CSS",
+      "Shadcn UI",
+      "Node.js",
+      "Express",
+      "postgreSQL",
+      "JWT",
+      "Stripe",
+      "React Hook Form",
+      "react-icon"
+    ],
+    "features": [
+      "Customer-friendly meal browsing and ordering system",
+      "Admin panel for meal and order management",
+      "Provider interface for managing menu and availability",
+      "Seamless integration with backend APIs for orders and authentication"
+    ],
+    "role": "Full Stack Developer",
+    "date": "2024-10",
+    "duration": "4 weeks",
+    "collaborators": []
+  },
+  {
     "id": "1",
-    "title": "Real Estate Project",
+    "title": "Real Estate Property Management",
     "desc": "A role-based MERN application for property buying and selling. Users can browse and purchase properties, agents can list new ones, and admins can manage users, agents, and listings. Features CRUD operations and secure access with Firebase tokens.",
     "url": "https://real-estate-client-2025.web.app",
     "repoUrl": "https://github.com/ashiful2002/get_land",
-    "img": "https://camo.githubusercontent.com/250c84671ab743155e69ac9054a418af95fb5986a17a6fdae89e4929cbe4025d/68747470733a2f2f692e6962622e636f2e636f6d2f4b31776e4b58782f53637265656e73686f742d323032352d30382d30382d61742d332d32312d35312d504d2e706e67",
+    "img": "https://i.ibb.co.com/WWHzKV1V/Screenshot-2026-04-07-at-7-26-03-PM.png",
     "techStack": [
       "React",
       "Tailwind CSS",
@@ -132,7 +194,7 @@
     "id": "4",
     "title": "Virtual Musium",
     "desc": "'Muktanchal research center' is a virtual musiam. visitors can explore here the history of free land during libaration war of bangaldesh held on 1971. This is a great platform to show the history of this free land of bangladeshg during libaration war.",
-    "url": "https://muktanchal-research-centre.web.app",
+    "url": "rmrcm.info",
     "repoUrl": "https://github.com/ashiful2002/muktanchan-research-center",
     "img": "https://i.ibb.co.com/qYRyqnSW/Screenshot-2025-09-02-at-4-13-19-PM.png",
     "techStack": [
@@ -205,24 +267,6 @@
     "role": "Frontend Developer",
     "date": "2024-09",
     "duration": "1 month",
-    "collaborators": []
-  },
-  {
-    "id": "7",
-    "title": "Hello She",
-    "desc": "Hello She is a non-profit organization dedicated to raising awareness about cyber security among women and female students. This is a landing page without functionality.",
-    "url": "https://helloshe.org/",
-    "repoUrl": "dfsg",
-    "img": "https://i.ibb.co.com/hFbb35Wc/helloshe.jpg",
-    "techStack": ["HTML", "CSS", "React"],
-    "features": [
-      "Informational landing page",
-      "Responsive design",
-      "SEO optimized"
-    ],
-    "role": "Frontend Developer",
-    "date": "2024-08",
-    "duration": "2 weeks",
     "collaborators": []
   }
 ]

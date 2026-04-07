@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import {
   FaReact,
   FaNodeJs,
-  FaDatabase,
   FaGitAlt,
   FaGithub,
   FaNpm,
-  FaBootstrap,
   FaJsSquare,
   FaCss3Alt,
   FaFigma,
@@ -20,34 +18,49 @@ import {
   SiPostman,
   SiFirebase,
   SiVisualstudiocode,
-  SiReactbootstrap,
   SiMongodb,
+  SiShadcnui,
+  SiTypescript,
 } from "react-icons/si";
+import { SiPostgresql, SiJsonwebtokens } from "react-icons/si";
+import { TbApi } from "react-icons/tb";
+import { FaDocker, FaLinux } from "react-icons/fa";
+
+import { SiPrisma, SiPnpm, SiEslint, SiPrettier } from "react-icons/si";
 
 const SkillsDetails = () => {
   const [skills, setSkills] = useState("frontend");
 
   const skillsData = {
     frontend: [
-      { name: "HTML5", icon: <FaHtml5 className="text-4xl text-orange-500" /> },
-      { name: "CSS3", icon: <FaCss3Alt className="text-4xl text-blue-500" /> },
+      {
+        name: "Next.js",
+        icon: <SiNextdotjs className="text-4xl dark:text-white" />,
+      },
+      { name: "React JS", icon: <FaReact className="text-4xl text-sky-400" /> },
       {
         name: "Tailwind CSS",
         icon: <SiTailwindcss className="text-4xl text-sky-400" />,
       },
       {
+        name: "Shadcn UI",
+        icon: <SiShadcnui className="text-4xl" />,
+      },
+      {
+        name: "Typescript",
+        icon: <SiTypescript className="text-4xl text-[#007acc]" />,
+      },
+      {
         name: "JavaScript",
         icon: <FaJsSquare className="text-4xl text-yellow-400" />,
       },
-      { name: "React JS", icon: <FaReact className="text-4xl text-sky-400" /> },
-      {
-        name: "React Bootstrap",
-        icon: <SiReactbootstrap className="text-4xl text-[#41e0fd]" />,
-      },
-      {
-        name: "Next.js",
-        icon: <SiNextdotjs className="text-4xl dark:text-white" />,
-      },
+
+      { name: "HTML5", icon: <FaHtml5 className="text-4xl text-orange-500" /> },
+      { name: "CSS3", icon: <FaCss3Alt className="text-4xl text-blue-500" /> },
+      // {
+      //   name: "React Bootstrap",
+      //   icon: <SiReactbootstrap className="text-4xl text-[#41e0fd]" />,
+      // },
     ],
     backend: [
       {
@@ -61,12 +74,29 @@ const SkillsDetails = () => {
         ),
       },
       {
+        name: "PostgreSQL",
+        icon: <SiPostgresql className="text-4xl text-blue-600" />,
+      },
+      {
+        name: "Prisma",
+        icon: <SiPrisma className="text-4xl text-indigo-500" />,
+      },
+      {
+        name: "Docker",
+        icon: <FaDocker className="text-4xl text-blue-500" />,
+      },
+      {
         name: "MongoDB",
         icon: <SiMongodb className="text-4xl text-green-700" />,
       },
+
       {
-        name: "Next.js",
-        icon: <SiNextdotjs className="text-4xl dark:text-white" />,
+        name: "JWT Auth",
+        icon: <SiJsonwebtokens className="text-4xl text-pink-500" />,
+      },
+      {
+        name: "REST API",
+        icon: <TbApi className="text-4xl text-emerald-500" />,
       },
     ],
     tools: [
@@ -75,24 +105,58 @@ const SkillsDetails = () => {
         name: "GitHub",
         icon: <FaGithub className="text-4xl dark:text-white" />,
       },
-      { name: "NPM", icon: <FaNpm className="text-4xl text-red-600" /> },
-      {
-        name: "Vercel",
-        icon: <SiVercel className="text-4xl dark:text-white" />,
-      },
       {
         name: "Postman",
         icon: <SiPostman className="text-4xl text-orange-500" />,
       },
+      // 🔥 New additions (more backend/dev focused)
       {
-        name: "Firebase",
-        icon: <SiFirebase className="text-4xl text-yellow-500" />,
+        name: "Docker",
+        icon: <FaDocker className="text-4xl text-blue-500" />,
+      },
+      {
+        name: "Prisma Studio",
+        icon: <SiPrisma className="text-4xl text-indigo-500" />,
+      },
+      {
+        name: "pgAdmin",
+        icon: <SiPostgresql className="text-4xl text-blue-600" />,
+      },
+      { name: "NPM", icon: <FaNpm className="text-4xl text-red-600" /> },
+      {
+        name: "PNPM",
+        icon: <SiPnpm className="text-4xl text-orange-600" />,
       },
       {
         name: "VS Code",
         icon: <SiVisualstudiocode className="text-4xl text-blue-500" />,
       },
+      {
+        name: "Vercel",
+        icon: <SiVercel className="text-4xl dark:text-white" />,
+      },
+      {
+        name: "Firebase",
+        icon: <SiFirebase className="text-4xl text-yellow-500" />,
+      },
       { name: "Figma", icon: <FaFigma className="text-4xl text-pink-500" /> },
+
+      {
+        name: "ESLint",
+        icon: <SiEslint className="text-4xl text-purple-600" />,
+      },
+      {
+        name: "Prettier",
+        icon: <SiPrettier className="text-4xl text-pink-400" />,
+      },
+      {
+        name: "Linux",
+        icon: <FaLinux className="text-4xl text-yellow-600" />,
+      },
+      // {
+      //   name: "Antigravity",
+      //   icon: <FaLinux className="text-4xl text-yellow-600" />,
+      // },
     ],
   };
 

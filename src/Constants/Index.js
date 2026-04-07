@@ -8,13 +8,11 @@ import {
   FaProjectDiagram,
 } from "react-icons/fa";
 import {
-
-  FaSearch,
-  FaPaintBrush,
-  FaMobileAlt,
   FaCode,
+  FaShoppingCart,
+  FaChartLine,
+  FaCreditCard,
 } from "react-icons/fa";
-
 import {
   FaHtml5,
   FaCss3,
@@ -26,7 +24,7 @@ import {
 import { SiReactbootstrap } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaMapLocationDot } from "react-icons/fa6";
-
+import { FaDatabase, FaLock, FaDocker, FaTools } from "react-icons/fa";
 export const navItems = [
   {
     id: "1",
@@ -128,54 +126,97 @@ export const aboutDetails = [
     titles: [
       "Web Developer",
       "Frontend Developer",
+      "Backend Developer",
       "React Developer",
-      // "Backend Developer",
-      "Junior MERN Developer",
+      // "Junior MERN Developer",
       "Full Stack Web Developer",
     ],
-    desc: "A passionate frontEnd focused full stack web developer. I enjoy crafting clean, responsive, and user-friendly web applications that bring ideas to life. Constantly learning new tools and frameworks, I’m eager to solve real-world problems through code. Let’s build something amazing together!",
+    desc: "A Backend-focused full stack developer building scalable, high-performance web applications. I design robust APIs, optimize databases, and ensure seamless system performance—while crafting clean, intuitive user experiences. Passionate about solving real-world problems through efficient and maintainable code.",
   },
 ];
 
+// export const services = [
+//   {
+//     id: "0",
+//     icon: FaCode,
+//     title: "Frontend Development",
+//     desc: "Building responsive, accessible, and high-performance user interfaces using React.js, Next.js, Tailwind CSS, and modern JavaScript.",
+//   },
+//   {
+//     id: "1",
+//     icon: FaServer,
+//     title: "Backend Development",
+//     desc: "Developing secure and efficient server-side applications with Node.js, Express.js, and MongoDB, including REST API integration.",
+//   },
+//   {
+//     id: "2",
+//     icon: FaMobileAlt,
+//     title: "Responsive & Cross-Browser Design",
+//     desc: "Ensuring seamless performance and design consistency across all devices and major browsers.",
+//   },
+//   {
+//     id: "3",
+//     icon: FaSearch,
+//     title: "Performance Optimization",
+//     desc: "Improving website load times, SEO readiness, and overall user experience using best development practices.",
+//   },
+//   {
+//     id: "4",
+//     icon: FaProjectDiagram,
+//     title: "Full Stack Web Applications",
+//     desc: "Designing and developing complete web solutions from concept to deployment with scalable architecture.",
+//   },
+//   {
+//     id: "5",
+//     icon: FaPaintBrush,
+//     title: "UI/UX Implementation",
+//     desc: "Translating Figma or design mockups into pixel-perfect, interactive, and user-friendly interfaces.",
+//   },
+// ];
 export const services = [
   {
     id: "0",
     icon: FaCode,
-    title: "Frontend Development",
-    desc: "Building responsive, accessible, and high-performance user interfaces using React.js, Next.js, Tailwind CSS, and modern JavaScript.",
+    title: "Custom Web App Development",
+    desc: "Building scalable and high-performance full stack web applications tailored to business needs, from idea to deployment.",
   },
   {
     id: "1",
     icon: FaServer,
-    title: "Backend Development",
-    desc: "Developing secure and efficient server-side applications with Node.js, Express.js, and MongoDB, including REST API integration.",
+    title: "API Development & Integration",
+    desc: "Designing secure RESTful APIs and integrating third-party services like payments, authentication, and external platforms.",
   },
   {
     id: "2",
-    icon: FaMobileAlt,
-    title: "Responsive & Cross-Browser Design",
-    desc: "Ensuring seamless performance and design consistency across all devices and major browsers.",
+    icon: FaDatabase,
+    title: "Database Design & Optimization",
+    desc: "Creating efficient database architectures using PostgreSQL and Prisma with optimized queries and strong data integrity.",
   },
   {
     id: "3",
-    icon: FaSearch,
-    title: "Performance Optimization",
-    desc: "Improving website load times, SEO readiness, and overall user experience using best development practices.",
+    icon: FaTools,
+    title: "Backend Refactoring & Bug Fixing",
+    desc: "Improving existing backend systems by fixing bugs, optimizing performance, and restructuring code for scalability.",
   },
   {
     id: "4",
-    icon: FaProjectDiagram,
-    title: "Full Stack Web Applications",
-    desc: "Designing and developing complete web solutions from concept to deployment with scalable architecture.",
+    icon: FaShoppingCart,
+    title: "E-commerce Solutions",
+    desc: "Developing complete e-commerce backends including product management, order systems, and payment integration.",
   },
   {
     id: "5",
-    icon: FaPaintBrush,
-    title: "UI/UX Implementation",
-    desc: "Translating Figma or design mockups into pixel-perfect, interactive, and user-friendly interfaces.",
+    icon: FaChartLine,
+    title: "Admin Dashboard Systems",
+    desc: "Building powerful admin dashboards with analytics, user management, and business insights for better decision-making.",
+  },
+  {
+    id: "6",
+    icon: FaCreditCard,
+    title: "Payment Systems Integration",
+    desc: "Integrating secure payment gateways like Stripe with support for subscriptions, billing, and transaction management.",
   },
 ];
-
 // export const projects = [
 //   {
 //     id: "5",

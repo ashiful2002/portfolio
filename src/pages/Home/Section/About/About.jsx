@@ -12,17 +12,15 @@ const AboutMe = () => {
       <h2 className="heading">About Me</h2>
 
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2">
-        {/* 1. Image */}
         <ProfileCard />
 
-        {/* 2. Text */}
         <motion.div
           initial={{ x: +300 }}
           animate={{ x: 0, y: 0 }}
           transition={{ duration: 2, ease: "easeInOut" }}
           className="rounded bg-gray-50 p-4 shadow-md duration-300 hover:shadow-xl dark:bg-gray-800"
         >
-          <p className="mb-4 text-justify leading-relaxed text-gray-800 dark:text-gray-200">
+          {/* <p className="mb-4 text-justify leading-relaxed text-gray-800 dark:text-gray-200">
             1. Hi, I'm <strong>Ashiful Islam</strong> — a passionate web
             developer with a love for crafting clean, efficient, and
             user-friendly digital experiences. My programming journey began
@@ -40,6 +38,25 @@ const AboutMe = () => {
             I thrive in creating seamless experiences that delight users.
             Working on projects that challenge me to learn new skills or think
             creatively is where I find the most joy.
+          </p> */}
+          <p className="mb-4 text-justify leading-relaxed text-gray-800 dark:text-gray-200">
+            I'm <strong>Ashiful Islam (Mukto)</strong> — a backend-focused full
+            stack developer passionate about building scalable and efficient web
+            applications. My journey into programming began when I discovered
+            the power of turning ideas into real-world solutions through code.
+            Since then, I’ve been continuously learning and working with modern
+            technologies to design robust systems, APIs, and database-driven
+            applications.
+          </p>
+
+          <p className="mb-4 text-justify leading-relaxed text-gray-800 dark:text-gray-200">
+            I enjoy building <em>dynamic, high-performance web applications</em>{" "}
+            that not only deliver smooth user experiences but also maintain
+            strong and reliable backend architecture. From designing RESTful
+            APIs and handling authentication to optimizing database performance,
+            I focus on creating clean, maintainable, and production-ready
+            solutions. I thrive on solving real-world problems and constantly
+            pushing myself to grow as a developer.
           </p>
         </motion.div>
       </div>

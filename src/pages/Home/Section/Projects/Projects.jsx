@@ -6,7 +6,7 @@ const truncateWords = (text, wordLimit) => {
   return words.length > wordLimit
     ? words.slice(0, wordLimit).join(" ") + "..."
     : text || "";
-}; 
+};
 
 const Projects = () => {
   const projects = useLoaderData();

@@ -1,4 +1,3 @@
-import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import {
   FaCheckCircle,
@@ -35,6 +34,8 @@ import {
   SiReacthookform,
   SiReactrouter,
   SiReact,
+  SiPrisma,
+  SiPostgresql,
 } from "react-icons/si";
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
 

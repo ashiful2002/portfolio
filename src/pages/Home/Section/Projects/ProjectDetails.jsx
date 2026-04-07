@@ -36,13 +36,14 @@ import {
   SiReact,
   SiPrisma,
   SiPostgresql,
+  SiShadcnui,
 } from "react-icons/si";
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
 
 export const techIcons = {
   // Frontend
   React: <FaReact className="text-sky-400" />,
-  "Next.js": <SiNextdotjs className="text-black dark:text-white" />,
+  "Next.js": <SiNextdotjs className="bg-black text-white" />,
   "React Bootstrap": <SiReactbootstrap className="text-[#41e0fd]" />,
   "Ant Design": <SiAntdesign className="text-blue-500" />,
   "React Router": <SiReactrouter className="text-red-600" />,
@@ -55,13 +56,13 @@ export const techIcons = {
   "Tailwind CSS": <SiTailwindcss className="text-sky-400" />,
   Figma: <FaFigma className="text-pink-500" />,
   recharts: <FaChartBar className="text-teal-500" />,
-
+  "Shadcn UI": <SiShadcnui className="bg-black text-white" />,
   // Backend
   "Node.js": <FaNodeJs className="text-green-500" />,
   Express: <SiExpress className="text-gray-700 dark:text-gray-300" />,
   MongoDB: <SiMongodb className="text-green-700" />,
   Prisma: <SiPrisma className="text-blue-400" />,
-  PostgreSQL: <SiPostgresql className="text-blue-600" />,
+  PostgreSQL: <SiPostgresql className="text-[#008bb9]" />,
   Firebase: <SiFirebase className="text-yellow-500" />,
   BetterAuth: <SiJsonwebtokens className="text-black dark:text-white" />,
   JWT: <SiJsonwebtokens className="text-pink-600" />,

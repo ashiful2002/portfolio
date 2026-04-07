@@ -29,7 +29,7 @@ import { FaDocker, FaLinux } from "react-icons/fa";
 import { SiPrisma, SiPnpm, SiEslint, SiPrettier } from "react-icons/si";
 
 const SkillsDetails = () => {
-  const [skills, setSkills] = useState("frontend");
+  const [skills, setSkills] = useState("backend");
 
   const skillsData = {
     frontend: [

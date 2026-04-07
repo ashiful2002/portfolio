@@ -1,16 +1,15 @@
 import React, { useRef, useState } from "react";
 import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
 import Socials from "../Socials";
-import { toast, ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { FaSpinner } from "react-icons/fa";
 import ContactForm from "./ContactForm/ContactForm";
 
 const Contact = () => {
   return (
     <section
       id="contact"
-      className="container mx-auto my-12 max-w-7xl scroll-mt-16 p-6 transition-colors duration-300 dark:bg-gray-900"
+      className="container mx-auto my-12 max-w-7xl scroll-mt-16 p-6 transition-colors duration-300"
     >
       <h2 className="heading">Contact Me</h2>
 

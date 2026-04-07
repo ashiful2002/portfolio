@@ -8,7 +8,7 @@ const Services = () => {
     >
       <h2 className="heading mb-8 text-center">What I Do</h2>
 
-      <div className="mx-auto grid grid-cols-1 gap-2 rounded sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4">
+      <div className="mx-auto grid grid-cols-1 gap-4 rounded sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
         {services.map(({ id, title, desc, icon: Icon }) => (
           <div
             key={id}

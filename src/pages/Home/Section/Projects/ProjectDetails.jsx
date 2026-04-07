@@ -1,6 +1,5 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router-dom";
-// Font Awesome Icons
 import {
   FaCheckCircle,
   FaReact,
@@ -12,15 +11,10 @@ import {
   FaFigma,
   FaGithub,
   FaChartBar,
-  FaJs,
   FaNpm,
 } from "react-icons/fa";
-// Feather Icons
 import { FiExternalLink } from "react-icons/fi";
 import { CiCircleAlert } from "react-icons/ci";
-import { IoCheckmarkCircleSharp } from "react-icons/io5";
-
-// Simple Icons
 import {
   SiTailwindcss,
   SiNextdotjs,
@@ -38,46 +32,56 @@ import {
   SiJsonwebtokens,
   SiStripe,
   SiAxios,
-  SiReactquery,
   SiReacthookform,
   SiReactrouter,
   SiReact,
 } from "react-icons/si";
-const techIcons = {
+import { IoCheckmarkCircleSharp } from "react-icons/io5";
+
+export const techIcons = {
+  // Frontend
   React: <FaReact className="text-sky-400" />,
   "Next.js": <SiNextdotjs className="text-black dark:text-white" />,
+  "React Bootstrap": <SiReactbootstrap className="text-[#41e0fd]" />,
+  "Ant Design": <SiAntdesign className="text-blue-500" />,
+  "React Router": <SiReactrouter className="text-red-600" />,
+  "React Hook Form": <SiReacthookform className="text-pink-400" />,
+  "react-icon": <SiReact className="text-red-500" />,
+  JavaScript: <FaJsSquare className="text-yellow-400" />,
+  TypeScript: <SiTypescript className="text-blue-600" />,
+  HTML: <FaHtml5 className="text-orange-600" />,
+  CSS: <FaCss3Alt className="text-blue-500" />,
+  "Tailwind CSS": <SiTailwindcss className="text-sky-400" />,
+  Figma: <FaFigma className="text-pink-500" />,
+  recharts: <FaChartBar className="text-teal-500" />,
+
+  // Backend
   "Node.js": <FaNodeJs className="text-green-500" />,
   Express: <SiExpress className="text-gray-700 dark:text-gray-300" />,
   MongoDB: <SiMongodb className="text-green-700" />,
-  JavaScript: <FaJsSquare className="text-yellow-400" />,
-  CSS: <FaCss3Alt className="text-blue-500" />,
-  HTML: <FaHtml5 className="text-orange-600" />,
-  "Tailwind CSS": <SiTailwindcss className="text-sky-400" />,
+  Prisma: <SiPrisma className="text-blue-400" />,
+  PostgreSQL: <SiPostgresql className="text-blue-600" />,
   Firebase: <SiFirebase className="text-yellow-500" />,
+  BetterAuth: <SiJsonwebtokens className="text-black dark:text-white" />,
+  JWT: <SiJsonwebtokens className="text-pink-600" />,
+  axios: <SiAxios className="text-violet-500" />,
+
+  // DevOps / Deployment
+  Docker: <SiDocker className="text-blue-400" />,
+  Vercel: <SiVercel className="text-black dark:text-white" />,
+  Netlify: <SiNetlify className="text-cyan-500" />,
+
+  // Payment / APIs
+  Stripe: <SiStripe className="text-purple-600" />,
+  Postman: <SiPostman className="text-orange-500" />,
+
+  // Tools
   Git: <FaGitAlt className="text-orange-500" />,
   GitHub: <FaGithub className="text-black dark:text-white" />,
-  Vercel: <SiVercel className="text-black dark:text-white" />,
-  Postman: <SiPostman className="text-orange-500" />,
-  Figma: <FaFigma className="text-pink-500" />,
   "VS Code": <SiVisualstudiocode className="text-blue-500" />,
-  "React Bootstrap": <SiReactbootstrap className="text-[#41e0fd]" />,
-  "Ant Design": <SiAntdesign className="text-blue-500" />,
-
-  // 🔹 New Suggested Icons
-  TypeScript: <SiTypescript className="text-blue-600" />,
-  Netlify: <SiNetlify className="text-cyan-500" />,
-  Docker: <SiDocker className="text-blue-400" />,
-  JWT: <SiJsonwebtokens className="text-pink-600" />,
-  Stripe: <SiStripe className="text-purple-600" />,
-  axios: <SiAxios className="text-violet-500" />,
-  "TanStack Query": <SiReactquery className="text-red-500" />,
-  "React Hook Form": <SiReacthookform className="text-pink-400" />,
-  "React Router": <SiReactrouter className="text-red-600" />,
-  recharts: <FaChartBar className="text-teal-500" />,
-  "react-icon": <SiReact className="text-red-500" />,
+  "react-helmet": <FaNpm className="text-red-500" />,
   "sweet alert2": <CiCircleAlert className="text-orange-600" />,
   "react-hot-toast": <IoCheckmarkCircleSharp className="text-green-400" />,
-  "react-helmet": <FaNpm className="text-red-500" />,
 };
 
 const ProjectDetails = () => {

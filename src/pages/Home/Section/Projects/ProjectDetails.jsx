@@ -39,7 +39,7 @@ import {
   SiShadcnui,
 } from "react-icons/si";
 import { IoCheckmarkCircleSharp } from "react-icons/io5";
-
+// dfga
 export const techIcons = {
   // Frontend
   React: <FaReact className="text-sky-400" />,

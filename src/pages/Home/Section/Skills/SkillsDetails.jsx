@@ -55,8 +55,8 @@ const SkillsDetails = () => {
         icon: <FaJsSquare className="text-4xl text-yellow-400" />,
       },
 
-      { name: "HTML5", icon: <FaHtml5 className="text-4xl text-orange-500" /> },
       { name: "CSS3", icon: <FaCss3Alt className="text-4xl text-blue-500" /> },
+      { name: "HTML5", icon: <FaHtml5 className="text-4xl text-orange-500" /> },
       // {
       //   name: "React Bootstrap",
       //   icon: <SiReactbootstrap className="text-4xl text-[#41e0fd]" />,
@@ -74,8 +74,21 @@ const SkillsDetails = () => {
         ),
       },
       {
+        name: "Typescript",
+        icon: <SiTypescript className="text-4xl text-[#007acc]" />,
+      },
+      {
+        name: "REST API",
+        icon: <TbApi className="text-4xl text-emerald-500" />,
+      },
+
+      {
         name: "PostgreSQL",
         icon: <SiPostgresql className="text-4xl text-blue-600" />,
+      },
+      {
+        name: "MongoDB",
+        icon: <SiMongodb className="text-4xl text-green-700" />,
       },
       {
         name: "Prisma",
@@ -85,19 +98,11 @@ const SkillsDetails = () => {
         name: "Docker",
         icon: <FaDocker className="text-4xl text-blue-500" />,
       },
-      {
-        name: "MongoDB",
-        icon: <SiMongodb className="text-4xl text-green-700" />,
-      },
 
-      {
-        name: "JWT Auth",
-        icon: <SiJsonwebtokens className="text-4xl text-pink-500" />,
-      },
-      {
-        name: "REST API",
-        icon: <TbApi className="text-4xl text-emerald-500" />,
-      },
+      // {
+      //   name: "JWT Auth",
+      //   icon: <SiJsonwebtokens className="text-4xl text-pink-500" />,
+      // },
     ],
     tools: [
       { name: "Git", icon: <FaGitAlt className="text-4xl text-orange-500" /> },

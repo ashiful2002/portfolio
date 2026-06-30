@@ -64,6 +64,10 @@ const SkillsDetails = () => {
     ],
     backend: [
       {
+        name: "Typescript",
+        icon: <SiTypescript className="text-4xl text-[#007acc]" />,
+      },
+      {
         name: "Node.js",
         icon: <FaNodeJs className="text-4xl text-green-500" />,
       },
@@ -73,10 +77,7 @@ const SkillsDetails = () => {
           <SiExpress className="text-4xl text-gray-700 dark:text-gray-300" />
         ),
       },
-      {
-        name: "Typescript",
-        icon: <SiTypescript className="text-4xl text-[#007acc]" />,
-      },
+
       {
         name: "REST API",
         icon: <TbApi className="text-4xl text-emerald-500" />,

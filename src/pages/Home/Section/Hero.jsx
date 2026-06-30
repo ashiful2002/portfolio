@@ -39,7 +39,7 @@ const Hero = () => {
 
               <a
                 href="https://drive.google.com/uc?export=download&id=1H8JWMB9qJDaS11qBxASqgAHRfQw9ntej"
-                className="mt-2 inline-flex items-center justify-center gap-2 rounded bg-secondary-color px-2 py-2 text-white no-underline transition hover:bg-secondary-color/80 md:px-4 dark:hover:bg-secondary-color/90"
+                className="mt-2 inline-flex items-center justify-center gap-2 rounded bg-primary-color px-3 py-2 text-white no-underline transition hover:bg-primary-color/80 md:px-4 dark:hover:bg-primary-color/90"
               >
                 <span>Download Resume</span>
                 <MdDownloadForOffline className="inline rounded-full bg-white text-xl text-primary-color dark:bg-gray-100" />

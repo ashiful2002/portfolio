@@ -5,7 +5,7 @@
     "desc": "MMDB, A Production-ready SaaS Movie Review Platform built with Next.js, Express, PostgreSQL, Prisma, Better Auth, Stripe and Recharts featuring subscription tiers, watchlists, review ranking algorithms, advanced filtering, analytics dashboards and scalable pagination.",
     "url": "https://mm-db.vercel.app",
     "repoUrl": "https://github.com/ashiful2002/movie_review_app",
-    "img": "https://i.ibb.co.com/84jPB978/Gemini-Generated-Image-j6lf9nj6lf9nj6lf.jpg",
+    "img": "https://i.ibb.co.com/q3KK4KLz/mmdb.png",
     "techStack": [
       "Next.js",
       "Node.js",

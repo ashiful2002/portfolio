@@ -1,5 +1,4 @@
-import React from "react";
-import { Link, useLoaderData } from "react-router-dom";
+ import { Link, useLoaderData } from "react-router-dom";
 
 const truncateWords = (text, wordLimit) => {
   const words = text?.split(" ") || [];
